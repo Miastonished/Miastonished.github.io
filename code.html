@@ -1,13 +1,29 @@
 <head>
-  <title>
-    Random Code - Will914's Site
+	<title>
+    Random Code - Mia's EPIC Site
     </title>
+	<style>
+	html, body {margin:0;padding:0;}
+	.header {background-image:linear-gradient(#2a8000, rgba(0, 0, 0, 0))}
+	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #2a8000)}
+	body {background-color:#000000;color:#ffffff}
+	.white {color:rgba(0,0,0,0)}
+	th{text-align: center;font-weight: normal}
+	.links{background-color: #55ff00;color: black;padding: 5px 100px;text-align: center;text-decoration: strong;display: inline-block}
+	a{color:#55ff00}
+	button{background-color: #00ff00}
+	</style>
 </head>
 
+<div class="header">
+	<br>
+	<center>
+	<h1> Random Code Stuff </h1>
+	</center>
+	<br>
+</div>
 <center>
-<h1> Random Code Stuff </h1>
-  
-<a href="code.html"> random code stuff </a> - <a href="https://www.youtube.com/channel/UC2Pn0tzn0c3HLs3Q8mJaZRw"> My Youtube </a> - <a href="will803.github.io"> Main Page </a>
+<a href="code.html" class="links"> random code stuff </a> - <a href="https://www.youtube.com/channel/UC2Pn0tzn0c3HLs3Q8mJaZRw" class="links"> My Youtube </a> - <a href="will803.github.io" class="links"> Main Page </a>
 <br>
 <br>
 <br>
@@ -23,3 +39,17 @@
 <br>
 
 </center>
+<div id="funny">
+<script>
+function funny(){
+	const a = document.querySelector('#funny');
+	br = document.createElement('br');
+	a.appendChild(br);
+	setTimeout(funny, 100);
+}
+funny();
+</script>
+</div>
+<div class="footer">
+<br><br><br><br><br>
+</div>
