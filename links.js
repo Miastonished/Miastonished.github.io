@@ -1,1 +1,1 @@
-document.getElementById("menulinks").innerHTML = '<a href="index.html" class="links"> Main Page </a> - <a href="aboutme.html" class="links"> About Me </a> - <a href="code.html" class="links"> Random Code Stuff </a>';
+document.getElementById("menulinks").innerHTML = '<a href="index.html" class="links"> Main Page </a> - <a href="code.html" class="links"> Random Code Stuff </a> - <a href="aboutme.html" class="links"> About Me </a>';
