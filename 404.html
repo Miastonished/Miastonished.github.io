@@ -1,6 +1,6 @@
 <head>
 	<title>
-    Random Code - Mia's EPIC Site
+    404 - Mia's EPIC Site
     </title>
 	<style>
 	html, body {margin:0;padding:0;}
@@ -43,14 +43,15 @@
 <script>
 function funny(){
 	const a = document.querySelector('#funny');
-	const btn = document.createElement("p");
+	const btn = document.createElement('span');
 	const br = document.createElement("br");
-	btn.innerHTML = "TURN BACK NOW";
+	btn.innerHTML = '<button onclick="history.back()" onmouseover="funny();">TURN BACK NOW</button>';
 	a.appendChild(btn);
 	a.appendChild(br);
 	setTimeout(funny, 100);
 }
 </script>
 </div>
+<p>don't destroy your pc challenge impossible</p>
 </center>
 </body>
