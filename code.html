@@ -38,7 +38,32 @@
 <p id="dis"> :) </p>
 <br>
 <br>
-<a href="tags.html"> i did all the tags yay :(  </a>  
+<p><a href="tags.html"> i did all the tags yay :(  </a></p> 
+<br>
+<br>
+<div>
+<table>
+<tr>
+<td><input type="range" min="1" max="100" value="10" id="sliderlol"></td>
+<td></td>
+<td><span id="slidey"></span></td>
+</tr>
+</table>
+<div id="Gradient" style="height:100px;width:75%;background-image:repeating-linear-gradient(90deg, #000000,#000000 10px,#2a8000 10px,#2a8000 20px);">
+</div>
+</div>
+<script>
+var slider = document.getElementById("sliderlol");
+var variablename = document.getElementById("slidey");
+var gradient = document.getElementById("Gradient");
+variablename.innerHTML = slider.value;
+slider.oninput = function() {
+  variablename.innerHTML = this.value;
+  gradient.style.backgroundImage = "repeating-linear-gradient(90deg, #000000,#000000 "+this.value+"px,#2a8000 "+this.value+"px,#2a8000 "+this.value*2+"px)";
+}
+</script>
+
+
 
 </center>
 <div id="funny">
