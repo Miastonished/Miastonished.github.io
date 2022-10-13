@@ -1,0 +1,1 @@
+document.getElementById("menulinks").innerHTML = '<a href="index.old.html" class="links"> Main</a> ​ ​ ​<a href="game.html" class="links"> Game </a> ​ ​ ​<a href="core.html" class="links"> C O R E </a> ​ ​ ​<a href="aboutthem.html" class="links"> About Them </a>';
