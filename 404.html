@@ -94,14 +94,45 @@
 <button onclick="history.back()" onmouseover="funny();">TURN BACK NOW</button>
 <div id="funny">
 <script>
+const advice = [
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='history.back()' onmouseover='funny();'>TURN BACK NOW</button>",
+	"<button onclick='plastic();' onmouseover='funny();'>444</button>"
+]
 function funny(){
 	const a = document.querySelector('#funny');
 	const btn = document.createElement('span');
 	const br = document.createElement("br");
-	btn.innerHTML = '<button onclick="history.back()" onmouseover="funny();">TURN BACK NOW</button>';
+	min = Math.ceil(0);
+	max = Math.floor(22);
+	randomboogie = Math.floor(Math.random() * (max - min) + min);
+	ohtheway = advice[randomboogie];
+	btn.innerHTML = ohtheway;
 	a.appendChild(btn);
 	a.appendChild(br);
 	setTimeout(funny, 100);
+}
+function plastic(){
+	window.open("444.html", "_blank");
 }
 console.log('%cUPDATE-10-29-2022-HES-ALIVE-AGAIN', 'color:#ffc83d;font-size:100px;background-color:black');
 </script>

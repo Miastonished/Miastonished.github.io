@@ -1,0 +1,116 @@
+<head>
+	<title>
+    The Funny Mans Advice - Mia's EPIC Site
+    </title>
+	<meta name="description" content="He says 'Its ingratiating!' 🙂">
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+	<style>
+	@font-face {
+		font-family: funny;
+		src: url(assets/funny.ttf);
+	}
+	html, body {margin:0;padding:0;}
+	.header {background-image:linear-gradient(181deg, #ffc83d, rgba(0, 0, 0, 0))}
+	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #ffc83d)}
+	body {background-image: linear-gradient(black, #ffc83d);color:#ffffff;font-family: funny}
+	.white {color:rgba(0,0,0,0)}
+	th{text-align: center;font-weight: normal}
+	.links{background-color: #ffc83d;color: black;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block}
+	a{color:#ffc83d}
+	button{background-color: #ffc83d; font-family: funny}
+	p{color:#ffc83d}
+	.funnyman{
+		font-size: 500px;
+		position: relative;
+		text-shadow:
+		-25px -25px 0 #000,
+		25px 25px 0 #000,
+		25px -25px 0 #ffc83d,
+		-25px 25px 0 #ffc83d;
+	}
+	.fun{
+		animation: Uhoh 0.5s linear infinite;
+		z-index: 1;
+		position: absolute;
+		top: 0%;
+		width: 100%;
+		text-align: center;
+	}
+	.nym{
+		width: 100%;
+		height: auto;
+	}
+	.ann{
+		animation: Poop 10s linear infinite;
+		z-index: 2;
+		position: absolute;
+		top: 0%;
+		width: 100%;
+		text-align: center;
+	}
+    @keyframes Uhoh {
+         50% {opacity: 0;}
+    }
+    @keyframes Poop {
+         0% {opacity: 0;}
+         25% {opacity: 1;}
+         75% {opacity: 1;}
+         100% {opacity: 0;}
+    }
+	</style>
+</head>
+<body>
+<center>
+<div class="header">
+	<br>
+	<center>
+	<h1> The Funny MAns' aD vice! </h1>
+	<span id="menulinks">ingratiating</span>
+	<script src="links.js" type="text/javascript"></script>
+	</center>
+	<br>
+</div>
+<a href="040.html"> Reject the respideral</a>
+<br><br>
+<a href="040.html"> Or face denial </a>
+<br>
+<div class="funnyman">
+<div class="nym">🔴</div>
+<div class="fun">😢</div>
+<div class="ann">😟</div>
+</div>
+<br>
+
+<button onclick="history.back()" onmouseover="funny();">Advice ! ADvice!</button>
+<div id="funny">
+<script>
+const advice = [
+	"<button onclick='history.back()' onmouseover='plastic();'>TURN BACK NOW</button>",
+	"<button onclick='plastic();' onmouseover='funny();'>PRAISE THE FUNNY MAN</button>",
+	"<button onclick='boogie();' onmouseover='funny();'>BE INGRATIATING</button>",
+]
+function funny(){
+	const a = document.querySelector('#funny');
+	const btn = document.createElement('span');
+	const br = document.createElement("br");
+	min = Math.ceil(0);
+	max = Math.floor(27);
+	randomboogie = Math.floor(Math.random() * (max - min) + min);
+	ohtheway = advice[randomboogie];
+	btn.innerHTML = ohtheway;
+	a.appendChild(btn);
+	a.appendChild(br);
+	setTimeout(funny, 100);
+}
+function boogie(){
+	window.open("aboutthem.html", "_blank");
+}
+function plastic(){
+	alert("please Ad :     : Listen ! ! ! ");
+}
+console.log('%cfrog breath deep death, neck p', 'color:#ffc83d;font-size:100px;background-color:black');
+</script>
+</div>
+<p>don't destroy your </p>
+</center>
+</body>
