@@ -1,0 +1,119 @@
+<head>
+	<title>
+	???
+    </title>
+	<meta name="description" content="???">
+	<meta name="author" content="???">
+	<meta name="author" content="John Doe">
+	<style>
+	@keyframes drippingtapkinggizzard {
+		from {backdrop-filter: hue-rotate(0deg);}
+		50% {backdrop-filter: hue-rotate(360deg);}
+		to {backdrop-filter: hue-rotate(0deg);}
+	}
+	html, body {margin:0;padding:0;}
+	.header {background-image:linear-gradient(#000000 10%,#FFFFFF 20%, rgba(0, 0, 0, 0) 30%)}
+	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #2a8000)}
+	body {
+		background-image: url(assets/tilingimage2.png);
+		color: white;
+		animation-name: drippingtapkinggizzard;
+		animation-duration: 60s;
+		animation-iteration-count: infinite;
+	}
+	.white {color:rgba(0,0,0,0)}
+	th{text-align: center;font-weight: normal}
+	.links{/*background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,0,255,1) 50%, rgba(0,0,0,1) 100%);*/color: black;padding: 5px 100px;background-image: url('https://i5.glitter-graphics.org/pub/607/607805x39ipznfe0.gif');text-align: center;text-decoration: none;display: inline-block}
+	a{color:#BCBCBC}
+	button{background-color: #00ff00}
+	h1{
+	    color: purple;
+	}
+	.p1{
+	    color: white;
+	}
+	.p2{
+	    color: white;
+	}
+	.thething{
+	    color: black;
+	}
+	img{
+		background-color: #00000000;
+		text-align: center;
+		width: 400px;
+	}
+	.doors{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	</style>
+</head>
+
+<div> <!--class="header"--->
+	<br>
+	<center>
+	<!--<h1> ??? </h1>-->
+	<!--<span id="menulinks">???</span>-->
+	<!--<script src="links.js" type="text/javascript"></script>	-->
+	</center>
+	<br>
+</div>
+<center>
+<br>
+<br>
+<br>
+<div class="GamesPLAS">
+<script>
+var n = 1;
+function aaa(){
+	console.log("Silly")
+}
+function farton(x){
+	x.src = "assets/doors/door0002.png";	
+}
+function suckfartsoutof(x){
+	x.src = "assets/doors/door0001.png";
+}
+function takeashit(x){
+	x.onmouseover = aaa;
+	x.onmouseout = aaa;
+	x.onclick = aaa;
+	if (n == 3){
+	setTimeout(() => {  x.src = "assets/doors/door0002.png"; }, 200);
+	setTimeout(() => {  x.src = "assets/doors/door0003.png"; }, 300);
+	setTimeout(() => {  x.src = "assets/doors/door0004.png"; }, 400);
+	setTimeout(() => {  x.src = "assets/doors/door0006.png"; }, 500);
+	setTimeout(() => {  x.src = "assets/doors/door0004.png"; }, 800);
+	setTimeout(() => {  x.src = "assets/doors/door0003.png"; }, 900);
+	setTimeout(() => {  x.src = "assets/doors/door0002.png"; }, 1000);
+	setTimeout(() => {  x.src = "assets/doors/door0001.png"; }, 1100);
+	setTimeout(() => { 	x.onmouseout = function () {farton(this)}; }, 1100);
+	setTimeout(() => {  x.onmouseover = function () {suckfartsoutof(this)}; }, 1100);
+	setTimeout(() => {  x.onclick = function () {takeashit(this)}; }, 1100);
+	setTimeout(() => {  x.src = "assets/doors/door0002.png"; }, 1200);
+	} else {
+	setTimeout(() => {  x.src = "assets/doors/door0002.png"; }, 200);
+	setTimeout(() => {  x.src = "assets/doors/door0003.png"; }, 300);
+	setTimeout(() => {  x.src = "assets/doors/door0004.png"; }, 400);
+	setTimeout(() => {  x.src = "assets/doors/door0005.png"; }, 500);
+	setTimeout(() => {  x.src = "assets/doors/door0004.png"; }, 800);
+	setTimeout(() => {  x.src = "assets/doors/door0003.png"; }, 900);
+	setTimeout(() => {  x.src = "assets/doors/door0002.png"; }, 1000);
+	setTimeout(() => {  x.src = "assets/doors/door0001.png"; }, 1100);
+	}
+	n++;
+}
+</script>
+</div>
+<div class="doors">
+<table>
+	<tr>
+	<td><img src="assets/doors/door0001.png" width="100%" height="100%" onmouseover="farton(this);" onmouseout="suckfartsoutof(this);" onclick="takeashit(this);"/></td>
+	<td><img src="assets/doors/door0001.png" width="100%" height="100%" onmouseover="farton(this);" onmouseout="suckfartsoutof(this);" onclick="takeashit(this);"/></td>
+	<td><img src="assets/doors/door0001.png" width="100%" height="100%" onmouseover="farton(this);" onmouseout="suckfartsoutof(this);" onclick="takeashit(this);"/></td>
+	</tr>
+</table>
+</div>
