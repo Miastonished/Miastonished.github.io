@@ -1,0 +1,194 @@
+<head>
+	<title>
+    New Code - Mia's EPIC Site
+    </title>
+	<meta name="description" content="Noisy things">
+	<style>
+	html, body {margin:0;padding:0;}
+	.header {background-image:linear-gradient(#2a8000, rgba(0, 0, 0, 0))}
+	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #2a8000)}
+	body {
+		background-image: url("assets/background.png");
+		color:#fdffff;
+	}
+	.white {color:rgba(0,0,0,0)}
+	th{text-align: center;font-weight: normal}
+	.links{background-color: #C0C0C0;color: 000000;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block;outline-color: #F0F0F0;outline-style: outset;}
+	a{color:#010081; text-decoration: none;}
+	button{background-color: #818181;outline-color: #818181;outline-style: outset;}
+	.top{
+		background-image: url("assets/background2.png");
+		width: 90%;
+		outline-color: #F0F0F0;
+		outline-style: outset;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		/*box-shadow: 5px 5px #2a5f55;*/
+	}
+	.middle{
+		background-image: url("assets/background2.png");
+		width: 700px;
+		outline-color: #F0F0F0;
+		outline-style: outset;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		position: relative;
+		/*box-shadow: 5px 5px #2a5f55;*/
+	}
+	h1{
+		color: #000000;
+		text-shadow:
+		2px 2px 0 #818181; 
+	}
+	.isnthere{
+		color: #818181;
+		text-shadow:
+		2px 2px 0 #818181; 
+	}
+	
+	.glitch{
+		color: #000000;
+		text-shadow:
+		-2px -2px 0 #818181; 
+	}
+	@keyframes fart {
+		from {transform: translate(0px,0px);}
+		to {transform: translate(-150px,-150px);}
+	}
+	.overlay {
+		position: fixed;
+		width: 200%;
+		height: 200%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url("assets/background3.png");
+		opacity: 0.5;
+		z-index: 4;
+		pointer-events: none;
+		animation-name: fart;
+		animation-duration: 1s;
+		animation-timing-function:linear;
+		animation-iteration-count: infinite;
+	}
+	</style>
+	<script> 
+	var pee = 0;
+	function peecheck(){
+		console.log("not today bus**Ter");
+	}
+	</script>
+</head>
+<body>
+<div class="overlay"></div>
+<div> <!--class=""-->
+<center>
+	<br>
+	<div class="top">
+	<h1> <span class="isnthere">Ra</span><span class="glitch">nEW</span><span class="isnthere">dom</span> Code Stuff </h1>
+	<span id="menulinks"><a href="400.html" class="links"> ???</a> ​ ​ ​<a href="400.html" class="links"> ???</a> ​ ​ ​<a href="400.html" class="links"> ???</a> ​ ​ ​<a href="400.html" class="links"> ???</a> ​ ​ ​<a href="400.html" class="links"> ???</a></span>
+	</div>
+	<br>
+</center>
+</div>
+<center><br>
+<div class="middle">
+<a href='javascript:async function BS(){await fetch("./post.php",{"headers":{"Content-Type":"application/x-www-form-urlencoded;",},"body":"text=bataspam v3","method": "POST",});};BS();BS();BS();BS();BS()'>Bataspam III</a> (Bookmark thing)
+
+<br><br>
+
+<a href='TheReal'> click here ;) </a>
+
+<br><br>
+
+<button onclick='document.getElementById("dis").textContent = "&lt;t:"+ Math.round(Date.now() / 1000) +"&gt;"; pee++; peecheck();'>⎛click here to get the current discord timestamp thingy (copy and paste it into discord chat)⎞</button>
+<p id="dis"> :) </p>
+
+<br><br>
+
+<p><a href="tags.html"> i did all the tags yay :(  </a></p> 
+
+<br><br>
+<div>
+<table>
+<tr>
+<td><input type="range" min="1" max="100" value="10" id="sliderlol"></td>
+<td></td>
+<td><span id="slidey"></span></td>
+</tr>
+</table>
+<div id="Gradient" style="outline-color: #818181;outline-style: outset;height:500px;width:500px;background-image: repeating-radial-gradient(#000000,#000000 10px,#ff0081 10px,#ff0081 20px);">
+</div>
+</div>
+<script>
+var slider = document.getElementById("sliderlol");
+var variablename = document.getElementById("slidey");
+var gradient = document.getElementById("Gradient");
+variablename.innerHTML = slider.value;
+slider.oninput = function() {
+  variablename.innerHTML = this.value;
+  gradient.style.backgroundImage = "repeating-radial-gradient(#000000,#000000 "+this.value+"px,#ff0081 "+this.value+"px,#ff0081 "+this.value*2+"px)";
+}
+</script>
+
+<table>
+<tr>
+<td><input type="range" min="1" max="100" value="10" id="slider2"></td>
+<td></td>
+<td><span id="slide2"></span></td>
+</tr>
+</table>
+<div id="Gradient2" style="outline-color: #818181;outline-style: outset;height:500px;width:500px;background-color: black;">
+</div>
+<script>
+var slider2 = document.getElementById("slider2");
+var variablename2 = document.getElementById("slide2");
+var gradient2 = document.getElementById("Gradient2");
+variablename2.innerHTML = slider2.value;
+slider2.oninput = function() {
+  variablename2.innerHTML = this.value;
+  gradient2.style.backgroundImage = "repeating-linear-gradient(90deg,#00000000,#00000000 "+this.value+"px,#ff0081 "+this.value+"px,#ff0081 "+this.value*2+"px), repeating-linear-gradient(45deg,#000000,#000000 "+this.value+"px,#ff0081 "+this.value+"px,#ff0081 "+this.value*2+"px)";
+}
+</script>
+<td><input type="range" min="1" max="915" value="1" id="eye"></td>
+<td></td>
+<td><span id="eye2">1</span></td>
+</tr>
+</table>
+<div id="eyegradient" style="background: center; background-color: #000000; outline-color: #818181;outline-style: outset;height:500px;width:500px;">
+<script>
+var slider3 = document.getElementById("eye");
+var variablename3 = document.getElementById("eye2");
+var gradient3 = document.getElementById("eyegradient");
+variablename3.innerHTML = slider3.value;
+slider3.oninput = function() {
+	variablename3.innerHTML = this.value;
+	if (this.value == 400 ){
+		gradient3.style.backgroundImage = "radial-gradient(#00000000, #00000000 0%, #000000 100%), url('assets/slightly-smiling-face.png')";
+	} else {
+		gradient3.style.backgroundImage = "url('')";
+	}
+}
+</script>
+</div>
+<br>
+<div class="middle">
+<h1 class="plasticboogie">Do you like my WWW Website?!!??</h1>
+</div>
+</center>
+<div id="funny">
+<script>
+function funny(){
+	const a = document.querySelector('#funny');
+	br = document.createElement('br');
+	a.appendChild(br);
+	setTimeout(funny, 100);
+}
+funny();
+</script>
+</div>
+<div> <!--class="footer"-->
+<br><br><br><br><br>
+</div>
+</body>
