@@ -32,7 +32,6 @@
 		outline-style: outset;
 		padding-top: 25px;
 		padding-bottom: 25px;
-		position: relative;
 		/*box-shadow: 5px 5px #2a5f55;*/
 	}
 	h1{
@@ -87,7 +86,7 @@
 	<br>
 	<div class="top">
 	<h1> <span class="isnthere">Ra</span><span class="glitch">nEW</span><span class="isnthere">dom</span> Code Stuff </h1>
-	<span id="menulinks"><a href="400.html" class="links"> ???</a> ​ ​ ​<a href="400.html" class="links"> ???</a> ​ ​ ​<a href="400.html" class="links"> ???</a> ​ ​ ​<a href="400.html" class="links"> ???</a> ​ ​ ​<a href="400.html" class="links"> ???</a></span>
+	<span id="menulinks"><a href="400.html.html" class="links"> ???</a> ​ ​ ​<a href="400.html.html" class="links"> ???</a> ​ ​ ​<a href="400.html.html" class="links"> ???</a> ​ ​ ​<a href="400.html.html" class="links"> ???</a> ​ ​ ​<a href="400.html.html" class="links"> ???</a></span>
 	</div>
 	<br>
 </center>
@@ -118,17 +117,23 @@
 <td><span id="slidey"></span></td>
 </tr>
 </table>
-<div id="Gradient" style="outline-color: #818181;outline-style: outset;height:500px;width:500px;background-image: repeating-radial-gradient(#000000,#000000 10px,#ff0081 10px,#ff0081 20px);">
+<br>
+<div id="Gradient" style="outline-color: #818181;outline-style: outset;height:100px;width:500px;background-image: repeating-radial-gradient(#000000,#000000 10px,#ff0081 10px,#ff0081 20px);">
+</div>
+<br>
+<div id="GradientB" style="outline-color: #818181;outline-style: outset;height:500px;width:500px;background-image: repeating-radial-gradient(#000000,#000000 10px,#ff0081 10px,#ff0081 20px);">
 </div>
 </div>
 <script>
 var slider = document.getElementById("sliderlol");
 var variablename = document.getElementById("slidey");
 var gradient = document.getElementById("Gradient");
+var gradientb = document.getElementById("GradientB");
 variablename.innerHTML = slider.value;
 slider.oninput = function() {
   variablename.innerHTML = this.value;
   gradient.style.backgroundImage = "repeating-radial-gradient(#000000,#000000 "+this.value+"px,#ff0081 "+this.value+"px,#ff0081 "+this.value*2+"px)";
+  gradientb.style.backgroundImage = "repeating-radial-gradient(#000000,#000000 "+this.value+"px,#ff0081 "+this.value+"px,#ff0081 "+this.value*2+"px)";
 }
 </script>
 
