@@ -7,17 +7,17 @@
 	html, body {margin:0;padding:0;}
 	.header {background-image:linear-gradient(#bf0000, rgba(0, 0, 0, 0))}
 	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #000)}
-	body {background-color:#7fffff;color:#ffffff}
+	body {background-color:#7fffff;color:#ffffff;z-index: -4;}
 	.white {color:rgba(0,0,0,0)}
 	th{text-align: center;font-weight: normal}
-	a{background-color: #f44336;color: white;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block;border-radius: 10px;}
+	a{background-color: #000;color: white;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block;border-radius: 10px;}
 	.news{
 		background-color: #99fefe;
 		width: 1000px;
 		border-radius: 0px 0px 25px 25px;
 		padding-top: 10px;
 		padding-bottom: 50px;
-		z-index: -1;
+		z-index: 5;
 		position: relative;
 		top: -10px;
 		outline: 5px solid black;
@@ -29,7 +29,7 @@
 		border-radius: 0px 0px 25px 25px;
 		padding-top: 0px;
 		padding-bottom: 25px;
-		z-index: 0;
+		z-index: 6;
 		position: relative;
 		background-image: url('http://dl10.glitter-graphics.net/pub/976/976240sqrrsjlejc.jpg');
 		top: -10px;
@@ -42,7 +42,7 @@
 		border-radius: 0px 0px 25px 25px;
 		padding-top: 70px;
 		padding-bottom: 10px;
-		z-index: 2;
+		z-index: 8;
 		position: relative;
 		top: -10px;
 		outline: 5px solid black;
@@ -54,7 +54,7 @@
 		border-radius: 0px 0px 25px 25px;
 		padding-top: 50px;
 		padding-bottom: 50px;
-		z-index: -2;
+		z-index: 4;
 		position: relative;
 		top: -10px;
 		outline: 5px solid black;
@@ -69,6 +69,7 @@
 	}
 	.fade{
 		height:500%;
+        position: relative;
 		background-image: 
 			linear-gradient(
 				#7fffff,
@@ -86,9 +87,23 @@
 				#F7A8B8 400px,
 				#55CDFC 400px
 			);
-		color:#ffffff
+		color:#ffffff;
 	}
+    .HEAVEN{
+        position: absolute;
+        bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
 	</style>
+    <script>
+    function forgor(h){
+        h.innerHTML = "🙂"
+        setTimeout(() => { h.innerHTML = "HEAVEN"}, "100");
+    }
+</script>
 </head>
 <center>
 <div class="menu">
@@ -115,9 +130,17 @@ He has not asked permission before creating such link to build an &lt;/script a 
 <div class="news">：ｇｒｉｎ：</div>
 <div class="bottom">
 <h1> Health </h1>
+<a href="ascii.html">is it true what they say is it true what they</a>
 <h3> be Health</h3>
 Do not Be no HElaht!
 <h6> qlglS ;h;q ;:! l! ! </h6>
 </div>
-<div class="fade"></div>
+<div class="fade">
+
+<div class="HEAVEN">
+<a href="040.html" class="links" onmouseover="forgor(this);"> HEAVEN </a> <a href="040.html" class="links" onmouseover="forgor(this);"> HEAVEN </a> <a href="040.html" class="links" onmouseover="forgor(this);"> HEAVEN </a> <a href="040.html" class="links" onmouseover="forgor(this);"> HEAVEN </a>
+</div>
+
+
+</div>
 </center>

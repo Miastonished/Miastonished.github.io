@@ -1,0 +1,149 @@
+<head>
+	<title>
+    [LICE CLINIC]
+    </title>
+	<meta name="description" content="#408">
+	<style>
+	html, body {margin:0;padding:0;}
+	.header {background-image:linear-gradient(#2a8000, rgba(0, 0, 0, 0))}
+	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #2a8000)}
+	body {background-color:#c0c0c0;color:#000000}
+	.invis {color:rgba(0,0,0,0)}
+	th{text-align: center;font-weight: normal}
+	.links{background-color: #818181;color: fdffff;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block;outline-color: #818181;outline-style: outset;}
+	a{color:#010081; text-decoration: none;}
+	button{background-color: #818181;outline-color: #818181;outline-style: outset;}
+	.middle{
+		background-color: #ffffff;
+		width: 700px;
+		height: 800px;
+        border: 5px solid black;
+		outline-color: #ffffff;
+        outline-style: solid;
+        outline-width: 5px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		position: relative;
+	}
+	.buttcontainer{
+		background-color: #ffffff;
+		width: 250px;
+        border: 5px solid black;
+		outline-color: #ffffff;
+        outline-style: solid;
+        outline-width: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		position: relative;
+		box-shadow: -10px 10px #000000, 10px -10px #000000;
+	}
+	.buttons{
+        color: black;
+        text-decoration: bold;
+		text-shadow:
+		5px 5px 0 #000,
+		0px 10px 0 #000,
+		0px -10px 0 #000,
+		12px 0px 0 #000,
+		-12px 0px 0 #000,
+		5px -5px 0 #000,
+		-5px 5px 0 #000,
+		-5px -5px 0 #000;
+        user-select: none;
+	}
+    .wacky{
+        width: 100px;
+        text-align: center;
+    }
+    @keyframes lefatty {
+        from {background: linear-gradient(90deg, rgba(255,0,0,0.75) 0%, rgba(0,0,0,0) 75%);opacity: 1;}
+        to {background: linear-gradient(90deg, rgba(255,0,0,0.75) 0%, rgba(0,0,0,0) 75%);opacity: 0;}
+    }
+    
+    .left{
+        width: 100%;
+        height: 860px;
+        animation-name: lefatty;
+        animation-duration: 0.5s;
+        pointer-events: none;
+        position: absolute;
+        top: 0px;
+    }
+    .right{
+        width: 100%;
+        height: 860px;
+        animation-name: lefatty;
+        animation-duration: 0.5s;
+        pointer-events: none;
+        transform: scaleX(-1);
+        position: absolute;
+        top: 0px;
+    }
+    .buttons:hover{
+        cursor:pointer;
+    }
+	</style>
+	<script> 
+	var pee = 0;
+	function peecheck(){
+		if (pee == 30) {
+			document.write("<center><h1>😡</h1></center>")
+		}
+	}
+	</script>
+</head>
+<center>
+<div class="middle">
+	<h1> Wacky WebComi™</h1>
+<!--	<span id="menulinks">the univserse has me invisible face</span>
+	<script src="links.js" type="text/javascript"></script>-->
+<br><br>
+<div>
+<table>
+<tr>
+<td><h2>Lice Clinic</h2></td>
+<td></td>
+<td>#408</td>
+</tr>
+</table>
+<div style="position: relative; "> <img src="assets/art/lice.png" width="700px"/> 
+<img src="assets/art/lice2.png" width="200px" style="  position: absolute; bottom: -20px; right: -128px; border: 5px solid #000000; transform: rotate(4deg);"/>
+<div style="width: 200px; height: 200px; position: absolute; bottom: -20px; right: -128px; border: 5px solid #000000; z-index:-1; outline-color: #ffffff; outline-style: solid;outline-width: 5px;transform: rotate(4deg);"/>
+</div>
+</div>
+<span title="too wacky for human consumption">https://www.kiddycharts.com/moshi-monsters/moshis-series-8-countdown-day-8-zooming-blinki/</span>
+<br>
+<br>
+<div class="buttcontainer">
+<table>
+<tr>
+<td class="wacky"><h1 class="buttons" onclick="left();">←</h1></td>
+<td class="wacky"><h1 class="buttons" onclick="right();">→</h1></td>
+</tr>
+<tr>
+
+<td class="wacky"><h6>#407 | d21</h6></td>
+<td class="wacky"><h6>#409 | lacerations</h6></td>
+
+</tr>
+</table>
+</div>
+</div>
+
+<script>
+function left(){
+    const loose = document.createElement("div");
+    loose.classList.add("left");
+    document.body.appendChild(loose);
+    new Audio('assets/error.mp3').play();
+    setTimeout(() => { loose.remove(); }, "600");
+}
+function right(){
+    const tight = document.createElement("div");
+    tight.classList.add("right");
+    document.body.appendChild(tight);
+    new Audio('assets/error.mp3').play();
+    setTimeout(() => { tight.remove(); }, "600");
+}
+</script>
+</center>

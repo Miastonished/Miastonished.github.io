@@ -30,6 +30,24 @@
 	.white {color:rgba(0,0,0,0)}
 	th{text-align: center;font-weight: normal}
 	.links{background-color: #000000;color: white;padding: 5px 75px;text-align: center;text-decoration: none;display: inline-block}
+	.hell{
+        background-color: #000000;color: white;padding: 5px 75px;text-align: center;text-decoration: none;display: inline-block;
+        position: relative;
+        bottom: 0;
+    }
+        
+    @keyframes bob{
+        from{bottom: 0px;}
+        
+        to{bottom: 3px;}
+    }    
+        
+    .hell:hover{
+        position: relative;
+        bottom: 3px;
+        animation-name: bob;
+        animation-duration: 0.5s;
+    }
 	a{color:#BCBCBC}
 	button{background-color: #00ff00}
 	h1{
@@ -50,7 +68,7 @@
 	    color: #BCBCBC;
 		text-shadow:
 		2px 1px 0 #000,
-		-2px -1px 0 #FFF
+		-2px -1px 0 #FFF;
 	}
 	</style>
 </head>
@@ -126,7 +144,7 @@
 <br>
 <br>
 <br><br>
-<a href="HELL.html" class="links"> HELL </a> - <a href="HELL.html" class="links"> HELL </a> - <a href="HELL.html" class="links"> HELL </a> - <a href="HELL.html" class="links"> HELL </a>
+<a href="HELL.html" class="hell"> HELL </a> - <a href="HELL.html" class="hell"> HELL </a> - <a href="HELL.html" class="hell"> HELL </a> - <a href="HELL.html" class="hell"> HELL </a>
 <br><br><br>
 </div>
 </div> 

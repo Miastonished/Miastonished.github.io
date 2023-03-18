@@ -11,24 +11,53 @@
 	title()
 	</script>
 	<style>
-	html, body {margin:0;padding:0;}
+	html, body {margin:0;padding:0; background:#000; color:#ffffff;}
 	.header {background-image:linear-gradient(#bf0000, rgba(0, 0, 0, 0))}
 	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #000)}
-	body {background-color:#800000;color:#ffffff}
+	.contentyay {background-color:#800000;color:#ffffff;}
 	.white {color:rgba(0,0,0,0)}
-	th{text-align: center;font-weight: normal}
-	a{background-color: #f44336;color: white;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block;border-radius: 10px;}
+	th{text-align: right;font-weight: normal}
+	a{
+        position:relative;
+        background-color: #f44336;color: white;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block;border-radius: 10px;
+        border-style: none none solid none;
+        border-width: 5px;
+        border-color: #e44336;
+        transition: border-width 0.1s, top 0.1s;    
+    }
+    a:hover{border-width:2.5px; top:2.5px;}
+    
+    
+    
+    
 	.news{
 		background-color: #660101;
 		width: 1000px;
 		border-radius: 0px 0px 25px 25px;
 		padding-top: 10px;
 		padding-bottom: 50px;
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: #560101;
 	}
+    table{
+        padding:10px;
+		background-color: #800000;
+		width: 700px;
+		border-radius: 25px 25px 25px 25px;
+        border-style: solid none none none;
+        border-width: 10px;
+        border-color: #560101;
+	}
+    td{vertical-align:top;}
+    th{vertical-align:top;}
 	.toparea{
 		background-color: #a30000;
 		width: 1250px;
 		border-radius: 0px 0px 25px 25px;
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: #930000;
 		padding-top: 0px;
 		padding-bottom: 25px;
 	}
@@ -38,21 +67,43 @@
 		border-radius: 0px 0px 25px 25px;
 		padding-top: 70px;
 		padding-bottom: 10px;
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: #bc0202;
 	}
 	.bottom{
 		background-color: #450000;
 		width: 750px;
 		border-radius: 0px 0px 25px 25px;
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: #350000;
 		padding-top: 10px;
 		padding-bottom: 50px;
 	}
 	.linkies{
 		background-color: #cc0202;
+        position:relative;
 		width: 1000px;
+        bottom:10px;
+        z-index:500;
 		border-radius: 0px 0px 25px 25px;
 		padding-top: 1px;
 		padding-bottom: 10px;
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: #bc0202;
 	}
+    .tumblr-post-thing{
+        width: 560px;
+        background:white;
+        padding: 5px;
+        border-radius: 25px 25px 25px 25px; 
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: #350000 #000 #efefef #000;
+    }
+    
 	/*.topshelfspyvoiceline{
 		background-color: #a30000;
 		border-radius: 0px 0px 25px 25px;
@@ -61,7 +112,8 @@
 	}*/
 	</style>
 </head>
-
+<body>
+<div class="contentyay">
 <div class="header">
 	<center>
 	<div class="menu">
@@ -77,7 +129,6 @@
 css <s>coming soon</s> WIP
 </center>
 </div>
-</div>
 
 <center>
 <div class="news">
@@ -89,14 +140,15 @@ css <s>coming soon</s> WIP
   <tr><th><p title="Im really sorry its not the 19th i was just bored">2/02/2022</p></th><td>-</td><td><p title="REAL?!?!?!?! OMG but only on this page for now cause im a silly">CSS?!?!?!??!!?!??!!!? WHAT?!?!!!! REAL?!?!?!?!!?!?!</p></td></tr>
   <tr><th>3/02/2022</th><td>-</td><td>gave random code page css and scroll thingy</td></tr>
   <tr><th>4/02/2022</th><td>-</td><td><p title='"snazzy" "capitalisation inconsistencies" am i okay?'>replaced youtube button with snazzy new about me page and fixed capitalisation inconsistencies on the other buttons</p></td></tr>
-  <tr><th>5/02/2022</th><td>-</td><td>Changed the way the menu thingy link bar at the top works, now I don't have to update all the pages to update it.</td></tr>
-  <tr><th></th><td></td><td>I also gave the 404 page css and actual content and removed unused files from the dir and made new tags page</td></tr>
+  <tr><th>5/02/2022</th><td>-</td><td>Changed the way the menu thingy link bar at the top works, now I don't have to update all the pages to update it. I also gave the 404 page css and actual content and removed unused files from the dir and made new tags page</td></tr>
+  <!--<tr><th></th><td></td><td></td></tr> thing from before it supported multiple lines in the news thingies-->
   <tr><th>6/02/2022</th><td>-</td><td>descriptosn</td></tr>
   <tr><th>10/02/2022</th><td>-</td><td><span title='took me way too long cause i used a semicolon and thats bad for some reason'>added new thingymabob to random code stuff</span> and added a funny flatulance to the about me page</td></tr>
   <tr><th>12/10/2022</th><td>-</td><td><span title='and a whole lot of new pages that i havent said about here'>theres now a GAY FLAG 😲😀😀😀😀 page</span></td></tr>
   <tr><th>31/10/2022</th><td>-</td><td><span title='🙂'>Oh God hes alive</span></td></tr>
-    <tr><th>1/11/2022</th><td>-</td><td><span title='my birthday oh My godnes'>completely revamped games.html and index.html!!!!! (this page!!!)</span></td></tr>
-
+  <tr><th>1/11/2022</th><td>-</td><td><span title='my birthday oh My godnes'>completely revamped games.html and index.html!!!!! (this page!!!)</span></td></tr>
+  <tr><th>19/03/2023</th><td>-</td><td><span>10 new secret pages, 10 changed pages (as of 3/18/23 thats when im writing this lmfao) complete rethingy of aboutthem, update to CSS of index.html and code.html and uh yea, also made this news section look cooler and supports updates having multiple lines now. <s>also, i now discovered the power of <i>gentrification de la humorousity</i> and will abuse it :)</s> UPDATE: please let me talk to big CSS, 😡</span></td></tr>
+  <tr><th></th><td></td><td></td></tr>
   </table>
 </div>
 <div class="footer">
@@ -114,12 +166,13 @@ Bugs and stuff can be reported to me (Contact is on about me)<br>
   
   
 <!--<blockquote class="twitter-tweet" data-lang="ar" data-theme="dark"><p lang="en" dir="ltr">i just realised how deep connect 4 is like you are literally connnecting peoples souls <a href="https://twitter.com/hashtag/deep?src=hash&amp;ref_src=twsrc%5Etfw">#deep</a></p>&mdash; Will94 (@WiII914) <a href="https://twitter.com/WiII914/status/1480504218465099777?ref_src=twsrc%5Etfw">١٠ يناير ٢٠٢٢</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+<div class="tumblr-post-thing">
 <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/Bv3d9F2Ebo9-KItRNAH4xw/701242285150650368" data-language="hi_IN"><a href="https://miastonished.tumblr.com/post/701242285150650368/mia-is-it-true-that-you-are-the-developer-of-the">https://miastonished.tumblr.com/post/701242285150650368/mia-is-it-true-that-you-are-the-developer-of-the</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
+</div>
 if u cant see this u need to check ur eyes
 <p class="white">if you cant see this then i understand why</p>
 </div>
 <br><a href="TheReal"> check out           site!! </a><br><br><br><br>
-</div>
 </div>
 </center>
 <script>
@@ -128,3 +181,5 @@ if u cant see this u need to check ur eyes
 	farty.innerHTML = "Some secrets are hidden very sneakily (Like waiting a while on a page lmfao)";
 	}, "30000");
 </script>
+</div>
+</body>

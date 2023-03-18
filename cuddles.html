@@ -1,0 +1,75 @@
+<html>
+
+    <head>
+    
+    <style>
+        html, body {margin:0;padding:0;background:black;}
+        
+        img{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+            height:100%;
+        }
+        .lice{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 10%;
+            right: 0;
+            text-align: center;
+            height:20%;
+            width:20%;
+            cursor: pointer;
+            background-color:#ff00ff00;
+        }
+        
+        
+    </style>
+    
+    
+    </head>
+    
+    
+<body>
+
+<img src="assets/art/needs.png"/>
+
+<img src="assets/art/blank1000.png" id="buzzybut"/>
+<img src="assets/art/needyour.png" id="needyour"/>
+
+<!-- Clickables 🤪-->
+<div class="lice" onmouseover="buzzoff(1);" onmouseleave="buzzoff(0);" onclick="window.location = 'lice.html';"></div>
+
+
+<script>
+function squiggle(){
+    setTimeout(() => { document.getElementById("needyour").src = "assets/art/needyour2.png"}, "200");
+    setTimeout(() => { document.getElementById("needyour").src = "assets/art/needyour.png"}, "400");
+    setTimeout(() => { squiggle()}, "400");
+}
+function bzzz(){
+    setTimeout(() => { document.getElementById("buzzybut").src = "assets/art/headlice.png"}, "200");
+    setTimeout(() => { document.getElementById("buzzybut").src = "assets/art/blank1000.png"}, "400");
+    setTimeout(() => { bzzz()}, "400");
+}
+squiggle();
+bzzz();
+document.getElementById("buzzybut").style.opacity = "0";
+function buzzoff(hairylegs){
+    document.getElementById("buzzybut").style.opacity = hairylegs;
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
