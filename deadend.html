@@ -2,7 +2,40 @@
 
     <head>
     
+    <style>
     
+    
+    
+    .deadender{    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+    width: 600px;
+    height: 600px;
+    text-align:center;
+    vertical-align: center;
+    background: linear-gradient(0deg, rgba(144,144,240,1) 0%, rgba(208,208,240,1) 47%, rgba(160,160,240,1) 100%);
+    
+    
+    }
+    
+    .content{
+    position:relative;
+    font-family:serif;
+    }
+    
+    .linky{
+    text-decoration: underline;
+    color: purple;
+    cursor:pointer;
+    }
+    .uwu{
+    position:absolute;
+    bottom:0;}
+    
+    
+    </style>
     
     
     
@@ -11,12 +44,42 @@
     
 <body>
 
-<div class="deadender">DEAD END</div>
+<div id="death" class="deadender">
+<img src="assets/img/round-left-a.png" style="width:30px;height:30px;position:absolute;top:0;left:0;"/>
+<img src="assets/img/round-left-a.png" style="width:30px;height:30px;position:absolute;top:0;right:0;transform: scaleX(-1);"/>
+<img src="assets/img/round-left-a.png" style="width:30px;height:30px;position:absolute;bottom:0;left:0;transform: scaleY(-1);"/>
+<img src="assets/img/round-left-a.png" style="width:30px;height:30px;position:absolute;bottom:0;right:0;transform: scaleY(-1) scaleX(-1);"/>
+<div class="content">
+
+<h1 id="deaden"> DEAD END </h1>
+
+<p style="font-size:0.6px;">surup arreviv nasmucca ni lsin isin euqsirelecs ue secirtlu eativ rotcua ue eugua tu sutcel ucra mudnebib ta suirav lev arterahp lev siprut cnun tege merol rolod des arreviv muspi cnun teuqila mudnebib mine sisilicaf adivarg euqen sillavnoc a sarc repmes rotcua euqen eativ supmet mauq euqsetnellep cen man mauqila mes te rotrot tauqesnoc di atrop hbin sitanenev sarc des silef tege tilev teuqila sittigas di rutetcesnoc surup tu subicuaf ranivlup mutnemele regetni mine euqen taptulov ca tnudicnit eativ repmes siuq sutcel allun ta taptulov maid tu sitanenev sullet ni sutem etatupluv ue euqsirelecs silef teidrepmi niorp mutnemref oel lev icro atrop non ranivlup euqen teeroal essidnepsus mudretni rutetcesnoc orebil di subicuaf lsin tnudicnit tege mallun non isin tse tis tema sisilicaf angam maite ropmet icro ue sitrobol mutnemele hbin sullet eitselom cnun non tidnalb assam mine cen iud cnun sittam mine tu sullet mutnemele sittigas eativ te oel siud tu maid mauq allun rotittrop assam di euqen mauqila mulubitsev ibrom tidnalb susruc susir ta secirtlu im supmet teidrepmi allun adauselam euqsetnellep tile tege adivarg muc siicos euqotan subitanep te singam sid tneirutrap setnom rutecsan sulucidir sum siruam eativ seicirtlu oel regetni adauselam cnun lev susir odommoc arreviv saneceam nasmucca sucal lev sisilicaf taptulov tse tilev satsege iud di eranro ucra oido tu mes allun arterahp maid tis tema lsin tipicsus gnicsipida mudnebib tse seicirtlu regetni siuq rotcua tile des etatupluv im tis tema siruam odommoc siuq teidrepmi assam tnudicnit cnun ranivlup neipas te alugil reprocmallu adauselam niorp orebil cnun tauqesnoc mudretni suirav tis tema sittam etatupluv mine allun teuqila rotittrop sucal sutcul nasmucca rotrot ereusop ca tu tauqesnoc repmes arreviv man orebil otsuj teeroal tis tema susruc tis tema mutcid tis tema otsuj cenod mine maid etatupluv tu arterahp tis tema mauqila di maid saneceam seicirtlu im tege siruam arterahp te secirtlu euqen eranro naenea domsiue mutnemele isin siuq dnefiele mauq gnicsipida eativ niorp sittigas lsin sucnohr</p>
+<br>
+You have Reached a Dead End<br>
+Please refrain plea<br>
+<br>
+<h2>Click <span class="linky" onmouseover="blackout(this);" onmouseleave="blackout2();" onclick="noescape();">here</span> to return to the Main site</h2>
+
+</div>
+</div>
 
 
 
 
+<script>
+const corners = '<img src="assets/img/round-left-a.png" style="width:30px;height:30px;position:absolute;top:0;left:0;"/><img src="assets/img/round-left-a.png" style="width:30px;height:30px;position:absolute;top:0;right:0;transform: scaleX(-1);"/><img src="assets/img/round-left-a.png" style="width:30px;height:30px;position:absolute;bottom:0;left:0;transform: scaleY(-1);"/><img src="assets/img/round-left-a.png" style="width:30px;height:30px;position:absolute;bottom:0;right:0;transform: scaleY(-1) scaleX(-1);"/>'
 
+function blackout(wacky){
+    wacky.style.color = "black";
+    wacky.style.background = "black";
+    
+}
+
+function blackout2(){document.body.style.background="black";}
+
+function noescape(){document.getElementById("deaden").innerHTML = "<a href='javascript:fart();'>NO ESCAPE</a>";}
+function fart(){document.getElementById("death").innerHTML = "<h1 class='uwu'>fl½me</h1><form><label>???:</label><input type='text'><br><br><label>???:</label><input type='text'><br><br><input type='submit' value='SUB'></form>";}
+</script>
 
 
 
