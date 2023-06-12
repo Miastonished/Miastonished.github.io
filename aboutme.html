@@ -7,14 +7,23 @@
 	console.log("%cwhy are you so silly!?!?!?", "font-size:4rem;background-image: repeating-linear-gradient(45deg,#55CDFC,#55CDFC 50px,#F7A8B8 50px,#F7A8B8 100px,#FFFFFF 100px,#FFFFFF 150px,#F7A8B8 150px,#F7A8B8 200px,#55CDFC 200px);");
 	</script>
 	<style>
-	html, body {margin:0;padding:0;}
+	html, body {margin:0;padding:0;background:#111111;}
 	.header {background-image:linear-gradient(#000000 10%,#FFFFFF 20%, rgba(0, 0, 0, 0) 30%)}
-	.footer {background-image:linear-gradient(195deg, #FFFFFF00,#FFFFFF00,#000),linear-gradient(165deg, #FFFFFF00,#FFFFFF00,#000);}
-	.footer2 {background-image:linear-gradient(180deg, #FFFFFF00,#FFFFFF00,#F00);z-index:-10;}
-	body {
+	.footer {height:250px; background-image:linear-gradient(190deg, #FFFFFF00,#FFFFFF00,#000),linear-gradient(170deg, #FFFFFF00,#FFFFFF00,#000);}
+	.footer2 {height:250px;background-image:linear-gradient(180deg, #FFFFFF00,#FFFFFF00,#F00);z-index:-10;}
+	.bodysuit {
+        position: relative;
+        width: 1500px;
+        margin: auto;
+        padding-top: 5px;
 		background-image: 
-			repeating-linear-gradient(
-				1deg,
+            linear-gradient(
+                92deg,
+                #FFFFFF00 0%,
+                #FFFFFFFF 55%
+            ),
+			linear-gradient(
+				88deg,
 				#55CDFC,
 				#55CDFC 100px,
 				#F7A8B8 100px,
@@ -23,8 +32,15 @@
 				#FFFFFF 300px,
 				#F7A8B8 300px,
 				#F7A8B8 400px,
-				#55CDFC 400px
+				#55CDFC 400px,
+                #21B1FF 550px,
+				#FFD800 550px,
+				#FFD800 700px,
+				#FF218C 700px,
+                #FF218C 850px,
+                #FFFFFF 850px
 			);
+            
 		color:#ffffff
 	}
 	.white {color:rgba(0,0,0,0)}
@@ -51,18 +67,21 @@
 	a{color:#BCBCBC}
 	button{background-color: #00ff00}
 	h1{
+       font-size: 6em;
 	    color: white;
 		text-shadow:
-		-2px -2px 0 #55CDFC,
-		2px -2px 0 #000000,
-		-2px 2px 0 #F7A8B8,
-		2px 2px 0 #FFFFFF;  
+		-4px -4px 0 #55CDFC,
+        4px -4px 0 #000000,
+		-4px 4px 0 #F7A8B8,
+		4px 4px 0 #FFFFFF;  
 	}
 	.p1{
+        font-size: 1.25em;
 	    color: #BCBCBC;
 		text-shadow:
 		-2px -1px 0 #000,
-		2px 1px 0 #FFF
+		2px 1px 0 #FFF;
+        
 	}
 	.p2{
 	    color: #BCBCBC;
@@ -70,11 +89,60 @@
 		2px 1px 0 #000,
 		-2px -1px 0 #FFF;
 	}
+    .biggap{height:1000px;}
+    .pillar{ 
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+        position: absolute;
+        right: 100px;
+        top: 370px;
+        transform: rotate(25deg);
+        pointer-events: none;
+    }
+    .yt{
+        font-size: 40px;
+        background: red;
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        width:250px;
+        position: absolute;
+        left: 200px; 
+        top: 200px;
+        transform: rotate(5deg);
+    }
+    .tm{
+        font-size: 40px;
+        background: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        width:250px;
+        position: absolute;
+        right: 200px; 
+        top: 230px;
+        transform: rotate(-2deg);
+    }
+    .secrets{
+        font-size: 40px;
+        background: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        width:250px;
+        position: absolute;
+        right: 75px; 
+        top: 425px;
+        transform: rotate(0deg);
+    }
 	</style>
 </head>
-
+<body>
+<div class="bodysuit">
 <div> <!--class="header"--->
-	<br>
 	<center>
 	<h1> About Me </h1>
 	<a href="index.html" class="links"> Main Page </a> ​ ​ ​<a href="games.html" class="links"> Games </a> ​ ​ ​<a href="code.html" class="links"> Random Code Stuff </a> ​ ​ ​<a href="aboutthem.html" class="links"> About Me </a> ​ ​ ​<a href="pride.html" class="links">PRIDEEE FLAGGSSSSSS</a>
@@ -85,67 +153,29 @@
 <br>
 <br>
 <br>
-<p class="p1">Hi im Mia</p>
+<p class="p1">Hi im Mia, I go by she/they pronouns so if you ever want to talk about me behind my back now you know :3</p>
 <p class="p1">Thats all you need to know ig</p>
-<p class="p1"><a href="https://www.youtube.com/channel/UC2Pn0tzn0c3HLs3Q8mJaZRw"> My Youtube </a></p>
-<br>
-<br>
-<br>
+<div class="yt"><a class="yt" href="https://www.youtube.com/@miastonished"> My Youtube </a></div>
+<div class="tm"><a class="tm" href="https://miastonished.tumblr.com/"> My Tumblr </a></div>
+<!--<div class="secrets"><a class="secrets" href="secrets.html"> My Seçrets </a></div>-->
+<!-- add in later -->
+
+<!--
 <p class="p1">but if you really want to dm me then heres my discord << <span class="p2">Mi​aA#541.4A</span> >> (sorry it <span title="in a freak accident involving 14 casualties and 12 injured 🙁">got sillied)</span> (and is now outdated anyway lmfao)</p> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+-->
+
+<img class="pillar" src="assets/art/pillar2.png" draggable="true"/>
+
+<div class="biggap"> </div>
+
 <div class="footer2">
-<br>
-<br>
-<br>
+
 <div class="footer">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br>    
 <a href="HELL.html" class="hell"> HELL </a> - <a href="HELL.html" class="hell"> HELL </a> - <a href="HELL.html" class="hell"> HELL </a> - <a href="HELL.html" class="hell"> HELL </a>
-<br><br><br>
+
 </div>
 </div> 
+</div>
+</body>
 
