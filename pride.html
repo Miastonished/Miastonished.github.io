@@ -46,7 +46,105 @@
 		transform: skew(-45deg, 0deg);
 	}
 	.links{background-color: #000000;color: white;padding: 5px 70px;text-align: center;text-decoration: none;display: inline-block}
-	.trans {
+	.formembed { 
+		padding-left:12.5px;
+		padding-right:12.5px;
+        overflow: hidden; 
+		background-image:
+			repeating-linear-gradient(45deg,#00000D,#00000D 10px,#11111D 10px,#11111D 20px);
+        box-shadow: 0 0 30px 10px #00000D;
+	}
+    .formsummary {
+        display: flex;
+        position: relative;
+        width: 1020px;
+        left: -20px;
+        
+        height: 75px;
+        font-size: 1.2em;
+        cursor: pointer;
+        align-items:center;
+        justify-content:center;
+        background-image: 
+			linear-gradient(
+				180deg,
+				#D60270,
+				#D60270 40%,
+				#9B4F96 40%,
+				#9B4F96 60%,
+				#0038A8 60%
+			);
+    }
+    .heightslider {
+        display: flex;
+        position: relative;
+        width: 1020px;
+        left: -20px;
+        
+        height: 75px;
+
+        font-size: 1.2em;
+    	background-image: 
+			linear-gradient(
+				180deg,
+				#FF218C,
+				#FF218C 33%,
+				#FFD800 33%,
+				#FFD800 66%,
+				#21B1FF 66%
+			);       
+        align-items:center;
+        justify-content:center;
+    }
+    .heightleft {
+		position: absolute;
+		background-image:
+			linear-gradient(90deg,#444441, #DDDDD100),
+			linear-gradient(180deg,#FF218C,#FF218C 33%,#FFD800 33%,#FFD800 66%,#21B1FF 66%);       
+		width: 50px;
+        height: 75px;
+		z-index: -10;
+		left: -58px;
+		bottom: 66px;
+		transform: skew(0deg, -45deg);
+	}
+    .heightright {
+		position: absolute;
+		background-image:
+			linear-gradient(90deg,#444441 60%, #DDDDD100),
+			linear-gradient(180deg,#FF218C,#FF218C 33%,#FFD800 33%,#FFD800 66%,#21B1FF 66%);       
+		width: 50px;
+        height: 75px;
+		z-index: -40;
+		right: -12px;
+		bottom: 66px;
+		transform: skew(0deg, -45deg);
+	}
+    .formleft {
+		position: absolute;
+		background-image:
+			linear-gradient(90deg,#444441, #DDDDD100),
+			linear-gradient(180deg,#D60270,#D60270 40%,#9B4F96 40%,#9B4F96 60%,#0038A8 60%);   
+		width: 50px;
+        height: 75px;
+		z-index: -10;
+		left: -50px;
+		top: 25px;
+		transform: skew(0deg, -45deg);
+	}
+    .formright {
+		position: absolute;
+		background-image:
+			linear-gradient(90deg,#444441 60%, #DDDDD100),
+			linear-gradient(180deg,#D60270,#D60270 40%,#9B4F96 40%,#9B4F96 60%,#0038A8 60%);        
+		width: 50px;
+        height: 75px;
+		z-index: -40;
+		right: 0px;
+		top: 25px;
+		transform: skew(0deg, -45deg);
+	}
+    .trans {
 		background-image: 
 			linear-gradient(
 				0deg,
@@ -354,8 +452,26 @@ if you see this text and its black and **not commented** dm me lmfao-->
 <p class="neutrois"></p>
 <br>
 <br>
+
+<div>
+<details open="true">
+<summary class="formsummary">(click to collapse)
+<div class="formleft"></div>
+<div class="formright"></div>
+</summary>
 <br>
-<div class="pan"><br>height <input type="range" min="50" max="500" value="150" id="sliderlol"><br><br></div>
+<iframe class="formembed" scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLSefXdcLvghbYVFlnlts1r60uHGFnwnxzdF5E7cijcAybSx7Vw/viewform?embedded=true" width="900" height="766" frameborder="0" marginheight="0" marginwidth="0">
+google FORM thingy oh my goodness</iframe>
+</details>
+
+</div>
+<br>
+<br>
+<div>
+<div class="heightslider">height <input type="range" min="50" max="500" value="150" id="sliderlol"></div>
+<div class="heightleft"></div>
+<div class="heightright"></div>
+</div>
 <script>
 var slider = document.getElementById("sliderlol");
 slider.oninput = function() {
