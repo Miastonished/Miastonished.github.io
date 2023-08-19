@@ -18,6 +18,24 @@
 	.blocked {
 		pointer-events: none;
 	}
+    
+    @keyframes blink {
+    
+        0%      {color: #FFFFFFFF}
+        50%     {color: #FFFFFFFF}
+        50.1%   {color: #FFFFFF00}
+        100%    {color: #FFFFFF00}
+        
+    }
+    
+    .blink{
+        animation-name: blink;
+        animation-duration: 0.75s;
+        animation-iteration-count: infinite;
+        color: #FFFFFF00;
+    }
+    
+    
 	</style>
 </head>
 <body>
@@ -32,7 +50,7 @@
 	<br>
 </div>
 <br><br>
-Prove you are Unfunny in order to continue_
+Prove you are Unfunny in order to continue<span class="blink">_</span>
 <br>
 <br>
 <div class="slidecontainer">
