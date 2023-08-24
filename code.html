@@ -34,10 +34,35 @@
 		position: relative;
 		box-shadow: 10px 10px #2a5f55;
 	}
+	.part2{
+		background-color: #c3c3c3;
+		width: 750px;
+		outline-color: #c3c3c3;
+		outline-style: outset;
+		padding: 25px;
+        outline-width: 5px;
+		position: relative;
+		box-shadow: 10px 10px #2a5f55;
+	}
+    .codebox { 
+        background-color: #000;
+        width: 600px;
+        color: white;
+        text-align: left;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-color: #000;
+        padding: 1em;
+    }
 	h1{
 		text-shadow:
 		2px 2px 0 #818181; 
 	}
+    /*
+    *{
+        transform: rotate(1deg);
+    }
+    */
 	</style>
 	<script> 
 	var pee = 0;
@@ -65,9 +90,12 @@
 <a href='javascript:async function BS(){await fetch("./post.php",{"headers":{"Content-Type":"application/x-www-form-urlencoded;",},"body":"text=bataspam v3","method": "POST",});};BS();BS();BS();BS();BS()'>Bataspam III</a> (Bookmark thing)
 
 <br><br>
+<span style="color:black">web destroyerz (drag them 2 ur bookmarkz): </span><br>
+<a href="javascript:void(function(){ a = '10000%'; document.getElementsByTagName('html')[0].style.filter = 'contrast('+a+')'; })();">Page Deepfrier</a>
+<br>
+<a href="javascript:void(function(){ b = prompt('how many degrees? (99 is rlly cool)', '1'); for (let i = 0; i < document.all.length; i++) { try{ document.all[i].style.transform='rotate('+b+'deg)'} catch{} } })();">Page Rotater</a>(takes a second)
 
-<a href="javascript:void(function(){ a = '10000%'; document.getElementsByTagName('html')[0].style.filter = 'contrast('+a+')'; })();">Page Deepfrier</a> (Bookmark thing)
-
+<!-- document.all.style.transform='rotate('+b+'deg)' ||null; -->
 <br><br>
 
 <a href='ms-calculator://'> click here ;) </a>
@@ -116,7 +144,36 @@ slider.oninput = function() {
 <span style="-webkit-filter: hue-rotate(288deg); font-size: 50;">:</span>
 <span style="-webkit-filter: hue-rotate(320deg); font-size: 50;">3</span>
 </div>
+
 </div>
+<br>
+<div class="part2">
+
+bits of code:
+<h3>changing 0s and 1s in the title on the home page:</h3>
+<pre>
+<div class="codebox" id="c1">function title(){
+	document.title = ""+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+" Mia's EPIC Site "+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random());
+	setTimeout(title, 100);
+}	
+title()
+</div>
+</pre>
+<pre>
+<div class="codebox" id="c2">from datetime import datetime
+while 1:    
+    try:
+        a = (((int(input("Paste Snowflake ID: ").split()[0]) >> 22) + 1420070400000) / 1000)
+        print(datetime.utcfromtimestamp(a).strftime("%Y-%m-%d %H:%M:%S")+"\n<t:"+((str(a)).split("."))[0]+":F>"+"\n"+(str(a * 1000)).split(".")[0])
+    except:
+        print("Error, use numbers or something idfk")
+#made by mia :sunglasses_emoji~102:
+#discord snowflake ID to date + timestamp converter
+</div>
+</pre>
+
+</div>
+
 </center>
 <div id="funny">
 <script>
