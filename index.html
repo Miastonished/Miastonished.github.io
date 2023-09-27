@@ -74,7 +74,7 @@
         border-width: 10px;
         border-color: #560101;
 	}
-    table{
+    .newstable{
         padding:10px;
 		background-color: #800000;
 		width: 700px;
@@ -115,6 +115,24 @@
 		padding-top: 10px;
 		padding-bottom: 50px;
 	}
+	.sinettings{
+		background-color: #454545;
+        background-image: url('assets/art/settings.png');
+        background-size: 100%;
+		width: 400px;
+        height: 320px;
+		border-radius: 25px 25px 25px 25px;
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: #353535;
+		padding-top: 10px;
+		padding-bottom: 50px;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+	}
 	.linkies{
 		background-color: #cc0202;
         position:relative;
@@ -151,9 +169,68 @@
         image-rendering: pixelated;
         -ms-interpolation-mode: nearest-neighbor;
     }
+    
+    #sinner {
+        position: fixed;
+        width: 150px;
+        height: 100%;
+    }
+    #cusser {
+        position: fixed;
+        right:0px;
+        width: 150px;
+        height: 100%;
+    }
 	</style>
 </head>
-<body>
+<body onload="sine(); sine2();">
+
+
+<script>
+iter = 1;
+delay = 100;
+scale = 25;
+function sine(){
+    var canvas = document.getElementById('sinner');
+    var width = canvas.width;
+    var height = canvas.height;
+    var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, width, height);
+    ctx.moveTo(width/2,0);
+    ctx.beginPath();
+    
+    for (let i = 0; i < scale+1; i++){
+        //ctx.moveTo((width/2)+(Math.sin(height*(Math.PI/180))*10),(height/scale)*(i));
+        //ctx.lineTo((width/2)+(Math.sin(height*(Math.PI/180))*10),(height/scale)*(i+1));
+        //ctx.moveTo((width/scale)*i,(height/scale)*i)
+        
+        //ctx.moveTo((width/2)+(Math.sin(iter+(height/scale)*(i-1)/10)*100),(height/scale)*i-1)
+        ctx.lineTo((width/2)+(Math.sin(iter+(height/scale)*i/10)*100),(height/scale)*i)
+        ctx.stroke();
+    }
+    iter = iter + 0.5;
+    setTimeout(() => sine(), delay)
+}
+function sine2(){
+    var canvas = document.getElementById('cusser');
+    var width = canvas.width;
+    var height = canvas.height;
+    var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, width, height);
+    ctx.moveTo(width/2,0);
+    ctx.beginPath();
+    for (let i = 0; i < scale+1; i++){
+        ctx.lineTo((width/2)+(Math.sin((iter*-1)+(height/scale)*i/10)*100),(height/scale)*i)
+        ctx.stroke();
+    }
+    setTimeout(() => sine2(), delay)
+}
+</script>
+
+<canvas id="sinner"> </canvas>
+<canvas id="cusser"> </canvas>
+
+
 <div class="contentyay">
 <div class="header">
 	<center>
@@ -187,7 +264,7 @@ css <s>coming soon</s> WIP
 <center>
 <div class="news">
   <h3>-- NEWS / CHANGELOG --</h3>
-  <table>
+  <table class="newstable">
   <div class="topshelfspyvoiceline"><tr><th>Date</th><td></td><td>Update</td></tr></div>
   <tr><th>19/06/2021</th><td>-</td><td>I made this coooool website</td></tr>
   <tr><th>19/10/2021</th><td>-</td><td>i fixed the bug on the random code page with the timestamp thing</td></tr>
@@ -205,6 +282,7 @@ css <s>coming soon</s> WIP
   <tr><th>20/08/2023</th><td>-</td><td><span>minor changes also uwu owo aboutme redesign owO and some pride.html additions</span></td></tr>
   <tr><th>24/08/2023</th><td>-</td><td><span>new cool page destroyer on code.html (it rotates every single element)</span></td></tr>
   <tr><th>25/08/2023</th><td>-</td><td><span><span title='its not secret so i cant call it that'>+1 bonus page</span>, still working on aboutme.html it was too big imo so im shrinking it</span></td></tr>
+  <tr><th>27/09/2023</th><td>-</td><td><span>sine waves on title page woahhhh 😲😲</span></td></tr>
   <tr><th></th><td></td><td></td></tr>
   </table>
   
@@ -227,6 +305,49 @@ Bugs and stuff can be reported to me (Contact is on about me (not yet im working
 <div class="tumblr-post-thing">
 <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/Bv3d9F2Ebo9-KItRNAH4xw/701242285150650368" data-language="hi_IN"><a href="https://miastonished.tumblr.com/post/701242285150650368/mia-is-it-true-that-you-are-the-developer-of-the">https://miastonished.tumblr.com/post/701242285150650368/mia-is-it-true-that-you-are-the-developer-of-the</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
 </div>
+<br>
+<br>
+<div class = "sinettings">
+
+<table>
+
+<tr>
+<td><input type="range" min="0" max="500" value="100" id="delayslider"> </td>
+<td><span id="delaydisplay">D</span></td>
+</tr>
+
+<tr>
+<td><input type="range" min="1" max="100" value="25" id="qualslider"> </td>
+<td><span id="qualdisplay">D</span></td>
+</tr>
+
+
+
+</table>
+</div>
+<br>
+
+<script>
+var slider1 = document.getElementById("delayslider");
+var variable1 = document.getElementById("delaydisplay");
+var slider2 = document.getElementById("qualslider");
+var variable2 = document.getElementById("qualdisplay");
+
+
+
+variable2.innerHTML = "sine wave quality: "+slider2.value+" stops";
+slider2.oninput = function() {
+  variable2.innerHTML = "sine wave quality: "+slider2.value+" stops";
+  scale = slider2.value;
+}
+
+variable1.innerHTML = "sine wave update rate: "+slider1.value+"ms";
+slider1.oninput = function() {
+  variable1.innerHTML = "sine wave update rate: "+slider1.value+"ms";
+  delay = slider1.value;
+}
+</script>
+
 if u cant see this u need to check ur eyes
 <p class="white">if you cant see this then i understand why</p>
 </div>
@@ -244,3 +365,47 @@ if u cant see this u need to check ur eyes
 </script>
 </div>
 </body>
+
+
+<!--
+iter = 0;
+function sine(){
+    var canvas = document.getElementById('sinner');
+    var width = canvas.width;
+    var height = canvas.height;
+    var ctx = canvas.getContext("2d");
+    //ctx.clearRect(width, height);
+    ctx.moveTo(width/2,0);
+    var scale = 10
+    for (let i = 0; i < scale+1; i++){
+        //ctx.moveTo((width/2)+(Math.sin(height*(Math.PI/180))*10),(height/scale)*(i));
+        //ctx.lineTo((width/2)+(Math.sin(height*(Math.PI/180))*10),(height/scale)*(i+1));
+        //ctx.moveTo((width/scale)*i,(height/scale)*i)
+        ctx.lineTo((width/scale)+(Math.sin((height/scale+iter)*i)*100),(height/scale)*i)
+        ctx.stroke();
+    }
+    iter = iter + 1;
+    setTimeout(() => sine(), 1000)
+}
+--
+iter = 1;
+function sine(){
+    var canvas = document.getElementById('sinner');
+    var width = canvas.width;
+    var height = canvas.height;
+    var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, width, height);
+    ctx.moveTo(width/2,0);
+    var scale = 100
+    for (let i = 0; i < scale+1; i++){
+        //ctx.moveTo((width/2)+(Math.sin(height*(Math.PI/180))*10),(height/scale)*(i));
+        //ctx.lineTo((width/2)+(Math.sin(height*(Math.PI/180))*10),(height/scale)*(i+1));
+        //ctx.moveTo((width/scale)*i,(height/scale)*i)
+        ctx.lineTo((width/2)+(Math.sin(iter+(height/scale)*i/10)*100),(height/scale)*i)
+        ctx.stroke();
+    }
+    iter = iter + 0.5;
+    setTimeout(() => sine(), 500)
+}
+
+-->

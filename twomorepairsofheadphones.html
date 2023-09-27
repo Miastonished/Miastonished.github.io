@@ -4,15 +4,19 @@
     background-image: linear-gradient(#13a1b37, #2c315e, #131b37);
     color: white;
     border: solid #1c2140 2.5px;
-    margin: 5px;
     padding: 3px 5px;
-    text-align: center;
+    text-align: right;
+    vertical-align: middle;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
     margin: 5px 20px;
     cursor: pointer;
     box-shadow: 0 8px #2c315e;
+}
+
+.buttontext{
+    text-align: right;
 }
 
 .TheSillierButtons {
@@ -29,6 +33,23 @@
     box-shadow: 0 4px #14172c;
     transform: translateY(4px);
 }
+
+.TheSillyButtons *{
+    vertical-align: middle;
+}
+
+.CrispPixels {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+
 </style>
 
-<button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/'"><img src="Favicons/SmallSilver.png" class="CrispPixels"/> Homepage</button>
+<button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/'">
+<span><img src="https://silvershorthair.github.io/Favicons/SmallSilver.png" height="32px" width="32px" class="CrispPixels"/></span>
+<span>Homepage</span> 
+</button>
