@@ -11,8 +11,10 @@
 	.white {color:rgba(0,0,0,0)}
 	th{text-align: center;font-weight: normal}
 	.links{background-color: #818181;color: fdffff;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block;outline-color: #818181;outline-width: 5px;outline-style: outset;}
-	a{color:#010081; text-decoration: none;}
+	.links:hover{outline:5px #818181 inset;}
+    a{color:#010081; text-decoration: none;}
 	button{background-color: #818181;outline-color: #818181;outline-width: 5px;outline-style: outset;border:none;}
+    button:hover{outline:5px #818181 inset;}
 	.top{
 		background-color: #c3c3c3;
 		width: 1400px;
@@ -26,7 +28,7 @@
 	.middle{
 		background-color: #c3c3c3;
 		width: 700px;
-		height: 600px;
+		/*height: 800px;*/
 		outline-color: #c3c3c3;
 		outline-style: outset;
 		padding: 25px;
@@ -58,11 +60,23 @@
 		text-shadow:
 		2px 2px 0 #818181; 
 	}
+    #c3{
+        border: 10px #22B14C ridge;
+    
+    }
+    
+    .ftsembed{
+        border: 10px #00A2E8 outset;
+        background-color: #00A2E8;
+    
+    }
+    
     /*
     *{
         transform: rotate(1deg);
     }
     */
+
 	</style>
 	<script> 
 	var pee = 0;
@@ -144,6 +158,19 @@ slider.oninput = function() {
 <span style="-webkit-filter: hue-rotate(288deg); font-size: 50;">:</span>
 <span style="-webkit-filter: hue-rotate(320deg); font-size: 50;">3</span>
 </div>
+<br><br><br>
+<div class='ftsembed'>
+<h3>find the silver js!</h3>
+<!--<a href="javascript:ZmluZA=document.createElement('div');ZmluZA.outerHTML = `<script onload='fts();' src='https://miastonished.github.io/fts.js'></script>`;document.body.appendChild(ZmluZA);">
+fun
+</a>-->
+<br>
+put this at the bottom of your site :3
+<pre><div class="codebox" id="c3">&lt;script onload='fts();' src='https://miastonished.github.io/fts.js'&gt;&lt;/script&gt;</div></pre>
+<!--+ <a href="javascript:const ZmluZA = document.createElement('script');ZmluZA.src = 'https://miastonished.github.io/fts.js';ZmluZA.onload=function(){fts();};document.head.append(ZmluZA);">
+Find the silver bookmarklet
+</a> (currently broken) <br><br>-->
+</div>
 
 </div>
 <br>
@@ -159,6 +186,7 @@ bits of code:
 title()
 </div>
 </pre>
+<h3>mias epic discord id thing idk</h3>
 <pre>
 <div class="codebox" id="c2">from datetime import datetime
 while 1:    
@@ -169,6 +197,7 @@ while 1:
         print("Error, use numbers or something idfk")
 #made by mia :sunglasses_emoji~102:
 #discord snowflake ID to date + timestamp converter
+#python
 </div>
 </pre>
 

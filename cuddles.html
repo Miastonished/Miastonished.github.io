@@ -26,6 +26,18 @@
             cursor: pointer;
             background-color:#ff00ff00;
         }
+        .lice{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 10%;
+            right: 0;
+            text-align: center;
+            height:20%;
+            width:20%;
+            cursor: pointer;
+            background-color:#ff00ff00;
+        }
         .fart{
             position:absolute;
             margin-left: auto;
@@ -46,40 +58,75 @@
     
 <body>
 
-<img src="assets/art/needs.png"/>
+<div id='destruct'>
+    <img src="assets/art/needs.png"/>
+    <div id='buzz'>
+        <img src="assets/art/blank1000.png" id="buzzybut"/>
+        <img src="assets/art/headlice.png" id="buzzybut2"/>
+    </div>
+    <img src="assets/art/needyour.png" id="needyour"/>
+    <img src="assets/art/needyour2.png" id="needyour2" style='opacity:0;'/>
 
-<img src="assets/art/blank1000.png" id="buzzybut"/>
-<img src="assets/art/needyour.png" id="needyour"/>
+    <!-- Clickables 🤪-->
 
-<!-- Clickables 🤪-->
-<div class="lice" onmouseover="buzzoff(1);" onmouseleave="buzzoff(0);" onclick="window.location = 'lice.html';"></div>
+    <div class="lice" onmouseover="buzzoff(1);" onmouseleave="buzzoff(0);" onclick="window.location = 'lice.html';"></div>
+    <div class="fart">
 
-<div class="fart">
+<!--
+<div class="lice" onmouseover="buzzoff(1);" onmouseleave="buzzoff(0);" onclick="window.location = 'carcass.html';"></div>
+        
+-->
+
+</div>
+
 <script>
 
 function a25pZmU(){
     alert('you stab him...');
+    try {
     let stateObj = { id: "100" }; 
             window.history.replaceState(stateObj, 
                         "Page 3", "/what have you done...");
-}
+                        } catch {
+    console.log('it didnt do one of the thing thing but thats fine');}
+    
+    document.getElementById("destruct").innerHTML = '<img src="assets/art/corpse.png" id="corpse"/><img src="assets/art/flies1.png" id="flies1"/><img src="assets/art/flies2.png" id="flies2"/><img src="assets/art/flies3.png" id="flies3" onload="flies();"/>';
+
+    
+    }
  
-                        
+                       
+const need = document.getElementById("needyour");
+const need2 = document.getElementById("needyour2");
+                     
+const buzz = document.getElementById("buzzybut");
+const buzz2 = document.getElementById("buzzybut2");                     
 function squiggle(){
-    setTimeout(() => { document.getElementById("needyour").src = "assets/art/needyour2.png"}, "200");
-    setTimeout(() => { document.getElementById("needyour").src = "assets/art/needyour.png"}, "400");
+    setTimeout(() => { need.style.opacity = "0"; need2.style.opacity = "1";}, "200");
+    setTimeout(() => { need.style.opacity = "1"; need2.style.opacity = "0";}, "400");
     setTimeout(() => { squiggle()}, "400");
 }
 function bzzz(){
-    setTimeout(() => { document.getElementById("buzzybut").src = "assets/art/headlice.png"}, "200");
-    setTimeout(() => { document.getElementById("buzzybut").src = "assets/art/blank1000.png"}, "400");
+    setTimeout(() => { buzz.style.opacity = "0"; buzz2.style.opacity = "1";}, "200");
+    setTimeout(() => { buzz.style.opacity = "1"; buzz2.style.opacity = "0";}, "400");
     setTimeout(() => { bzzz()}, "400");
+}
+
+
+function flies(){
+    fl1 = document.getElementById("flies1");
+    fl2 = document.getElementById("flies2");      
+    fl3 = document.getElementById("flies3");      
+    setTimeout(() => { fl1.style.opacity = "1"; fl2.style.opacity = "0"; fl3.style.opacity = "0";}, "200");
+    setTimeout(() => { fl1.style.opacity = "0"; fl2.style.opacity = "1"; fl3.style.opacity = "0";}, "400");
+    setTimeout(() => { fl1.style.opacity = "0"; fl2.style.opacity = "0"; fl3.style.opacity = "1";}, "600");
+    setTimeout(() => { flies()}, "600");
 }
 squiggle();
 bzzz();
-document.getElementById("buzzybut").style.opacity = "0";
+document.getElementById("buzz").style.opacity = "0";
 function buzzoff(hairylegs){
-    document.getElementById("buzzybut").style.opacity = hairylegs;
+    document.getElementById("buzz").style.opacity = hairylegs;
 }
 </script>
 

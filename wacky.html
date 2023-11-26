@@ -1,0 +1,126 @@
+<head>
+	<title>
+	Links #1
+    </title>
+	<meta name="description" content="the cosmos align">
+	<link rel="icon" type="image/x-icon" href="Silly.com">
+	<style>
+	html, body {margin:0;padding:0;font-family: "Times New Roman", Times, serif;}
+	body {
+		background-image: url("assets/img/ordinary.jpg");
+		background-size: 200px 200px;
+		color:#ffffff;
+	}
+    
+    @font-face {
+		font-family: elite;
+		src: url(assets/elite.ttf);
+	}
+    
+	.white {color:rgba(0,0,0,0)}
+	th{text-align: center;font-weight: normal}
+	.links{background-color: #000000 ;color: white;padding: 10px 10px;text-align: center;text-decoration: none;display: inline-block;height:10px;width:90px;font-size:10px;left:50px;position:relative;}
+	a{color:#550000 }
+	button{background-color: #550000 ; font-family: funny}
+	p{color:#550000 }
+    
+    .are{
+        width:500px;
+        height:750px;
+        background-image: url('assets/art/thing.png');
+        background-size:500px;
+    
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+        z-index: -1;
+    }
+    .blur {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        backdrop-filter: blur(40px);
+        z-index: -5;
+    
+    }
+    
+    .flex-container {
+      display: flex;
+      height: 500px;
+      width: 450px;
+    }
+
+    .flex-container > a:hover {
+        transform: rotateZ(1deg) rotateX(25deg);
+    
+    }
+
+    .flex-container > a {
+      background-color: #f1f1f1;
+      background-image: linear-gradient(#f1f1f1, black);
+      margin: 10px;
+      padding: 10px;
+      font-size: 30px;
+      flex-grow: 1;
+      transition: transform 0.5s;
+    }
+    
+    .pw{
+        text-align: left;
+        padding: 50px;
+        font-size: 15px;
+        font-family: elite;
+    }
+    .pw > input {
+        background-color: grey;
+        border: none;
+        outline: none;
+        font-size:30px;
+        font-family: elite;
+        width:160px;
+    }
+
+	</style>
+</head>
+<body>
+<center>
+<div class="blur"></div>
+<div class="are">
+<br>
+<div class="flex-container">
+    <a href="scrap.html">Scrap</a>
+    <a href="aboutthem.html">About<br>Them</a>
+    <a href="unfunny.html">😡</a>
+    <a href="ascii.html">ReturN</a>
+</div>
+
+<div class="pw">
+<br><br>
+enter local passcode<br>
+<input type="text" id="passcode" maxlength="6" placeholder="XXXXXX"></input><br>
+all caps 6 letters
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("passcode").oninput = function() {
+    if (this.value == "SATURN"){
+        window.location.assign("301.html");
+    }
+}
+
+</script>
+<!--
+
+	<br>
+    
+	<span id="menulinks">this page will give you the links</span>
+	<script src="links.js" type="text/javascript"></script><br><br>
+	<br>
+    -->
+</center>
+</body>

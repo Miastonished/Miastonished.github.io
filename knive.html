@@ -1,0 +1,102 @@
+<html>
+
+    <head>
+    
+    <style>
+        html, body {margin:0;padding:0;background:black;}
+        
+        img{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+            height:100%;
+        }
+        .lice{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 10%;
+            right: 0;
+            text-align: center;
+            height:20%;
+            width:20%;
+            cursor: pointer;
+            background-color:#ff00ff00;
+        }
+        .fart{
+            color: white;
+            font-size: 50px;
+            position:absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left:20%;
+            top:5%;
+            width:40%;
+            height:55%;
+            background-color:#ff00ff00;
+            /*backdrop-filter: blur(10px);*/
+        }
+        .subtext{
+            color: white;
+            font-size: 10px;
+            position:relative;
+            
+            
+            width:40%;
+            height:55%;
+            background-color:#ff00ff00;
+            /*backdrop-filter: blur(10px);*/
+        }
+        
+        a{color: #aeaeae;}
+        
+    </style>
+    
+    
+    </head>
+    
+    
+<body>
+<script>
+
+function a25pZmU(){alert('You pick up the knife, its cleanliness contrasts heavily to the thick layers of dust that cover the vault walls');}
+
+
+</script>
+<img id='knife' src="assets/art/knife.png"/>
+<img id='knife2' src="assets/art/knife2.png"/>
+
+<!-- Clickables 🤪-->
+<div class="lice" onmouseover="buzzoff(1);" onmouseleave="buzzoff(0);" onclick="window.location = 'lice.html';"></div>
+
+<div class="fart"><a href='javascript:try{a25pZmU();}catch{alert(atob("dGhlcmVzIG5vdCByZWFsbHkgbXVjaCB5b3UgY2FuIGRvIHdpdGggaXQgaGVyZQ=="))}'>Knife</a>
+<div class="subtext">Drag above text to bookmark bar to use item on other pages :3</div>
+</div>
+<script>
+const iceV = document.getElementById("knife");
+const iceX = document.getElementById("knife2");
+
+function squiggle(){
+    setTimeout(() => { iceV.style.opacity = "0"; iceX.style.opacity = "1"; }, "200");
+    setTimeout(() => { iceV.style.opacity = "1"; iceX.style.opacity = "0"; }, "400");
+    setTimeout(() => { squiggle()}, "400");
+}
+squiggle();
+document.getElementById("buzzybut").style.opacity = "0";
+function buzzoff(hairylegs){
+    document.getElementById("buzzybut").style.opacity = hairylegs;
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

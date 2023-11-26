@@ -1,0 +1,123 @@
+<head>
+	<title>
+    Noise
+    </title>
+	<meta name="description" content="Deception">
+	<style>
+	html, body {margin:0;padding:0;}
+	.header {background-image:linear-gradient(#2a8000, rgba(0, 0, 0, 0))}
+	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #2a8000)}
+	body {
+		background-image: url("assets/background.png");
+		color:#fdffff;
+	}
+	.white {color:rgba(0,0,0,0)}
+	th{text-align: center;font-weight: normal}
+	.links{background-color: #C0C0C0;color: 000000;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block;outline-color: #F0F0F0;outline-style: outset;}
+	a{color:#010081; text-decoration: none;}
+	button{background-color: #818181;outline-color: #818181;outline-style: outset;}
+	.top{
+		background-image: url("assets/background2.png");
+		width: 90%;
+		outline-color: #F0F0F0;
+		outline-style: outset;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		/*box-shadow: 5px 5px #2a5f55;*/
+	}
+	.middle{
+		background-image: url("assets/background2.png");
+		width: 700px;
+		outline-color: #F0F0F0;
+		outline-style: outset;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		/*box-shadow: 5px 5px #2a5f55;*/
+	}
+	h1{
+		color: #00000000;
+		text-shadow:
+		2px 2px 0 #81818100; 
+	}
+	.isnthere{
+		color: #818181;
+		text-shadow:
+		2px 2px 0 #818181; 
+	}
+	
+	.glitch{
+		color: #000000;
+		text-shadow:
+		-2px -2px 0 #818181; 
+	}
+	@keyframes fart {
+		from {transform: translate(0px,0px);}
+		to {transform: translate(-150px,-150px);}
+	}
+	.overlay {
+		position: fixed;
+		width: 200%;
+		height: 200%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url("../assets/background3.png");
+		opacity: 0.5;
+		z-index: 4;
+		pointer-events: none;
+		animation-name: fart;
+		animation-duration: 1s;
+		animation-timing-function:linear;
+		animation-iteration-count: infinite;
+	}	
+	.overlay2 {
+        position:absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+        z-index:5;
+		background-image: url("../assets/art/maze.png");
+        background-size: 100% 100%;
+		opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.1s;
+	}
+	</style>
+	<script> 
+	var pee = 0;
+	function peecheck(){
+		console.log("not today bus**Ter");
+	}
+	</script>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="overlay2" id='maze'></div>
+<div> <!--class=""-->
+<center>
+	<br>
+	<div class="top">
+	<h1>crying</h1>
+	<span id="menulinks"><a href="javascript:j();" id='???' class="links"> ???</a></span>
+	</div>
+	<br>
+</center>
+</div>
+<center><br>
+<div class="middle">
+<p><a href="../abouther.html">i did</a></p> 
+
+<script>
+function j(){
+    f = document.getElementById('maze');
+    g = document.getElementById('???');
+    f.style.opacity = 1;
+    setTimeout(() => { f.style.opacity = 0; }, "100");
+    g.href = "javascript:window.location.replace('../assets/background3.png');";
+}
+</script>
+</body>

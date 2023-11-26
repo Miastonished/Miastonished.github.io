@@ -1,4 +1,20 @@
+<head>
+<script>let v = 0; 
+
+
+function vaultcheck(){
+    document.getElementById('v').innerHTML = `v = ${v}`;
+    if(v == 1){
+        console.log("you win");
+        document.getElementById('vaultinfo').innerHTML = '<a href="knive.html">and pretend it just opened</a>';
+    } else {
+        console.log("the vault is shut");
+    }
+
+}
+</script>
 <style>
+
 .TheSillyButtons {
     background-color: #131b37;
     background-image: linear-gradient(#13a1b37, #2c315e, #131b37);
@@ -13,6 +29,86 @@
     margin: 5px 20px;
     cursor: pointer;
     box-shadow: 0 8px #2c315e;
+}
+
+body{
+    padding: 50px;
+    background-image: url(assets/bgtileguts.png);
+    background-color: #800;
+    color: white;
+    margin: 0px;
+}
+
+.🔛🔝{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    /*background-color: white;*/
+}
+.square{
+    position: fixed;
+    top: 5px;
+    right:5px;
+    pointer-events: none;
+    width: 200px;
+    z-index: 50;
+    height: 200px;
+    border: 1px white dashed;
+    border-radius: 10px;
+    backdrop-filter: contrast(5000%);
+    transform: rotate(45deg);
+    /*background-color: black;*/
+}
+
+.vaultinfo{
+    position: fixed;
+    bottom: 5px;
+    right:5px;
+    width: 200px;
+    z-index: 50;
+    height: 200px;
+    border: 10px black solid;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transform: rotate(-10deg);
+    /*background-color: black;*/
+    font-size: 16px;
+}
+.vault{
+    position: relative;
+    width: 200px;
+    z-index: 50;
+    height: 200px;
+    border: 10px black solid;
+    border-radius: 10px;
+    backdrop-filter: grayscale(1);
+    transform: rotate(0deg);
+    /*background-color: black;*/
+    font-size: 25px;
+    text-align: center;
+}
+
+.vault > div {
+    position: absolute;
+    text-align: center;
+    top:0px;
+    left:0px;
+}
+
+@keyframes glow {
+    from{color:white}
+    50%{color:grey}
+    to{color:white}
+}
+
+.vault > * > a {
+    color:white;
+    animation-name: glow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .buttontext{
@@ -46,10 +142,256 @@
     -ms-interpolation-mode: nearest-neighbor;
 }
 
+.mainlink{
+    color: white;
+    letter-spacing: normal;
+    width: auto;
+    transition: letter-spacing 0.5s;
+}
+
+.mainlink:hover{
+    letter-spacing: 5px;
+}
+
+#v {
+    background-color: black;
+    padding: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
 
 </style>
+<title>⚵ better scraps ⚳</title>
+</head>
+<body onmousemove='getCursor(event);' onload='vaultcheck();'>
 
-<button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/'">
+<div class='vaultinfo'>
+For the "vault" to open, v must equal 1. <br>
+However, setting it to 1 via console will not work.<br>
+This is because the vault only checks the variable once the page has loaded, not after.<br>
+Good Luck
+<br><br>
+<span id='v'>v = 0</span>
+</div>
+<div class='square'></div>
+<h1><a href='index.html' class='mainlink'>mias epic site !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</a></h1>
+<h1> <span class='mainlink'> hi welcome to my testing page</span></h1>
+<h3> <span class='mainlink'> this is the page where i test code for other pieces of the site/friends sites </span></h3>
+<h6 class='mainlink'> waring: may be <s>extremely</s> laggy</h6>
+<button title='😀' id='swap' class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/'">
 <span><img src="https://silvershorthair.github.io/Favicons/SmallSilver.png" height="32px" width="32px" class="CrispPixels"/></span>
 <span>Homepage</span> 
 </button>
+
+<script>
+let littlefucker = document.getElementById('swap');
+let floppy = true;
+
+function flippers() {
+    if(floppy == true){littlefucker.title = '😡';}
+    if(floppy == false){littlefucker.title = '🙂';}
+    floppy = !floppy;
+    setTimeout(flippers, 1);
+}
+flippers();
+</script>
+<br>
+<br>
+<br>
+<br>
+
+<style>
+    .wrapper
+    {
+        display:flex;
+        flex-direction:column;
+        width: 400px;
+        background-color: black;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+    
+    .onhover:hover + .Panel
+    {
+        opacity:0.3;
+    }
+    .Panel:hover + .onhover
+    {
+        opacity:0.3;
+    }
+    
+    .wrapper > * > img{
+        height: 50px;
+        width: 200px;
+    
+    }
+    .wrapper:has(.Panel:hover){
+        background-color: red;
+    }
+    .wrapper:has(.onhover:hover){
+        background-color: blue;
+    }   
+</style>
+ <div class="wrapper">
+ 
+      <div class="Panel">
+           <img src="assets/week3.png">
+      </div>
+
+      <div class="onhover">
+           <img src="assets/week2.png">
+      </div>
+     
+</div>
+so why is it only the second one that goej transparent   
+   
+   
+<div id='info'> </div>   
+
+https://miastonished.github.io/twomorepairsofheadphones.html<span id='pram'>praise</span>
+<script>
+document.getElementById('pram').innerHTML = decodeURI(window.location.search);
+</script>
+
+
+
+
+<canvas class="🔛🔝" id='canv' <!--onload="document.body.onmousemove='getCursor(event);'"-->></canvas> 
+<!--<canvas class="🔛🔝" id='silver'></canvas> 
+<div class="🔛🔝" onmousemove="getCursor(event);"></div>-->
+<script>
+
+var mouseDown = 0;
+document.body.onmousedown = function() { 
+  ++mouseDown;
+}
+document.body.onmouseup = function() {
+  --mouseDown;
+}
+
+var x2 = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
+var y2 = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
+
+function getCursor(event) {
+    let x = event.clientX;
+    let y = event.clientY;
+    
+    
+    
+    
+    var canvas = document.getElementById('canv');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    var width = canvas.width;
+    var height = canvas.height;
+    var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, width, height);
+
+    ctx.moveTo(0,0);
+    ctx.beginPath();
+    
+    ctx.strokeStyle = 'red'; //} else {ctx.strokeStyle = 'blue';}
+    
+    ctx.fillStyle = 'red';
+    //ctx.fillRect(y,x,x2[40],y2[40]);
+    x2.push(x);
+    y2.push(y);
+    x2.shift();
+    y2.shift();
+    
+    ctx.font = "10px Arial red";
+    ctx.fillText(`(${x},${y})`, x, y);
+    ctx.lineTo(x,y);
+    for(let i = 50; i > 0; i-=1){
+        if (x2[i] != -1){
+            ctx.lineTo(x2[i],y2[i]);
+        }
+    }
+    
+    ctx.stroke();
+    //console.log(`${width}, ${height}, ${x}, ${y}`);
+}
+</script>
+
+<br>
+<br>
+<br>
+<style>
+
+
+@keyframes spacinganim {
+  from {letter-spacing: -40px;}
+  50% {letter-spacing: 20px;}
+  to {letter-spacing: -40px;}
+}
+
+
+.fxwrap{ width: 100%; /*background-color:black;*/ height: 150px; font-size: 100px; position: relative; overflow: hidden;}
+.fxwrap > div {position:absolute; top:0px; left:0px; width: 100%; height: 100%;}
+.one{backdrop-filter: blur(10px); z-index:30;}
+.two{backdrop-filter: contrast(5000%); z-index:40;}
+.three{
+    color: red; text-align: center; letter-spacing: 10px;
+    animation-name: spacinganim;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    }
+
+</style>
+<div class='fxwrap'>
+    <div class='one'></div>
+    <div class='two'></div>
+    <div class='three'><b>Miastonished :3</b></div>
+</div><br>
+<div class='vault'>
+pretend this is a vault<br>
+<span id='vaultinfo'>and pretend its closed</span>
+
+</div>
+
+
+<br>
+
+
+<style>
+.wavelems{
+    position: relative;
+    background-color:green;
+    height: 10px;
+    width:10%;
+    /*box-shadow: 
+        1px 1px 10px black,
+        1px 1px 10px black,
+        1px 1px 10px black,
+        1px 1px 10px black,
+        1px 1px 10px black,
+        1px 1px 10px black,
+        1px 1px 10px black,
+        1px 1px 10px black,
+        1px 1px 10px black,
+        1px 1px 10px black
+    ;*/
+}
+</style>
+
+<div id='elementwave'>
+
+</div>
+
+<script>
+let wavelem = document.getElementById("elementwave");
+
+let a = 360;
+
+while(a > 0){
+    wavelem.innerHTML = wavelem.innerHTML + `<div class='wavelems' style='left:${(Math.cos(a/10)+1)*30}%'></div>`;
+    a-=1;
+}
+
+</script>
+
+</body>

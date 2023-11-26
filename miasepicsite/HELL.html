@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+    
+        <title>...</title>
+    
+        <style>
+            html, body {padding:0; margin:0; background:black; font-family: "Comic Sans MS", "Comic Sans", cursive;}
+            
+            .redthing{
+                position: relative;
+                width:1000px;
+                background-image: url('img/wants.png');
+                height:100px;
+                margin:auto;
+            }
+            h1{
+                position: absolute;
+                top: 40px;
+                right: 400px;
+                font-size: 50px;
+            }
+            .aboutme{
+                position: absolute;
+                top: 160px;
+                right: 150px;
+                color:black;
+                width: 150px;
+                height: 47px;
+                background-color: #aa0000;
+                border-radius: 40px;
+                
+            }
+            .main{
+                position: absolute;
+                top: 160px;
+                left: 120px;
+                color:black;
+                width: 190px;
+                height: 49px;
+                font-size: 25px;
+                background-color: #aa0000;
+                border-radius: 40px;
+                
+            }
+            .stellar{
+                position: absolute;
+                top: 220px;
+                left: 440px;
+                color:white;
+                width: 190px;
+                height: 49px;
+                font-size: 25px;
+                background-color: #000;
+                border-radius: 40px;
+                
+            }
+            .new {
+                position: absolute;
+                left: 200px;
+                top: 280px;
+            
+            }
+            .red {
+                color: red;
+            }
+            .wants{
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
+                height:100%;      
+            }
+            .obscure{
+                position: absolute;
+                height: 50%;
+                background:black;
+                width: 100%;
+            
+            
+            }
+        </style>
+    </head>
+    <body>
+        <img src="img/wants.png" id='wants1' class='wants'></img>
+        <img src="img/wants2.png" id='wants2' class='wants'></img>
+        <div class='obscure'></div>
+        
+        
+        <script>
+        function squiggle(){
+            setTimeout(() => { wants1.style.opacity = "0"; wants2.style.opacity = "1";}, "200");
+            setTimeout(() => { wants1.style.opacity = "1"; wants2.style.opacity = "0";}, "400");
+            setTimeout(() => { squiggle()}, "400");
+        }
+        squiggle();
+        
+        
+        function a25pZmU(){
+            alert('she ignores the knife');
+        }
+
+        </script>
+    </body>
+</HTML>
+    
+   

@@ -14,7 +14,6 @@
 	th{text-align: center;font-weight: normal}
 	.links{background-color: #550000 ;color: black;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block}
 	a{color:#550000 }
-	button{background-color: #550000 ; font-family: funny}
 	p{color:#550000 }
 	.funnyman{
 		font-size: 500px;
@@ -40,6 +39,49 @@
 	.blocked {
 		pointer-events: none;
 	}
+    
+    .thecode{
+       
+    }
+    
+    .g{
+        width:50px;
+        height:50px;
+        background-color: #aaaaaa;
+        		outline-color: #333333;
+		outline-style: outset;
+        outline-width: 5px;
+        margin: 5px;
+        border-width:0px;
+        transition: margin 0.25s;
+    }
+    button:hover {
+        outline-style: inset;
+        margin:6px;
+    }
+    .b, .b2{
+        width:50px;
+        height:50px;
+        background-color: blue;
+        		outline-color: #333333;
+		outline-style: outset;
+        margin: 5px;
+        border-width:0px;
+        outline-width: 5px;
+        transition: margin 0.5s;
+    }
+    .d{
+        width:50px;
+        height:50px;
+        background-color: black;
+        outline-color: #333333;
+		outline-style: outset;
+        margin: 5px;
+        border-width:0px;
+        outline-width: 5px;
+        transition: margin 0.5s;
+    }
+    
 	</style>
 </head>
 <body>
@@ -89,9 +131,27 @@
 </center>
 </div>
 <center>
-<img src="assets/unfunnycode.png" width="100px"><br><br><br><br><br><br><br><br><br>
+<!--<img src="assets/unfunnycode.png" width="100px">-->
+<div class="thecode">
+<button class="g"></button><button class="b2" onclick="tell();"></button><button class="g"></button><button class="g"></button><button class="g"></button><br>
+<button class="g"></button><button class="g"></button><button class="b"></button><button class="g"></button><button class="b"></button><br>
+<button class="g"></button><button class="g"></button><button class="g"></button><button class="g"></button><button class="g"></button><br>
+<button class="d"></button><button class="g"></button><button class="g"></button><button class="g"></button><button class="d"></button><br>
+<button class="d"></button><button class="d"></button><button class="d"></button><button class="d"></button><button class="d"></button><br>
+
+
+</div>
+<br><br><br><br><br><br><br><br><br>
 <div class="unfunnyman"></div>
 <div class="funnyman" title="take this and help us uncover THEREALTRUTH">🙁</div><!-- huerotate is bs and doesn't do its job right-->
 </center>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<script>
+
+function tell(){
+
+    alert('last one');
+}
+</script>
 </body>
