@@ -1,32 +1,40 @@
-let silver = document.createElement("div");
+let silver = [];
 let FTSscore = 0;
 let height = 0;
 let width = 0;
 
-function fts(){
+function fts(numberofsilvers){
     FTSheight = document.documentElement.getBoundingClientRect().height;
     FTSwidth = document.documentElement.getBoundingClientRect().width;
-
-    silver.style.height = "44.734693877551020408163265306122px"; 
-    silver.style.width = "32px"; 
-    silver.style.position = "absolute";
-    silver.style.top = Math.floor(Math.random() * FTSheight-31);
-    silver.style.left = Math.floor(Math.random() * FTSwidth-31);
-    silver.style.backgroundImage = "url('https://miastonished.github.io/assets/silver.png')";
-    silver.style.backgroundSize = "32px";
-    silver.style.cursor = "pointer";
-    silver.style.transition = "top 0.1s, left 0.1s";
-    silver.onclick = function(){find()};
-    document.body.appendChild(silver); 
+    console.log(numberofsilvers);
+    if(!Number.isInteger(numberofsilvers))
+    {
+        numberofsilvers = 1;
+    }
+    for (let n = 0; n < numberofsilvers; n++)
+    {
+        silver.push(document.createElement("div"));
+        silver[n].style.height = "44.734693877551020408163265306122px"; 
+        silver[n].style.width = "32px"; 
+        silver[n].style.position = "absolute";
+        silver[n].style.top = Math.floor(Math.random() * FTSheight-31);
+        silver[n].style.left = Math.floor(Math.random() * FTSwidth-31);
+        silver[n].style.backgroundImage = "url('https://miastonished.github.io/assets/silver.png')";
+        silver[n].style.backgroundSize = "32px";
+        silver[n].style.cursor = "pointer";
+        silver[n].style.transition = "top 0.1s, left 0.1s";
+        silver[n].onclick = function(){find(this)};
+        document.body.appendChild(silver[n]);
+    }    
 }
 
-function find(){
+function find(who){
     FTSscore += 1;
     console.log('silver '+FTSscore);
     
     FTSheight = document.documentElement.getBoundingClientRect().height;
     FTSwidth = document.documentElement.getBoundingClientRect().width;
     
-    silver.style.top = Math.floor(Math.random() * FTSheight-31);
-    silver.style.left = Math.floor(Math.random() * FTSwidth-31);
+    who.style.top = Math.floor(Math.random() * FTSheight-31);
+    who.style.left = Math.floor(Math.random() * FTSwidth-31);
 }
