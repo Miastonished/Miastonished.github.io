@@ -176,6 +176,9 @@
 		padding-bottom: 50px;
 	}
 	.sinettings{
+    
+        filter: brightness(20%);
+        
 		background-color: #454545;
         background-image: url('assets/art/settings.png');
         background-size: 100%;
@@ -241,7 +244,61 @@
         width: 150px;
         height: 100%;
     }
-
+    
+    .fc2 > a {
+        background: none;
+        border: none;
+        padding:0px;
+    }
+    #HCB_comment_box{
+        background-color: #454545;
+        background-image: url('assets/img/lavadark.png');
+        background-size: 64px;
+		width: 700px;
+        height: auto !important;
+		border-radius: 25px 25px 25px 25px;
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: #000;
+		padding-top: 10px;
+		padding-bottom: 10px;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+    #HCB_comment_box > * > form {
+        width: 600px;
+    }
+    #HCB_comment_box > a {
+        width: 50px;
+        padding: 0px;
+        margin: auto;
+    }
+    .home-desc > a {
+        background: none;
+        border: none;
+        padding: 0px;
+    }
+    .admin-link{
+        display:none;
+    }
+    .btn-secondary{
+        display:none !important;
+    }
+    #comments_list {
+        padding:5px;
+		background-color: #000;
+		width: 500px;
+		border-radius: 25px 25px 25px 25px;
+        border-style: solid none none none;
+        border-width: 10px;
+        border-color: #400;
+        margin: auto;
+        position: relative;
+        top: -30px;
+    }
 	</style>
 </head>
 <body onload="sine(); sine2();">
@@ -323,7 +380,7 @@ f
 <div class="linkies"> 
 <span href="webring.html" class="webring">
 <a href='https://stellaring.network/previous/'>◄prev</a>
-<img src="assets/art/placeholderbutton.gif" height="77.5px" width="220px"/>
+<img src="assets/buttons/button.gif" height="77.5px" width="220px"/>
 <a href='https://stellaring.network/next/'> next►</a>
 
 <!--webring links <s>css</s> coming soon <s>WIP</s>-->
@@ -335,13 +392,20 @@ f
  
 </div>
 
-<br>
-css <s>coming soon</s> WIP
+    <div class='FC2 side'>
+    
+    css <s>coming soon</s> WIP
+    
+    <!-- FC2 Counter  Starts here -->
+    <script language="javascript" type="text/javascript" src="https://counter1.fc2.com/counter.php?id=39381451&main=1"></script><noscript><img src="https://counter1.fc2.com/counter_img.php?id=39381451&main=1" /></noscript>
+    <!-- FC2 Counter  Ends here -->
+    </div>
 </center>
 </div>
 
 <center>
 <div class="news">
+  this site is updated regularly :3
   <h3>-- NEWS / CHANGELOG --</h3>
   <table class="newstable">
   <div class="topshelfspyvoiceline"><tr><th>Date</th><td></td><td>Update</td></tr></div>
@@ -365,6 +429,7 @@ css <s>coming soon</s> WIP
   <tr><th>17/11/2023</th><td>-</td><td><span>webring thingyyyyyyyyy at the Top of The Page<br> contains links to the previous and next page in the cool stellaring webring <br>and also a link to its main page</span></td></tr>
   
   <tr><th>26/11/2023</th><td>-</td><td><span>massive update, changed like 30 ass pages idk and added 19 pages! updated HELL and stuff. new ways to get to previously inaccesible pages.<br>2 new secret areas<br>put some buttons at the bottom of the page, gumi, silver, sky, vae, mine and then cool blinkie site<br>the thing lists 83 changed files, with ~25 of them being pages<br>still haven't fixed the sine wave lmao</span></td></tr>
+  <tr><th>30/11/2023</th><td>-</td><td><span>added some embeds to my main page and added a buttons page to collect buttons</span></td></tr>
   <tr><th></th><td></td><td></td></tr>
   </table>
   
@@ -389,6 +454,15 @@ Bugs and stuff can be reported to me (Contact is on about me (not yet im working
 </div>
 <br>
 <br>
+
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24Kbllf4aeaSytdFx6u25UL1"+"&opts=16798&num=10&ts=1701235357978");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+
+<br>
+
 <div class = "sinettings">
 
 <table>
@@ -442,16 +516,15 @@ Bugs and stuff can be reported to me (Contact is on about me (not yet im working
 <a class='button88x31 emptbutt' href='https://' target='_blank'></a>
 <a class='button88x31 emptbutt' href='https://' target='_blank'></a>
 <br>
-<br>
+
 <a class='button88x31 emptbutt' href='https://' target='_blank'></a>
 <a class='button88x31 emptbutt' href='https://' target='_blank'></a>
 <a class='button88x31 emptbutt' href='https://' target='_blank'></a>
 <a class='button88x31' href='https://arab.org/click-to-help/palestine/' target='_blank'><img src='assets/art/88x31palestine.png'></a>
 <br>
-
+<a href='buttons.html'>more buttons</a>
 
 <br>
-<iframe src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
 
 <script>
 var slider1 = document.getElementById("delayslider");
@@ -491,8 +564,20 @@ slider1.oninput = function() {
   delay = slider1.value;
 }
 </script>
+
+<div class='FC2'>
+<!-- FC2 Counter  Starts here -->
+Current Viewers:<script language="javascript" type="text/javascript" src="https://counter1.fc2.com/views.php?id=39381451&main=1"></script><noscript><img src="https://counter1.fc2.com/counter_now.php?id=39381451&main=1" /></noscript>
+<!-- FC2 Counter  Ends here -->
+</div>
+
+<br>
+<iframe src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
+
 if u cant see this then that may be a problem
 <p class="white">if you cant see this then i understand why</p>
+
+
 </div>
 <br><a href="TheReal"> check out           site!! </a><br><br><br><br>
 </div>
@@ -507,6 +592,7 @@ if u cant see this then that may be a problem
     }
 </script>
 </div>
+
 </body>
 
 
