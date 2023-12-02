@@ -9,10 +9,10 @@ function fts(numberofsilvers){
     document.body.style.minHeight = "100%";
 //    FTSheight = document.documentElement.getBoundingClientRect().height;
 //    FTSwidth = document.documentElement.getBoundingClientRect().width;
-//    FTSheight = document.documentElement.offsetHeight;
-//    FTSwidth = document.documentElement.offsetWidth;
-    FTSheight = document.documentElement.style.height;
-    FTSwidth = document.documentElement.style.width;
+    FTSheight = document.documentElement.offsetHeight;
+    FTSwidth = document.documentElement.offsetWidth;
+//    FTSheight = document.documentElement.style.height;
+//    FTSwidth = document.documentElement.style.width;
     console.log(numberofsilvers);
     if(!Number.isInteger(numberofsilvers))
     {
