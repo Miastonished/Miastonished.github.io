@@ -4,6 +4,8 @@ let height = 0;
 let width = 0;
 
 function fts(numberofsilvers){
+    
+    document.body.minHeight = "100%";
 //    FTSheight = document.documentElement.getBoundingClientRect().height;
 //    FTSwidth = document.documentElement.getBoundingClientRect().width;
     FTSheight = document.documentElement.offsetHeight;
@@ -33,6 +35,9 @@ function fts(numberofsilvers){
 function find(who){
     FTSscore += 1;
     console.log('silver '+FTSscore);
+    console.log(who);
+    console.log(FTSheight, FTSwidth);
+    
     
     FTSheight = document.documentElement.offsetHeight;
     FTSwidth = document.documentElement.offsetWidth;
