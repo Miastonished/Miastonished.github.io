@@ -5,6 +5,7 @@ let width = 0;
 
 function fts(numberofsilvers){
     
+    document.html.style.minHeight = "100%";
     document.body.style.minHeight = "100%";
 //    FTSheight = document.documentElement.getBoundingClientRect().height;
 //    FTSwidth = document.documentElement.getBoundingClientRect().width;
