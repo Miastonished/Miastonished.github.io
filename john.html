@@ -5,7 +5,7 @@
 	<meta name="description" content="i saw another site do it">
 
 	<style>
-	html, body {margin:0;padding:0;background-color:#444441;}
+	html, body {margin:0;padding:0;background-image:url('assets/john.png'); min-height:100%; min-width:100%;}
 	.container { 
 		padding-left:12.5px;
 		padding-right:12.5px;
@@ -85,15 +85,46 @@
         height:2em;
         padding:5px 0px;
     }
+    iframe{
+        top:0px;
+        left:0px;
+        transition: top 1s, left 1s;
+        position: absolute;
+        margin: none;
+    }
     </style>
 </head>
 <body>
 
-<iframe src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
-<iframe src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
-<iframe src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
-<iframe src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
-<iframe src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
+<iframe id='j1' src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="max-width:732px;width:100%;height:94px;border:none;"></iframe>
+<iframe id='j2' src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="max-width:732px;width:100%;height:94px;border:none;"></iframe>
+<iframe id='j3' src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="max-width:732px;width:100%;height:94px;border:none;"></iframe>
+<iframe id='j4' src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="max-width:732px;width:100%;height:94px;border:none;"></iframe>
+<iframe id='j5' src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="max-width:732px;width:100%;height:94px;border:none;"></iframe>
+
+<a href='http://hrgiger.com/'>
+    <img src='assets/buttons/giger.jpg'/>
+</a>
+<a href='https://www.youtube.com/watch?v=AgiYLtBOZC8'>cool song</a>
+
+<script>
+haii = document.documentElement.offsetHeight-94;
+wthh = document.documentElement.offsetWidth-732;
+
+i = 5;
+function boing(){
+    
+    //for(i = 5; i > 0; i--){
+    document.getElementById("j"+i).style.top = Math.floor(Math.random() * haii);
+    document.getElementById("j"+i).style.left = Math.floor(Math.random() * wthh);
+    //}
+    i--;
+    if(i==0){i=5};
+    setTimeout(() => {boing()}, 500);
+}
+boing();
+
+</script>
 
 
 </body>

@@ -85,7 +85,8 @@
 	<script> 
 	var pee = 0;
 	function peecheck(){
-		if (pee == 30) {
+        document.getElementById('disbutton').style.transform = `rotate(${pee*0.1}deg)`;
+		if (pee == 25) {
 			document.write("<center><h1>QUITE UN FUNNY <br><br><br><br><br><br><a href='Archive/code.html'>old page lmao</a><br><a href='newcode.html'>new page lmao</a><br><br><br>😡</h1></center>")
 		}
 	}
@@ -122,10 +123,70 @@
 
 <br><br>
 
-<button onclick='document.getElementById("dis").textContent = "&lt;t:"+ Math.round(Date.now() / 1000) +"&gt;"; pee++; peecheck();'>⎛click here to get the current discord timestamp thingy (copy and paste it into discord chat)⎞</button>
+<button id='disbutton' onclick='document.getElementById("dis").textContent = "&lt;t:"+ Math.round(Date.now() / 1000) +"&gt;"; pee++; peecheck();'>⎛click here to get the current discord timestamp thingy (copy and paste it into discord chat)⎞</button>
 <p id="dis"> :) </p>
 
 <br><br>
+
+<a href='binary.html' class='links'>purposefully very inefficient binary to decimal converter!!!!</a>
+<!--<div class='overcomp'>
+    <p>The purposefully least efficient binary to decimal converter ever</p>
+    <input type='text' id='bin' placeholder="binary go here :3"></input>
+    <p id='dec'>decimal number goes here!!!</p>
+    
+    <script>
+    // "anyway im going to reduce everything down to an unholy amount of iterations of a += 1" - mia, 2023
+    function funnyadd(x, y){
+        for(let i = x; i > 0; i--){
+            y+=1;
+        }
+        return y;
+    }
+    
+    function funnymultiply(x, y){
+        let z = 0;
+        for(let i = x; i > 0; i--){
+            z = funnyadd(z,y);
+        }
+        return z;
+    }
+    
+    function funnypower(x,y){
+        let z = 1;
+        for(let i = y; i > 0; i--){
+            z = funnymultiply(z,x);
+        }
+        return z;
+    }
+    
+    function converd(){
+        base = 2;
+        input666 = document.querySelector('input').value;
+        numberlist = [];
+        finalnumber = 0;
+        number = 0;
+        for(let i = input666.length; i > 0; i--){
+            //console.log(input666.split('')[i-1]);
+            numberlist[number] = funnymultiply(input666.split('')[i-1],funnypower(base,number));
+            
+            number++;
+        }
+        for(let i = numberlist.length; i > 0; i--){
+            finalnumber= funnyadd(finalnumber,numberlist[i-1]);
+            
+        }
+        document.getElementById('dec').innerHTML = finalnumber;
+        
+    }
+
+
+
+    document.getElementById('bin').addEventListener('input', () => {
+        converd();
+    });        
+    </script>
+    
+</div>-->
 
 <p><a href="tags.html"> i did all the tags yay :(  </a></p> 
 
