@@ -3,6 +3,7 @@
     Mia's EPIC Site
     </title>
 	<meta name="description" content="This site is very epic!">
+    <link href="osd.xml" rel="search" title="mias epic search!" type="application/opensearchdescription+xml">
 	<script>
 	function title(){
 		document.title = ""+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+" Mia's EPIC Site "+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random());
@@ -509,14 +510,9 @@ Bugs and stuff can be reported to me (Contact is on about me (not yet im working
 <br>
 
 <div class = "sinettings">
+<h1>Sine wave controls</h1>
 
 <table>
-<th>
-<td>
-<h1>broken</h1>
-</td>
-</th>
-
 
 <tr>
 <td><input type="range" min="1" max="60" value="15" id="delayslider"> </td>
@@ -539,6 +535,66 @@ Bugs and stuff can be reported to me (Contact is on about me (not yet im working
 <td><span id="lengthdisplay">length</span></td>
 </tr>
 
+<tr>
+<td><input type="range" min="0" max="100" value="0" id="secretslider"> </td>
+<td><span id="secretdisplay">???</span></td>
+</tr>
+
+<script>
+var slider1 = document.getElementById("delayslider");
+var variable1 = document.getElementById("delaydisplay");
+var slider2 = document.getElementById("qualslider");
+var variable2 = document.getElementById("qualdisplay");
+var slider3 = document.getElementById("speedslider");
+var variable3 = document.getElementById("speeddisplay");
+
+var slider4 = document.getElementById("lengthslider");
+var variable4 = document.getElementById("lengthdisplay");
+
+var slider5 = document.getElementById("secretslider");
+var variable5 = document.getElementById("secretdisplay");
+
+slider1.value = 15;
+slider2.value = 12;
+slider3.value = 5;
+slider4.value = 1;
+slider5.value = 0;
+
+
+
+variable5.innerHTML = "???";
+slider5.oninput = function() {
+  variable5.innerHTML = ""+slider5.value +"???";
+  if(slider5.value > 99){ window.location.href = "YmxvYg.html"; };
+}
+
+variable4.innerHTML = "wave length multiplier: "+slider4.value +"";
+slider4.oninput = function() {
+  variable4.innerHTML = "wave length multiplier: "+slider4.value +"";
+  length = slider4.value;
+}
+
+
+variable3.innerHTML = "sine wave speed: "+slider3.value / 10+"";
+slider3.oninput = function() {
+  variable3.innerHTML = "sine wave speed: "+slider3.value / 10+"";
+  speed = slider3.value / 10;
+}
+
+
+variable2.innerHTML = "sine wave quality: "+slider2.value+" stops";
+slider2.oninput = function() {
+  variable2.innerHTML = "sine wave quality: "+slider2.value+" stops";
+  scale = slider2.value;
+}
+
+variable1.innerHTML = "sine wave fps: "+slider1.value;
+slider1.oninput = function() {
+  variable1.innerHTML = "sine wave fps: "+slider1.value;
+  fps = slider1.value;
+  msPerFrame = 1000 / fps;
+}
+</script>
 
 
 </table>
@@ -572,45 +628,6 @@ Bugs and stuff can be reported to me (Contact is on about me (not yet im working
 <br>
 
 <br>
-<script>
-var slider1 = document.getElementById("delayslider");
-var variable1 = document.getElementById("delaydisplay");
-var slider2 = document.getElementById("qualslider");
-var variable2 = document.getElementById("qualdisplay");
-var slider3 = document.getElementById("speedslider");
-var variable3 = document.getElementById("speeddisplay");
-
-var slider4 = document.getElementById("lengthslider");
-var variable4 = document.getElementById("lengthdisplay");
-
-
-variable4.innerHTML = "wave length multiplier: "+slider4.value +"";
-slider4.oninput = function() {
-  variable4.innerHTML = "wave length multiplier: "+slider4.value +"";
-  length = slider4.value;
-}
-
-
-variable3.innerHTML = "sine wave speed: "+slider3.value / 10+"";
-slider3.oninput = function() {
-  variable3.innerHTML = "sine wave speed: "+slider3.value / 10+"";
-  speed = slider3.value / 10;
-}
-
-
-variable2.innerHTML = "sine wave quality: "+slider2.value+" stops";
-slider2.oninput = function() {
-  variable2.innerHTML = "sine wave quality: "+slider2.value+" stops";
-  scale = slider2.value;
-}
-
-variable1.innerHTML = "sine wave fps: "+slider1.value;
-slider1.oninput = function() {
-  variable1.innerHTML = "sine wave fps: "+slider1.value;
-  fps = slider1.value;
-  msPerFrame = 1000 / fps;
-}
-</script>
 
 <div class='FC2'>
 <!-- FC2 Counter  Starts here -->

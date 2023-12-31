@@ -1,0 +1,7 @@
+<OpenSearchDescription>
+    <ShortName>Mias Epic Site</ShortName>
+    <Description>Secret!</Description>
+    <Tags>mia funnyman silly miastonished secret</Tags>
+    <Image height="16" width="16" type="image/x-icon">https://miastonished.github.io/assets/smiley.png</Image>
+    <Url type="text/html" template="https://miastonished.github.io/secretpage123.html?code={searchTerms}"/>
+</OpenSearchDescription>
