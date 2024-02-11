@@ -1,8 +1,9 @@
 <head>
 <script>let v = 0; 
 
+console.log("djon't use the console uwu thanks");
 
-function vaultcheck(){
+function dmF1bHRjaGVjaw(){
     document.getElementById('v').innerHTML = `v = ${v}`;
     if(v == 1){
         console.log("you win");
@@ -166,7 +167,7 @@ body{
 </style>
 <title>⚵ better scraps ⚳</title>
 </head>
-<body onmousemove='getCursor(event);' onload='vaultcheck();'>
+<body onmousemove='getCursor(event);' onload='dmF1bHRjaGVjaw();'>
 
 <div class='vaultinfo'>
 For the "vault" to open, v must equal 1. <br>
@@ -361,8 +362,8 @@ pretend this is a vault<br>
 .wavelems{
     position: relative;
     background-color:green;
-    height: 10px;
-    width:10%;
+    height: 1px;
+    width:1%;
     /*box-shadow: 
         1px 1px 10px black,
         1px 1px 10px black,
@@ -388,10 +389,35 @@ let wavelem = document.getElementById("elementwave");
 let a = 360;
 
 while(a > 0){
-    wavelem.innerHTML = wavelem.innerHTML + `<div class='wavelems' style='left:${(Math.cos(a/10)+1)*30}%'></div>`;
+    wavelem.innerHTML = wavelem.innerHTML + `<div class='wavelems' style='left:${(Math.cos(a/10)+1)*2}%'></div>`;
     a-=1;
 }
 
+</script>
+
+<div style='position: relative; background: red; width: 100px; height: 100px;' id='silly'>aoskdoaskdoaskd<br> wasd</div>
+
+<script>
+x = 0;
+y = 0;
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 65) { //a
+         x -= 5;
+         document.getElementById("silly").style.left = `${x}px`; 
+    }
+    if(event.keyCode == 87) { //w
+         y += 5;
+         document.getElementById("silly").style.bottom = `${y}px`; 
+    }
+    if(event.keyCode == 68) { //a
+         x += 5;
+         document.getElementById("silly").style.left = `${x}px`; 
+    }
+    if(event.keyCode == 83) { //w
+         y -= 5;
+         document.getElementById("silly").style.bottom = `${y}px`; 
+    }
+});
 </script>
 
 </body>
