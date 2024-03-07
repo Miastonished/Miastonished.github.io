@@ -254,11 +254,36 @@ function fallanim(){
         /*thefaller.remove();*/
         thefaller.style.rotate = `0deg`;
         thefaller.style.pointerEvents = 'none';
+        bbac = 0;
+        fallY = 0;
+        fallvel = -32;
+        fallersize = 0;
+        setTimeout(function(){respanim();}, 750);
     }
     
 
 }
 
+fallersize = 0;
+function respanim(){
+    if(fallersize > 1.01){
+    
+        thefaller.style.rotate = `0deg`;
+        thefaller.style.pointerEvents = 'auto';
+        thefaller.style.scale = 1;
+        
+    }else{
+        thefaller.style.top = 0;
+        thefaller.style.opacity = fallersize * 2;
+        thefaller.style.scale = fallersize;
+        
+        
+        fallersize += 0.05;
+        setTimeout(function(){respanim();}, 75);
+    }
+    
+
+}
 
 
 /*
