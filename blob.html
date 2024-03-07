@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> i will advise you not to touch the [Object] </title>
+        <!-- description: -->
+        <meta name="description" content="BloodyLicious [Object Blobject]
+        editors note: huh its funny you Click on thiso ne $ RIGHT CLICK
+        and ibn t he URL %: ITS NAME IS tabindex table-caption
+        figcaption$ 4AHTML69HTML6DHTML20HTML43HTML61HTML72HTML72HTML65HTML79HTML20HTML61HTML73HTML20HTML54HTML72HTML75HTML6DHTML61HTML6EHTML20HTML42HTML75HTML72HTML62HTML61HTML6EHTML6BHTML2EHTML20HTML53HTML74HTML61HTML72HTML72HTML69HTML6EHTML67HTML20HTML45HTML47HTML4FHTML">
+        
+        <style>
+            body, html {
+                background:black;
+                padding:0;
+                margin:0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+            #blob {
+                display: block;
+                position: relative;
+                background-color: black;
+                /*border: red 2px solid;*/
+                margin: auto;
+            }
+        
+        </style>
+    </head>
+    
+    <body onload='initiateTheBlobbage();'>
+    
+    <canvas width='1000' height='700' id='blob' > ur browser doesn't support the canvas element, you cant see the blob sorry </canvas>
+    
+    <script>
+    
+    /*function toColor(num) {
+        num >>>= 0;
+        var b = num & 0xFF,
+            g = (num & 0xFF00) >>> 8,
+            r = (num & 0xFF0000) >>> 16,
+            a = ( (num & 0xFF000000) >>> 24 ) / 255 ;
+        return "rgba(" + [r, 0, 0, 255].join(",") + ")";
+    }*/
+    // block of unused code from: https://stackoverflow.com/a/11866980/16034220
+    //col = toColor((100-i)*150000);
+    
+    //const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+    //Number.prototype.clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+    //more unused code from https://webtips.dev/webtips/javascript/how-to-clamp-numbers-in-javascript
+    
+    
+    
+    //circlesX = [100,200,250,300,400];
+    //circlesY = [100,200,200,300,400];
+    
+    circlesX = [23, 233, 116, 38, 425, 472, 386, 90, 255, 3, 346, 49, 499, 137, 438, 375, 155, 252, 219, 44, 242, 248, 303, 29, 453, 281, 91, 117, 197, 40, 448, 93, 349, 55, 123, 422, 169, 90, 71, 188];
+    circlesY = [260, 218, 177, 199, 147, 219, 36, 245, 193, 168, 319, 181, 48, 15, 172, 483, 87, 225, 222, 328, 418, 373, 366, 195, 293, 410, 177, 286, 170, 45, 496, 3, 158, 497, 238, 226, 35, 389, 71, 249];
+
+    circlesR = [100,100,100,100,150,100,100,100,100,150,100,100,100,100,150,100,100,100,100,150,100,100,100,100,150,100,100,100,100,150,100,100,100,100,150,100,100,100,100,150];
+    circlesR2 = [100,100,100,100,150,100,100,100,100,150,100,100,100,100,150,100,100,100,100,150,100,100,100,100,150,100,100,100,100,150,100,100,100,100,150,100,100,100,100,150];
+    
+    BorrisJohns0n = 195941929419249123912;
+    // this ones important varai ble
+    
+    
+    //circlesR2= [100,100,100,100,150];
+
+    let msPrev = window.performance.now()
+    const fps = 2
+    const msPerFrame = 1000 / fps
+    let frames = 0
+
+    
+    
+    function initiateTheBlobbage(){
+    
+        window.requestAnimationFrame(initiateTheBlobbage);
+    
+        const msNow = window.performance.now()
+        const msPassed = msNow - msPrev
+
+        if (msPassed < msPerFrame) return
+
+        const excessTime = msPassed % msPerFrame
+        msPrev = msNow - excessTime
+
+        
+        offset = (Math.sin(frames)+2);
+
+        frames++
+
+
+        circlesR2 = [];
+        circlesR2 = circlesR2.concat(circlesR);
+        //console.log(circlesR2);
+        
+        /*for(r = circlesR.length; r > -1; r--){
+            circlesR2[r] = circlesR[r] + offset*10;
+        }*/
+        
+        
+        
+        c = document.getElementById("blob");
+        ctx = c.getContext("2d");
+        //if(frames % 100 == 0){
+        ctx.clearRect(0,0,1000,1000); //}
+        
+        qual = 2
+        
+        
+        //distToMouse=0;
+        /*for (i = circlesR[a]; i > 0; i-=qual){
+                    col = `rgba(${(circlesR[a]-i)*2}, 0, 0, 255)`;
+                    ctx.fillStyle = col;
+                    ctx.strokeStyle = col;
+                    ctx.beginPath();
+                    ctx.arc(circlesX[a], circlesY[a], i, 0, 2*Math.PI);
+                    ctx.stroke(); 
+                    ctx.fill();
+                    ctx.closePath();
+                } */
+                
+        
+        for(z = 0; z < (150/qual); z++){
+            for(a = circlesX.length; a > -1; a--){ //
+                if(circlesR2[a] > 0){
+                    col = `rgba(${(circlesR[a]-circlesR2[a])*1.5}, 0, 0, 255)`;
+                    ctx.fillStyle = col;
+                    ctx.strokeStyle = col;
+                    ctx.beginPath();
+                    ctx.arc(
+                            circlesX[a]+250,
+                            circlesY[a]+105,
+                            Math.max(circlesR2[a]-offset*5,0),
+                            0,
+                            2*Math.PI
+                        );
+                        
+                    ctx.stroke(); 
+                    ctx.fill();
+                    ctx.closePath();
+                    circlesR2[a] -= qual;
+                }
+            }
+        }
+    }    
+        
+        
+        
+    </script>
+    
+    
+    <script id='spoilers!'>
+        function a25pZmU(){
+            alert("For reasons possibly not yet known to you, this [Object] cannot be interacted on.");
+            //alert("Your brain forces you to not put anything near the [Object Object]");
+        }
+    </script>
+    
+    </body>
+</html>
+

@@ -5,7 +5,9 @@
 	<meta name="description" content="a whole ton of buttons to all the sites ever!">
 
 	<style>
-	html, body {margin:0;padding:0;background-color:#444441;}
+	html, body {margin:0;padding:0;background-color:#444441; position: relative;}
+    body{  background-image: url('assets/art/buttonbg.png'); }
+    html{  background-image: url('assets/art/buttonbglarge.png'); ]
 	.container { 
 		padding-left:12.5px;
 		padding-right:12.5px;
@@ -25,13 +27,18 @@
         height: 50px;
     }
 	.links{
-        background-color: #000000;color: white;padding: 5px 70px;text-align: center;text-decoration: none;display: inline-block;
+        background-color: #000000;color: white;padding: 10px 70px;text-align: center;text-decoration: none;display: inline;
         height: 25px;
+        
     }
 	.links2{
         background-color: #000000;color: white;padding:5px;text-align: center;text-decoration: none;display: inline;
         height: 2em;
         
+    }
+    .links3{
+        background-color: #000000;color: white;padding: 10px 70px;text-align: center;text-decoration: none;display: inline;
+        height: 25px;        
     }
 	
     .buttonholder > a {
@@ -85,6 +92,22 @@
         height:2em;
         padding:5px 0px;
     }
+    .buttonTitle{
+        font-size: 40px;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        height: 25px;     
+        position: relative;
+        top: 7px;
+    }
+    #faller{
+        position: relative;
+        top: 0px;
+        transform: rotate(0deg);
+        z-index: 10;
+    }
     </style>
 </head>
 <body>
@@ -93,13 +116,16 @@
  <!--class="header"--->
 	<br>
 	<center>
-	<h1> Buttons </h1>
-	<span id="menulinks" class="enby">BUTTONS</span><br><br>
-    <a class='links' href='https://rainy.gay/pride/pridebuttons'>pride buttons <img src='assets/art/external.png' width='17px'></a>
-    <a class='links' href='john.html'>john farm</a>
-
-	<script src="links.js" type="text/javascript"></script>	</center>
+    <!--<h1> Buttons </h1>-->
 	<br>
+	<span id="menulinks" class="enby">BUTTONS</span><br>
+    <a class='links3' href='https://rainy.gay/pride/pridebuttons'>pride buttons <img src='assets/art/external.png' width='17px'></a>
+   ​ ​ ​<a class='links3' href='john.html'>john farm</a> <span class='buttonTitle'>--- Buttons --------</span>
+	<br>
+
+	<script src="links.js" type="text/javascript"></script>
+    </center>
+	<br><br>
     <center>
 
 <center> 
@@ -111,15 +137,18 @@ my button:
 <br>
 if you want me to add or remove your button (or update it) contact me <a href='contact.html'>here</a> :3<br>
 in the future when i collect more buttons i'll sort them by colour :3333<br><br>
+click on a button to go to the respective site :3 <br><br>
 <div class='buttonholder'>
 <a href='https://miastonished.github.io' target='_blank'><img src='assets/buttons/button.gif'></a>
 <a href='https://gumi.gay' target='_blank'><img src='assets/buttons/gumi.gif'></a>
 <a href='https://silvershorthair.github.io' target='_blank'><img src='assets/buttons/silver.png'></a>
 <a href='https://skysupercharged.github.io' target='_blank'><img src='assets/buttons/sky.png'></a>
-
 <a href='https://vaelaris.github.io' target='_blank'><img src='assets/buttons/vae.png'></a>
+<a href="https://hiyaderred.github.io/"><img src="https://hiyaderred.github.io/images/webring/derredbutton.png"></a>
 
-<a href='https://arab.org/click-to-help/palestine/' target='_blank'><img src='assets/art/88x31palestine.png'></a>
+
+<!--<a href='https://arab.org/click-to-help/palestine/' target='_blank'><img src='assets/art/88x31palestine.png'></a>-->
+<a href='https://www.tumblr.com/sulfurcosmos/732456971539775488/how-you-can-help-palestine' target='_blank'><img src='assets/art/88x31palestine.png'></a>
 <a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
 <a href="https://chiitopia.neocities.org"><img src="https://chiitopia.neocities.org/images/balls.png" alt="chiitopia"></a>
 
@@ -142,10 +171,8 @@ in the future when i collect more buttons i'll sort them by colour :3333<br><br>
 <a href="https://transbro.neocities.org/"><img src="assets/buttons/transbro.gif"></a>
 <a href="https://wynns-wonderful-pixel-paradise.neocities.org/"><img src="assets/buttons/pixelparadise.gif"></a>
 <a href="https://goop.house/"><img src="assets/buttons/goop.gif"></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
+<a href="https://yesterweb.org/no-to-web3/"><img src="assets/buttons/web3.gif"></a>
+<a class='fallercont' href="javascript:bgbreak()"><img id='faller' src="assets/art/warningbtn.png"></a>
 
 <a class=' emptbutt' href='https://' target='_blank'></a>
 <a class=' emptbutt' href='https://' target='_blank'></a>
@@ -187,27 +214,6 @@ in the future when i collect more buttons i'll sort them by colour :3333<br><br>
 <a class=' emptbutt' href='https://' target='_blank'></a>
 <a class=' emptbutt' href='https://' target='_blank'></a>
 
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-<a class=' emptbutt' href='https://' target='_blank'></a>
-
-<a class=' emptbutt' href='https://' target='_blank'></a>
 <a class=' emptbutt' href='https://' target='_blank'></a>
 <a class=' emptbutt' href='https://' target='_blank'></a>
 <a class=' emptbutt' href='https://' target='_blank'></a>
@@ -217,6 +223,56 @@ in the future when i collect more buttons i'll sort them by colour :3333<br><br>
 
 
 </center>
+
+<script>
+bbac = 0;
+fallvel = -32;
+fallY = 0;
+thefaller = document.getElementById('faller');
+
+function bgbreak(){
+    /*bgbreakanim();*/
+    fallanim();
+    /*document.body.style.backgroundImage = "url('assets/art/buttonbglarge.png')";
+    
+    document.body.style.overflowX = "clip";*/
+}
+
+function fallanim(){
+    if(bbac < 41){
+        thefaller.style.top = fallY;
+        thefaller.style.rotate = `${bbac}deg`;
+        thefaller.style.opacity = 4 - (bbac*0.1);
+        
+        
+        fallY+= fallvel;
+        fallvel += 2;
+        bbac += 1;
+        setTimeout(function(){fallanim();}, 30);
+        
+    }else{
+        /*thefaller.remove();*/
+        thefaller.style.rotate = `0deg`;
+        thefaller.style.pointerEvents = 'none';
+    }
+    
+
+}
+
+
+
+/*
+function bgbreakanim(){
+    if(bbac > 0){
+        document.body.style.right = Math.sin(bbac)*bbac;
+        bbac -= 1;
+        setTimeout(function(){bgbreakanim();}, 50);
+        
+    } 
+    document.body.style.overflowX = "none";
+    document.body.style.right = 0;
+}*/
+</script>
 
 <br>
 <br>

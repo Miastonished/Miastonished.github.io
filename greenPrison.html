@@ -1,0 +1,168 @@
+<head>
+	<title>
+    Green Prison
+    </title>
+	<meta name="description" content="Moved due to complaints">
+	<style>
+	html, body {margin:0;padding:0; position: relative; overflow-x: clip;}
+	.header {background-image:linear-gradient(#000000 10%,#FFFFFF 20%, rgba(0, 0, 0, 0) 30%)}
+	.footer {background-image:linear-gradient(195deg, #FFFFFF00,#FFFFFF00,#000),linear-gradient(165deg, #FFFFFF00,#FFFFFF00,#000);}
+	.footer2 {background-image:linear-gradient(180deg, #FFFFFF00,#FFFFFF00,#F00);z-index:-10;}
+	body {
+		background-color: green;
+        color:#ffffff;
+        /*background-image: 
+            repeating-linear-gradient(
+                0deg,
+                #00000000 0px,
+                #00000000 1px,
+                #000000FF 1px,
+                #000000FF 2px
+            );*/
+	}
+	.white {color:rgba(0,0,0,0)}
+	th{text-align: center;font-weight: normal}
+	.links{background-color: #000000;color: white;padding: 5px 75px;text-align: center;text-decoration: none;display: inline-block}
+	a{color:#ffffff;text-decoration: none}
+	button{background-color: #00ff00}
+	pre{
+	    background-color: black;
+		width:132px
+	}
+	.p1{
+	    color: #BCBCBC;
+		text-shadow:
+		-2px -1px 0 #000,
+		2px 1px 0 #FFF
+	}
+	.p2{
+	    color: #BCBCBC;
+		text-shadow:
+		2px 1px 0 #000,
+		-2px -1px 0 #FFF
+	}
+    .rightDiv {
+        min-height: 750px;
+        width: 500px;
+        background: #0a0;
+        display: inline-block;
+        outline: 5px solid black;
+        font-family: arial;
+    }
+    .lrcontainer{
+        width:1000px;
+        height: 750px;
+        position: relative;
+    }
+    .hyperlink{
+        color: red;
+    }
+    .hm{
+        cursor: help;
+        text-decoration-line: underline;
+        text-decoration-style: dotted; 
+    }
+    #hTB{
+        width: 450px;
+        height: 150px;
+    }
+    .gRaspberry{
+        cursor: pointer;
+        width: 128;
+        height: 128;
+        background-color: black;
+        background-image: url('assets/raspberries/greenRaspberry.gif');
+        background-size: 128px;
+    }
+	</style>
+    <!--<script> alert('epilepsy warning');</script>-->
+</head>
+<body>
+<div> <!--class="header"--->
+	<br>
+	<center>
+	<h2> Green Box </h2>
+    <!--<h2> EPILEPSY WARNING </h2>-->
+    <a href='ascii.html' id='backButton'> BACK </a><br><br>
+    </center>
+</div>
+<center>
+
+<div class='rightDiv'>
+<h2>Green Objects:</h2>
+<img src='assets/img/Granny Smith Apples.png' width='128' height='128'/>
+<img src='assets/img/Granny Smith Apples.png' width='128' height='128'/>
+<img src='assets/img/Granny Smith Apples.png' width='128' height='128'/>
+<img src='assets/img/Granny Smith Apples.png' width='128' height='128'/>
+<img src='assets/img/Granny Smith Apples.png' width='128' height='128'/>
+<img src='assets/img/Granny Smith Apples.png' width='128' height='128'/><br>
+Apples<br><br><br>
+<img src='assets/img/Tree.png' width='128' height='128'/>
+<img src='assets/img/Tree.png' width='128' height='128'/>
+<img src='assets/img/Tree.png' width='128' height='128'/>
+<img src='assets/img/Tree.png' width='128' height='128'/>
+<img src='assets/img/Tree.png' width='128' height='128'/>
+<img src='assets/img/Tree.png' width='128' height='128'/><br>
+Tree<br><br><br>
+
+<div class='gRaspberry'>
+<img src='assets/raspberries/greenRaspberry.png' onclick='payload();' id='gR' width='128' height='128'/>
+</div>
+Green Raspberry<br><br><br>
+
+We were asked to move this page as the images took to long to load and slowed down important recieving of information
+</div>
+</div>
+
+<script>
+gR = document.getElementById('gR');
+gR.style.display = 'inline';
+
+bB = document.getElementById('backButton');
+
+payloadNo = 0;
+
+function gRGl(){
+    if(Math.random() > 0.8){
+        gR.style.display = 'none';
+    } else {
+        gR.style.display = 'inline';
+    }
+    setTimeout(function(){gRGl()}, 122);
+}
+setTimeout(function(){gRGl()}, 500);
+
+function payload(){
+    document.body.style.background = 'black';
+    bodySine();
+    backButton.style.color = '#0f0';
+    backButton.href = 'raspberry.html';
+}
+
+thingy = false;
+sineNo = 60;
+elems = document.body.getElementsByTagName("*");
+function bodySine(){
+    if(thingy){
+        for(x = 0; x < 10; x++){
+            elems[x].innerHTML += decodeURI(`%${Math.round(Math.random()*69)+10}`);
+        }
+    }
+    
+    if(sineNo > 0){
+        sineNo -= 2;
+        document.body.style.right = Math.sin(sineNo * sineNo)*(sineNo*5);
+        document.body.style.top = Math.sin(sineNo * sineNo)*(sineNo*5);
+        setTimeout(function(){bodySine()}, 10);
+    } else {
+        sineNo = 20;
+        thingy = true;
+    };
+}
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</center>
+
+
+</body>

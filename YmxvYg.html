@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>LOCK A01 1/2</title>
+        <!-- description: -->
+        <meta name="description" content="LOCK A01 1/2">
+        
+        <style>
+            body, html {
+                background:black;
+                padding:0;
+                margin:0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+            .lock{
+                width: 70%;
+                background: #EEEEEE;
+                padding: 10px;
+                margin: 10px auto;
+                text-align: center;
+                font-family: arial;
+            }
+            .puzzle{
+                min-height: 500px;
+                width: 70%;
+                background: #E0E0E0;
+                margin: auto;
+                box-shadow: inset 2px 2px 10px 0px #D0D0D0;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    
+    <body onload='clearNum();'>
+
+        <div class='lock'>
+            <h1> LOCK A01 1/2 </h1>
+            <div class='puzzle'>
+                <button onclick='generateNum();'> Generate </button><br>
+                <span id='countdown'>What is the sum of the following numbers:</span><br><br>
+                <span id='numbers'>
+                
+                
+                </span><br><br>
+                <input type='text' id='answer'></input>
+                <button onclick='verifyAnswer();' id='verifyButton'>Verify</button>
+                
+                
+                
+                <script>
+                numberList = [];
+                timerOWO = 0;
+                stillPlaying = 1;
+                
+                function clearNum(){
+                    innerH = "";
+                    numberList = [];
+                    for(n=10;n>0;n--){
+                        innerH+= "-<br>"
+                    }
+                    document.getElementById("numbers").innerHTML = innerH;
+                    timerOWO = 0; // just in case
+                }
+                function generateNum(){
+                    if(timerOWO == 0){
+                        innerH = "";
+                        numberList = [];
+                        
+                        for(n=10;n>0;n--){
+                            numberList[n] = Math.round(Math.random()*10000000000000);
+                            innerH+= `${numberList[n]}<br>`
+                        }
+                        document.getElementById("numbers").innerHTML = innerH;
+                        timerOWO = 15;
+                        timerUWU();
+                    }
+                }
+                
+                function timerUWU(){
+                    if(stillPlaying){
+                        timerOWO--;
+                        document.getElementById("countdown").innerHTML = `What is the sum of the following numbers(${timerOWO}s):`
+                        if(timerOWO > 0){
+                            setTimeout(timerUWU, 1000);
+                        } else {
+                            clearNum();
+                        }
+                    }
+                }
+                
+                function verifyAnswer(){
+                    if(stillPlaying == 0){
+                        window.location.href = "c2lsbHk.html";
+                    }
+                    actualAnswer = 0;
+                    for(n=10;n>0;n--){
+                        actualAnswer+= numberList[n];
+                    }
+                    if(document.getElementById("answer").value == actualAnswer){
+                        stillPlaying = 0;
+                        document.getElementById("verifyButton").innerHTML = "Correct!, Continue";
+                    } else {
+                        document.getElementById("verifyButton").innerHTML = "Incorrect";
+                    }
+                }
+                
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
