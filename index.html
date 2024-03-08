@@ -190,15 +190,20 @@
         border-color: #350000;
 		padding-top: 10px;
 		padding-bottom: 50px;
+        position: relative;
 	}
 	.sinettings{
     
         /*filter: brightness(20%);
         */
-        
+        position: absolute;
+        left: -320px;
+        top: 200px;
+        transform: rotate(-2deg);
 		background-color: #454545;
-        background-image: url('assets/art/settings.png');
+        background-image: url('assets/art/settings2.png');
         background-size: 100%;
+        background-position: -10px -20px;
 		width: 400px;
         height: 320px;
 		border-radius: 25px 25px 25px 25px;
@@ -227,12 +232,14 @@
 	}
     .tumblr-post-thing{
         width: 560px;
+        height: 397px;
         background:white;
         padding: 5px;
         border-radius: 25px 25px 25px 25px; 
         border-style: none none solid none;
         border-width: 10px;
         border-color: #350000 #000 #efefef #000;
+        transform: scale(1);
     }
     
 	/*.topshelfspyvoiceline{
@@ -316,6 +323,12 @@
         position: relative;
         top: -30px;
     }
+    .bannerMain{
+        width: 400px;
+        position: relative;
+        top: -20px;
+        transform: scale(1.2);
+    }
 	</style>
 </head>
 <body onload="sine();">
@@ -337,6 +350,8 @@ function toRad(deg){
     return deg * (Math.PI / 180);
 }
 
+sinable = false;
+
 function sine(){
 
     window.requestAnimationFrame(sine);
@@ -345,7 +360,7 @@ function sine(){
     const msPassed = msNow - msPrev
 
     if (msPassed < msPerFrame) return
-
+    
     const excessTime = msPassed % msPerFrame
     msPrev = msNow - excessTime
 
@@ -361,6 +376,10 @@ function sine(){
     ctx2.clearRect(0, 0, width, height);
     ctx2.moveTo(width/2,0);
     ctx2.beginPath();
+    
+    
+    if (sinable == false) return
+
     
     pointsList = [];
     
@@ -422,7 +441,8 @@ function sine(){
 <div class="header">
 	<center>
 	<div class="menu">
-		<h1 id="haiix3">hi</h1>
+		<!--<h1 id="haiix3">hi</h1>-->
+        <img class='bannerMain' src='assets/art/miasEpicSiteBannerTruncated.png' title='hi' alt='Scrawly black handdrawn text saying Mias Epic Site in all caps'/><br>
 <!--        DON"T PIBLISH THIS VERSION THE SINE WAVE IS FACKY WACKY-->
 <!--f-->
 	<span id="menulinks">idex dot html</span>
@@ -454,10 +474,7 @@ function sine(){
     
     css <s>coming soon</s> WIP
     
-    <!-- FC2 Counter  Starts here -->
-    <script language="javascript" type="text/javascript" src="https://counter1.fc2.com/counter.php?id=39381451&main=1"></script><noscript><img src="https://counter1.fc2.com/counter_img.php?id=39381451&main=1" /></noscript>
-    <!-- FC2 Counter  Ends here -->
-    
+
     </div>
 </center>
 </div>
@@ -501,6 +518,7 @@ function sine(){
     <br> (SUB UPDATE): fixed the button page cause i had a stray ] at the start ofthe css and most browsers don't ignore that, also spawned the contact page its pretty barebones <br>
     also made the warning button respawn
   </span></td></tr>
+  <tr><th>08/03/2024</th><td>-</td><td><span>rearranged main page slightly and finally added a site logo after almost 3 years of coooool website</span></td></tr>
   
   
   <tr><th></th><td></td><td></td></tr>
@@ -517,6 +535,7 @@ This site is best viewed on desktop. Most of it looks horrible on mobile<br>
 <!-- I'm being serious -->
 Bugs and stuff can be reported to me (Contact is on about me (not yet im working on it))<br>
 <span id="farty" title="like hovering over certain text 😲">Some secrets are hidden very sneakily</span>
+
 
 <br>
 <br>
@@ -542,6 +561,16 @@ Bugs and stuff can be reported to me (Contact is on about me (not yet im working
 <h1>Sine wave controls</h1>
 
 <table>
+<tr>
+<td>
+  <input type="checkbox" id="sinenable" style='transform: scaleX(12); position: relative; left: 70px;'>
+
+</td>
+<td>
+toggle sine wave 
+</td>
+
+</tr>
 
 <tr>
 <td><input type="range" min="1" max="60" value="15" id="delayslider"> </td>
@@ -583,6 +612,8 @@ var variable4 = document.getElementById("lengthdisplay");
 var slider5 = document.getElementById("secretslider");
 var variable5 = document.getElementById("secretdisplay");
 
+var checkboxx = document.getElementById("sinenable");
+
 slider1.value = 15;
 slider2.value = 12;
 slider3.value = 5;
@@ -595,6 +626,10 @@ variable5.innerHTML = "???";
 slider5.oninput = function() {
   variable5.innerHTML = ""+slider5.value +"???";
   if(slider5.value > 99){ window.location.href = "YmxvYg.html"; };
+}
+
+checkboxx.oninput = function() {
+  sinable = checkboxx.checked;
 }
 
 variable4.innerHTML = "wave length multiplier: "+slider4.value +"";
@@ -636,20 +671,20 @@ slider1.oninput = function() {
 <br>
 <a class='button88x31' href='miasepicsite/' target='_blank'><img src='assets/art/placeholderbutton.gif'></a>
 <a class='button88x31' href="https://hiyaderred.github.io/"><img src="https://hiyaderred.github.io/images/webring/derredbutton.png"></a>
-<a class='button88x31 emptbutt' href='https://' target='_blank'></a>
-<a class='button88x31 emptbutt' href='https://' target='_blank'></a>
-<br>
+<a class='button88x31' href="https://xzan-corvus.github.io/XzanCorvusEnterprises/"><img src="assets/buttons/xzan_proto.gif"></a>
 <a class='button88x31' href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
-
-<a class='button88x31 emptbutt' href='https://' target='_blank'></a>
-<a class='button88x31 emptbutt' href='https://' target='_blank'></a>
-<a class='button88x31 emptbutt' href='https://' target='_blank'></a>
 <br>
 
-<a class='button88x31 emptbutt' href='https://' target='_blank'></a>
-<a class='button88x31 emptbutt' href='https://' target='_blank'></a>
-<a class='button88x31 emptbutt' href='https://' target='_blank'></a>
-<a class='button88x31' href='https://arab.org/click-to-help/palestine/' target='_blank'><img src='assets/art/88x31palestine.png'></a>
+<a class='button88x31 emptbutt'></a>
+<a class='button88x31 emptbutt'></a>
+<a class='button88x31 emptbutt'></a>
+<a class='button88x31 emptbutt'></a>
+<br>
+
+<a class='button88x31 emptbutt'></a>
+<a class='button88x31 emptbutt'></a>
+<a class='button88x31 emptbutt'></a>
+<a class='button88x31' href='https://www.tumblr.com/sulfurcosmos/732456971539775488/how-you-can-help-palestine' target='_blank'><img src='assets/art/88x31palestine.png'></a>
 <br>
 <a class='buttonlink' href='buttons.html'>more buttons</a>
 
@@ -661,6 +696,11 @@ slider1.oninput = function() {
 <!-- FC2 Counter  Starts here -->
 Current Viewers:<script language="javascript" type="text/javascript" src="https://counter1.fc2.com/views.php?id=39381451&main=1"></script><noscript><img src="https://counter1.fc2.com/counter_now.php?id=39381451&main=1" /></noscript>
 <!-- FC2 Counter  Ends here -->
+<br> Total Views:   
+    <!-- FC2 Counter  Starts here -->
+    <script language="javascript" type="text/javascript" src="https://counter1.fc2.com/counter.php?id=39381451&main=1"></script><noscript><img src="https://counter1.fc2.com/counter_img.php?id=39381451&main=1" /></noscript>
+    <!-- FC2 Counter  Ends here -->
+    
 </div>
 <br>
 <iframe src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
@@ -670,7 +710,7 @@ if u cant see this then that may be a problem
 
 
 </div>
-<br><a href="TheReal"> check out           site!! </a><br><br><br><br>
+<br><a href="TheReal"> check out         site!! </a><br><br><br><br>
 </div>
 </center>
 <script>
