@@ -1,2 +1,3 @@
 User-agent: GPTBot
+Allow: /040
 Disallow: /

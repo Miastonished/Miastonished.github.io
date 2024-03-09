@@ -14,21 +14,33 @@
 	<style>
 
 	html, body {margin:0;padding:0; background:#000; color:#ffffff;}
-	.header {background-image:linear-gradient(#af0000, rgba(0, 0, 0, 0))}
+	.header {background-image:linear-gradient(#000, rgba(0, 0, 0, 0))}
 	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #000)}
     
-	.contentyay {background-color:#500000;color:#ffffff;}
+	/*.contentyay {background-color:#500000;color:#ffffff;}*/
+	.contentyay {background-color:#000;color:#ffffff;}
 	.white {color:rgba(0,0,0,0)}
 	th{text-align: right;font-weight: normal}
-	a{
+    .links{
         position:relative;
-        background-color: #f44336;color: white;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block;border-radius: 10px;
+        background-color: #f4433600;
+        color: black;
+        padding: 5px 0px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 0px;
+        width: 244px;
+        height: 22px;
+        background-image: url('assets/art/index/buttons2.png');
+        background-size: 100% 100%;
+        
         border-style: none none solid none;
-        border-width: 5px;
-        border-color: #e44336;
-        transition: border-width 0.1s, top 0.1s;    
+        border-width: 4px;
+        border-color: #a00;
+        transition: border-width 0.1s, top 0.1s;
     }
-    a:hover{border-width:2.5px; top:2.5px;}
+    a:hover{border-width:0px; top:4px;}
     .stellar:hover{border-width:6px; width:800px; top:0px;}
     .button88x31:hover{border-width:0px; top:2.5px;}
     
@@ -73,13 +85,14 @@
         image-rendering: -webkit-optimize-contrast;
         image-rendering: pixelated;
         -ms-interpolation-mode: nearest-neighbor;
+        display: inline-block;
     }
 
     .webring{
         position:relative;
         /*top: -1;*/
         width: 750px;
-        height: 77.5px;
+        height: 124px;
         background: black;
         /*background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(90,0,60,1) 0%, rgba(103,0,69,1) 8%, rgba(67,0,45,1) 39%, rgba(65,0,43,1) 64%, rgba(58,0,39,1) 75%, rgba(121,0,81,1) 82%, rgba(192,0,129,1) 90%, rgba(255,0,172,1) 100%);*/
         /*background-image: url("assets/img/glitter.gif");*/
@@ -91,8 +104,8 @@
         border-radius: 0px 0px 10px 10px;
         border-style: solid none none none;
         border-width: 10px;
-        border-color: #bc0202;
-        background-image: url('assets/img/purple-stars-bg.gif');
+        border-color: #bc020200;
+        background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url('assets/img/purple-stars-bg.gif');
         /*box-shadow: 0px 10px 0px 0px #500000 inset;*/
         /*box-shadow: 0px 10px 10px 0px black;
         transition: border-width 0.1s, top 0.1s;    */
@@ -102,6 +115,8 @@
         background-color:black;
         background-image: url('assets/img/purple-stars-bg.gif');
         border-color: black;
+                text-decoration: none;
+        color: white;
         border-radius: 0px 0px 100px 100px;
         width:700px;
         padding: 0px;
@@ -111,14 +126,17 @@
     
     }
     .webring > a {
-        height: 77.5px;
+        height: 124px;
         font-size: 20px;
         background: #ff00ff22;
-        line-height: 77.5px;
+        line-height: 124px;
         position: relative;
-        top: -32px;
-        width: 220px;
+        top: -56px;
+        display: inline-block;
+        width: 100px;
         padding: 0px;
+                text-decoration: none;
+        color: white;
         border-width: 0px;
         border-radius: 0px;
     }
@@ -143,7 +161,7 @@
 	.news{
 		background-color: #660101;
 		width: 1000px;
-		border-radius: 0px 0px 25px 25px;
+		border-radius: 50px 50px 25px 25px;
 		padding-top: 10px;
 		padding-bottom: 50px;
         border-style: none none solid none;
@@ -162,24 +180,24 @@
     td{vertical-align:top;}
     th{vertical-align:top;}
 	.toparea{
-		background-color: #a30000;
+		background-color: #a3000000;
 		width: 1250px;
 		border-radius: 0px 0px 25px 25px;
         border-style: none none solid none;
         border-width: 10px;
-        border-color: #930000;
+        border-color: #93000000;
 		padding-top: 0px;
 		padding-bottom: 25px;
 	}
 	.menu{
-		background-color: #cc0202;
+		background-color: #cc020200;
+        background-image: url('assets/art/index/top.png');
+        background-size: 100% 100%;
 		width: 1300px;
-		border-radius: 0px 0px 25px 25px;
+        height: 123px;
+		border-radius: 0px 0px 0px 0px;
 		padding-top: 70px;
-		padding-bottom: 10px;
-        border-style: none none solid none;
-        border-width: 10px;
-        border-color: #bc0202;
+		padding-bottom: 20px;
 	}
 	.bottom{
 		background-color: #450000;
@@ -219,16 +237,16 @@
         -ms-interpolation-mode: nearest-neighbor;
 	}
 	.linkies{
-		background-color: #cc0202;
+		background-color: #cc020200;
         position:relative;
 		width: 1000px;
-        bottom:10px;
+        bottom:0px;
         z-index:500;
 		border-radius: 0px 0px 25px 25px;
         padding: 0px 5px 15px 5px;
         border-style: none none solid none;
         border-width: 10px;
-        border-color: #bc0202;
+        border-color: #bc020200;
 	}
     .tumblr-post-thing{
         width: 560px;
@@ -249,7 +267,7 @@
 		padding-bottom: 10px;
 	}*/
 
-    img, canvas{
+    img, canvas, .menu, *{
         image-rendering: -moz-crisp-edges;
         image-rendering: -o-crisp-edges;
         image-rendering: -webkit-optimize-contrast;
@@ -334,105 +352,6 @@
 <body onload="sine();">
 
 
-<script>
-let msPrev = window.performance.now()
-let fps = 15
-let msPerFrame = 1000 / fps
-let frames = 0
-
-iter = 1;
-delay = 100;
-scale = 25;
-speed = 0.5;
-length = 1;
-
-function toRad(deg){
-    return deg * (Math.PI / 180);
-}
-
-sinable = false;
-
-function sine(){
-
-    window.requestAnimationFrame(sine);
-    
-    const msNow = window.performance.now()
-    const msPassed = msNow - msPrev
-
-    if (msPassed < msPerFrame) return
-    
-    const excessTime = msPassed % msPerFrame
-    msPrev = msNow - excessTime
-
-
-    var canvas = document.getElementById('sinner');
-    var width = canvas.width;
-    var height = canvas.height;
-    var ctx = canvas.getContext("2d");
-    var ctx2 = document.getElementById('cusser').getContext("2d");
-    ctx.clearRect(0, 0, width, height);
-    ctx.moveTo(width/2,0);
-    ctx.beginPath();
-    ctx2.clearRect(0, 0, width, height);
-    ctx2.moveTo(width/2,0);
-    ctx2.beginPath();
-    
-    
-    if (sinable == false) return
-
-    
-    pointsList = [];
-    
-    IPHOS = (iter);//+(height/scale);
-    HALFWIDTH = (width/2);
-    
-    //console.log(Math.sin(toRad(iter)));
-    
-    for (let i = 0; i < scale+1; i++){
-        pos = (height/scale)*i
-        pointsList[i] = toRad((pos + iter)*length);
-    }
-    
-    for (let i = 0; i < scale+1; i++){
-        //pos = (height/scale)*i
-        //i2 = (150/scale)*i
-        
-        ctx.lineTo(HALFWIDTH+Math.sin(pointsList[i])*100,(height/scale)*i)
-        ctx2.lineTo(HALFWIDTH+Math.cos(pointsList[i])*100,(height/scale)*i)
-        
-        //ctx.fill();
-        ctx.stroke();
-        ctx2.stroke();
-    }
-    iter += (speed*200) / fps;
-    //setTimeout(() => sine(), delay)
-}
-
-        //ctx.lineTo((width/2)+( Math.sin(((iter + pos)/10)*length)*100 ) ,pos)
-        //ctx.moveTo((width/2)+(Math.sin(height*(Math.PI/180))*10),(height/scale)*(i));
-        //ctx.lineTo((width/2)+(Math.sin(height*(Math.PI/180))*10),(height/scale)*(i+1));
-        //ctx.moveTo((width/scale)*i,(height/scale)*i)
-        //        ctx.lineTo((width/2)+(Math.sin((i2 + iter)*length)*100),i2)
-
-        //ctx.moveTo((width/2)+(Math.sin(iter+(height/scale)*(i-1)/10)*100),(height/scale)*i-1)
-        //ctx.lineTo((width/2)+(Math.sin((iter+(height/scale)*i*10)/length)*100)     ,(height/scale)*i)
-        
-/*function sine2(){
-    var canvas = document.getElementById('cusser');
-    var width = canvas.width;
-    var height = canvas.height;
-    var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, width, height);
-    ctx.moveTo(width/2,0);
-    ctx.beginPath();
-    for (let i = 0; i < scale+1; i++){
-        ctx.lineTo((width/2)+(Math.sin((iter*-1)+(height/scale)*i/10)*100),(height/scale)*i)
-        ctx.stroke();
-    }
-    setTimeout(() => sine2(), delay)
-}*/
-</script>
-
 <canvas id="sinner" height="500"> </canvas>
 <canvas id="cusser" height="500"> </canvas>
 
@@ -442,15 +361,18 @@ function sine(){
 	<center>
 	<div class="menu">
 		<!--<h1 id="haiix3">hi</h1>-->
-        <img class='bannerMain' src='assets/art/miasEpicSiteBannerTruncated.png' title='hi' alt='Scrawly black handdrawn text saying Mias Epic Site in all caps'/><br>
+        <!--<img class='bannerMain' src='assets/art/miasEpicSiteBannerTruncated.png' title='hi' alt='Scrawly black handdrawn text saying Mias Epic Site in all caps'/><br>
+-->
 <!--        DON"T PIBLISH THIS VERSION THE SINE WAVE IS FACKY WACKY-->
 <!--f-->
-	<span id="menulinks">idex dot html</span>
-	<script src="links.js" type="text/javascript"></script>
+	
 	</div>
 	</center>
 <center>
 <div class="toparea">
+<br>
+<span id="menulinks">idex dot html</span>
+	<script src="links.js" type="text/javascript"></script>
 <!--
 <div class="linkies"><a href="https://batashock.github.io/"> check out Batashocks site!! </a> ​ ​ ​<a href="https://silvershorthair.github.io/"> check out Silvers Shorthairs site!! </a></div>
 -->
@@ -458,7 +380,7 @@ function sine(){
 <div class="linkies"> 
 <span href="webring.html" class="webring">
 <a href='https://stellaring.network/previous/'>◄prev</a>
-<img src="assets/buttons/button.gif" height="77.5px" width="220px"/>
+<img src="assets/buttons/button.gif" height="124px" width="352px"/>
 <a href='https://stellaring.network/next/'> next►</a>
 
 <!--webring links <s>css</s> coming soon <s>WIP</s>-->
@@ -672,11 +594,11 @@ slider1.oninput = function() {
 <a class='button88x31' href='miasepicsite/' target='_blank'><img src='assets/art/placeholderbutton.gif'></a>
 <a class='button88x31' href="https://hiyaderred.github.io/"><img src="https://hiyaderred.github.io/images/webring/derredbutton.png"></a>
 <a class='button88x31' href="https://xzan-corvus.github.io/XzanCorvusEnterprises/"><img src="assets/buttons/xzan_proto.gif"></a>
-<a class='button88x31' href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
-<br>
+<a class='button88x31' href="https://fabledbugs.github.io/"><img src="assets/buttons/bugs.png"></a>
 
-<a class='button88x31 emptbutt'></a>
-<a class='button88x31 emptbutt'></a>
+<br>
+<a class='button88x31' href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
+<a class='button88x31' href="https://batashock.github.io/"><img src="assets/buttons/bata.png"></a>
 <a class='button88x31 emptbutt'></a>
 <a class='button88x31 emptbutt'></a>
 <br>
@@ -769,3 +691,108 @@ function sine(){
 }
 
 -->
+
+
+
+<script>
+let msPrev = window.performance.now()
+let fps = 15
+let msPerFrame = 1000 / fps
+let frames = 0
+
+iter = 1;
+delay = 100;
+scale = 25;
+speed = 0.5;
+length = 1;
+
+function toRad(deg){
+    return deg * (Math.PI / 180);
+}
+
+sinable = false;
+
+function sine(){
+
+    window.requestAnimationFrame(sine);
+    
+    const msNow = window.performance.now()
+    const msPassed = msNow - msPrev
+
+    if (msPassed < msPerFrame) return
+    
+    const excessTime = msPassed % msPerFrame
+    msPrev = msNow - excessTime
+
+
+    var canvas = document.getElementById('sinner');
+    var width = canvas.width;
+    var height = canvas.height;
+    var ctx = canvas.getContext("2d");
+    var ctx2 = document.getElementById('cusser').getContext("2d");
+    
+    ctx.strokeStyle = "#a00"
+    ctx2.strokeStyle = "#a00"
+    
+    ctx.clearRect(0, 0, width, height);
+    ctx.moveTo(width/2,0);
+    ctx.beginPath();
+    ctx2.clearRect(0, 0, width, height);
+    ctx2.moveTo(width/2,0);
+    ctx2.beginPath();
+    
+    
+    if (sinable == false) return
+
+    
+    pointsList = [];
+    
+    IPHOS = (iter);//+(height/scale);
+    HALFWIDTH = (width/2);
+    
+    //console.log(Math.sin(toRad(iter)));
+    
+    for (let i = 0; i < scale+1; i++){
+        pos = (height/scale)*i
+        pointsList[i] = toRad((pos + iter)*length);
+    }
+    
+    for (let i = 0; i < scale+1; i++){
+        //pos = (height/scale)*i
+        //i2 = (150/scale)*i
+        
+        ctx.lineTo(HALFWIDTH+Math.sin(pointsList[i])*100,(height/scale)*i)
+        ctx2.lineTo(HALFWIDTH+Math.cos(pointsList[i])*100,(height/scale)*i)
+        
+        //ctx.fill();
+        ctx.stroke();
+        ctx2.stroke();
+    }
+    iter += (speed*200) / fps;
+    //setTimeout(() => sine(), delay)
+}
+
+        //ctx.lineTo((width/2)+( Math.sin(((iter + pos)/10)*length)*100 ) ,pos)
+        //ctx.moveTo((width/2)+(Math.sin(height*(Math.PI/180))*10),(height/scale)*(i));
+        //ctx.lineTo((width/2)+(Math.sin(height*(Math.PI/180))*10),(height/scale)*(i+1));
+        //ctx.moveTo((width/scale)*i,(height/scale)*i)
+        //        ctx.lineTo((width/2)+(Math.sin((i2 + iter)*length)*100),i2)
+
+        //ctx.moveTo((width/2)+(Math.sin(iter+(height/scale)*(i-1)/10)*100),(height/scale)*i-1)
+        //ctx.lineTo((width/2)+(Math.sin((iter+(height/scale)*i*10)/length)*100)     ,(height/scale)*i)
+        
+/*function sine2(){
+    var canvas = document.getElementById('cusser');
+    var width = canvas.width;
+    var height = canvas.height;
+    var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, width, height);
+    ctx.moveTo(width/2,0);
+    ctx.beginPath();
+    for (let i = 0; i < scale+1; i++){
+        ctx.lineTo((width/2)+(Math.sin((iter*-1)+(height/scale)*i/10)*100),(height/scale)*i)
+        ctx.stroke();
+    }
+    setTimeout(() => sine2(), delay)
+}*/
+</script>
