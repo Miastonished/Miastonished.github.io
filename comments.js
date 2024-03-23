@@ -14,9 +14,6 @@ function commentsletsgo(){
 	.white {color:rgba(0,0,0,0)}
 	th{text-align: center;font-weight: normal}
 	.links{background-color: #550000 ;color: black;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block}
-	a{color:#550000 }
-	button{background-color: #550000 ; font-family: funny}
-	p{color:#550000 }
 	.funnyman{
 		font-size: 500px;
 		text-shadow:
