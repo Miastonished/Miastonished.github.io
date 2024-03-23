@@ -49,12 +49,19 @@
 	th{text-align: center;font-weight: normal}
 	.links{background-color: #550000 ;color: black;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block}
 	a{color:#550000 }
-	button{background-color: #550000 ; font-family: funny}
+	button{background-color: #AAA;}
 	p{color:#550000 }
 
 	.blocked {
 		pointer-events: none;
 	}
+    .associated {
+        cursor: pointer;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        vertical-align: middle;
+    }
+
 	</style>
 </head>
 <body>
@@ -70,6 +77,19 @@
 </div>
 
 <a href="healt.html">TEMPLATE</a>
+
+<center style="background-color:#0064af;position:relative;left:0px;">
+<button tabindex=-1 style="opacity:0%; pointer-events:none; width:80px;" onclick="document.location='404'">404</button>
+<button style="width:80px;" onclick="document.location='credits'">Credits</button>
+<button style="width:80px;" onclick="document.location='changelog'">Changelog</button>
+<span class="associated" style="user-select:none; color:#FFFFFF;" onclick="associatedleft()"><</span>
+<span class="associated" style="user-select:none;" id="associatedbutton"><img class="associatedbutton" src="https://miastonished.github.io/assets/buttons/button.gif" onclick="document.location='https://miastonished.github.io'"></img></span>
+<span class="associated" style="user-select:none; color:#FFFFFF;" onclick="associatedright()">></span>
+<button style="width:80px;" onclick="document.location='oclist'">OC List</button>
+<button style="width:80px;" onclick="document.location='downloads'">Downloads</button>
+<button style="width:80px;" onclick="skylanders()">Skylanders</button>
+</center>
+
 <br>
 template content
 <br>
