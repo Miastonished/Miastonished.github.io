@@ -1,4 +1,6 @@
-<head>
+
+function commentsletsgo(){
+    document.write(`<head>
 	<title>
     Comments
     </title>
@@ -88,4 +90,6 @@
 
 
 </center>
-</body>
+</body>`);
+
+}
