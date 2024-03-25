@@ -17,12 +17,14 @@ xhr.onreadystatechange = function() {
     for (var i = 0; i < items.length; i++) {
         var title = items[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
         var link = (items[i].getElementsByTagName("link")[0].childNodes[0]) ? items[i].getElementsByTagName("link")[0].childNodes[0].nodeValue : '' ;
-        var description = items[i].getElementsByTagName("description")[0].childNodes.toString();
+        var description = items[i].getElementsByTagName("description")[0].childNodes;
         var pubDate = (items[i].getElementsByTagName("pubDate")[0].childNodes[0]) ? items[i].getElementsByTagName("pubDate")[0].childNodes[0].nodeValue : '' ;
         if (pubDate != ''){
             var date = new Date(pubDate);
             pubDate = ' - ' + date.toLocaleDateString();
         }
+        
+        console.log(description);
         
         if (link != ''){
             container.innerHTML += "<div class='rssItem'><h2 class='rssHeading'><a class='rssLink' href='" + link + "'><span class='rssTitle'>" + title + "</span></a><span class='rssDate'>" + pubDate + "</span></h2><p class='rssContent'>" + description + "</p></div>";
