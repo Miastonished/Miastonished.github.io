@@ -3,6 +3,7 @@
     Games - Mia's EPIC Site
     </title>
 	<meta name="description" content="find the Silver caN you Finde her HFInd hte silver NO YOU CARNT 😡😡😡😡😡😡😡😡">
+    <link rel="icon" type="image/png" href="assets/icons/games.png"/>
 	<style>
 	html, body {margin:0;padding:0;}
 	.header {background-image:linear-gradient(#000000 10%,#FFFFFF 20%, rgba(0, 0, 0, 0) 30%)}
@@ -13,8 +14,13 @@
 		color: white;
 	}
 	.white {color:rgba(0,0,0,0)}
-	th{text-align: center;font-weight: normal}
-	.links{/*background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,0,255,1) 50%, rgba(0,0,0,1) 100%);*/color: black;padding: 5px 100px;background-image: url('http://dl7.glitter-graphics.net/pub/1028/1028697ahsqselomu.gif');text-align: center;text-decoration: none;display: inline-block}
+	th{text-align: center;font-weight: normal; background:black;}
+    
+	.links{
+        /*background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,0,255,1) 50%, rgba(0,0,0,1) 100%);*/
+        color: black;padding: 5px 100px;background-image: url('http://dl7.glitter-graphics.net/pub/1028/1028697ahsqselomu.gif');text-align: center;text-decoration: none;display: inline-block;
+        background-color: #aaa;
+        }
 	a{color:#BCBCBC}
 	button{background-color: #00ff00}
 	h1{
@@ -31,8 +37,10 @@
 	}
 	td{
 		background-color: black;
-		width: 640px;
+		width: 350px;
+        height: 240px;
 		text-align: center;
+        position: relative;
 	}
 	.Games{
 		background-color: black;
@@ -61,14 +69,33 @@
 		border-radius: 10px;
 	}
     .ofts{
-        width: 560;
-        height: 175;
+        width: 240px;
+        height: 240px;
     }
     .fisqweiqweh{
         transform: scaleX(1.25) scaleY(1.25);
     }
     .details{
         background-color: #ffffff;
+    }
+    .raspb{
+        background: url('assets/raspberries/blueRaspberry.jpg');
+        background-size: 240px 240px;
+        width:240px;
+        height:240px;
+        filter: brightness(0%);
+        transition: filter 1s;
+    }
+    .raspb:hover{
+        filter:brightness(50%);
+    }
+    .gameTitle{
+        font-size: 20px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        color: #aaaaaa;
+        font-family: monospace;
     }
 	</style>
     
@@ -92,33 +119,55 @@
 <p class="p1">they <s>shit</s> ARE <a href="https://www.youtube.com/watch?v=XTte01kdG_k" style="text-decoration: none;">THE BEST</a></p>
 <div class="GamesPLAS">
 
+
+
 <h1> other games </h1>
 <table style="background-image:url(https://i2.glitter-graphics.org/pub/509/509512rouw9uppsb.gif);">
 
 	<tr>
 	<th>
 	<div class="snake">
-    <iframe frameborder="0" src="https://itch.io/embed/2410554?border_width=5&amp;bg_color=EEF296&amp;fg_color=000&amp;link_color=508D69&amp;border_color=508D69" width="560" height="175"><a href="https://miagaming.itch.io/reverse-snake">Reverse Snake by Mia</a></iframe>
+    <!--<iframe frameborder="0" src="https://itch.io/embed/2410554?border_width=5&amp;bg_color=EEF296&amp;fg_color=000&amp;link_color=508D69&amp;border_color=508D69" width="560" height="175"><a href="https://miagaming.itch.io/reverse-snake">Reverse Snake by Mia</a></iframe>
+    -->
+    <a href='https://miagaming.itch.io/reverse-snake'><img src="assets/icons/snake.png" width="240" height="240"/></a>
     </div>
 	</th>
-	<td> snake but YOUR the APPLe </td>
+	<td> 
+    <div class='gameTitle'>reverse snake</div>
+    snake but YOUR the APPLe </td>
+    
+    
+	<th>
+	<div class="sokro">
+	<div class='raspb'></div>
+	</div>
+	</th>
+	<td> maybe game coming soon </td>
+    
 	</tr>
     	
     <tr>
-	<th>
-	<div class="sokro">
-	<img src="assets/img/pissin.gif" width="560" height="175"/>
-	</div>
-	</th>
-	<td> untitled puzzle game coming soon </td>
 	</tr>
 
     
 </table>
 <br><br>
 <a class='links' href='https://smm2.wizul.us/smm2/maker/VSN-FFS-FDG/uploaded-courses'>mario maker 2 levels </a>
-<a class='links' href='https://smm2.wizul.us/smm2/maker/VSN-FFS-FDG/uploaded-courses'>mario maker 2 levels </a>
+<!--<a class='links' href='https://smm2.wizul.us/smm2/maker/VSN-FFS-FDG/uploaded-courses'>mario maker 2 levels </a>-->
 
+<div style='background-image: url("assets/art/FTSbutton/bg.png"); width: 88px; height: 31px; position:relative;'>
+<script>
+function Find8831(theSilver){
+    theSilver.style.top = `${1+Math.round(Math.random()*15)}px`;
+    theSilver.style.left = `${1+Math.round(Math.random()*77)}px`;
+}
+
+</script>
+<img src='assets/art/FTSbutton/overlay.png' style='position:absolute; top:0; left:0;z-index:1; pointer-events:none;'/>
+<img src='assets/art/FTSbutton/FTS.png' style='position:absolute; top:0; left:0; z-index:1;pointer-events:none;'/>
+<img src='assets/art/FTSbutton/silver.png' onload='Find8831(this);' onclick='Find8831(this);' style='position:absolute; top:1; left:1;'/>
+
+</div>
 
 <h1> Find The Silvers </h1>
 <table style="background-image:url(assets/backgroundfts.gif);">
@@ -126,85 +175,101 @@
 	<tr>
 	<th>
 	<div class="fts1">
-	<iframe frameborder="0" src="https://itch.io/embed/982786?border_width=5&amp;bg_color=00b056&amp;fg_color=ffffff&amp;link_color=000000&amp;border_color=239cde" width="560" height="175"><a href="https://miagaming.itch.io/findthesilver">Find The Silvers - Easter 2021 by Mia</a></iframe>
-	</div>
+	<!--<iframe frameborder="0" src="https://itch.io/embed/982786?border_width=5&amp;bg_color=00b056&amp;fg_color=ffffff&amp;link_color=000000&amp;border_color=239cde" width="560" height="175"><a href="https://miagaming.itch.io/findthesilver">Find The Silvers - Easter 2021 by Mia</a></iframe>
+	-->
+        <a href='https://miagaming.itch.io/findthesilver'><img src="assets/icons/fts.png" width="240" height="240"/></a>
+
+    </div>
 	</th>
-	<td>9<br>Find the Silvers, One of the most popular and Well rated games of 2014<br>(and and of all times)<br>
+    
+	<td>    <div class='gameTitle'>Find The Silver</div>
+9<br>Find the Silvers, One of the most popular and Well rated games of 2014<br>(and and of all times)<br>
     This Game is so Well Rated Click<br>
     <details><summary>Click here To see The REvieS!!!!</summary> "Good Game" - Everyone on Earth!<br>"it makes You Go all Wonkey" - Concerned Fan, 2014</details>
     And so much Money - the Guys Like thee Game! The Guys THe GAme! The    Other Like the GAme! TEVeryone Olike the GAme1!!</td>
-	</tr>
-    
-    
-	<tr>
 	<th>
 	<div class="fts2">
-	<iframe frameborder="0" src="https://itch.io/embed/1508797?border_width=5&amp;bg_color=22b14c&amp;fg_color=000000&amp;link_color=ffffff&amp;border_color=00290d" width="560" height="175"><a href="https://miagaming.itch.io/find-the-silvers-2">F ind hte SIVLERs 2 !!!!1!!!!11!1!1!1 by Mia</a></iframe>
-	</div>
+	<!--<iframe frameborder="0" src="https://itch.io/embed/1508797?border_width=5&amp;bg_color=22b14c&amp;fg_color=000000&amp;link_color=ffffff&amp;border_color=00290d" width="560" height="175"><a href="https://miagaming.itch.io/find-the-silvers-2">F ind hte SIVLERs 2 !!!!1!!!!11!1!1!1 by Mia</a></iframe>
+	-->
+        <a href='https://miagaming.itch.io/find-the-silvers-2'><img src="assets/icons/fts2.png" width="240" height="240"/></a>
+    </div>
 	</th>
-	<td><h4>the find the silver 2</h4>A new look on the "Find the " Silver Franchise! Silver Returns with this Hit GAme "Find the Silver 2" where she uh she goes off the screen uh OH!<br><br>"A very good game, i love finding all the silvers, silver is very cute and it's funny when she hides but fucking fails miserably"<br>- Batashock, 1997</td>
-	</tr>
+	<td>    <div class='gameTitle'>Find The Silvers 2</div>
+        <!--<h4>the find the silver 2</h4>-->A new look on the "Find the " Silver Franchise! Silver Returns with this Hit GAme "Find the Silver 2" where she uh she goes off the screen uh OH!<br><br>"A very good game, i love finding all the silvers, silver is very cute and it's funny when she hides but fucking fails miserably"<br>- Batashock, 1997</td>
+	
+    </tr>
     
 	<tr>
 	<th>
 	<div class="fts3">
-	<img src="assets/tilingimage2.png" width="560" height="175"/>
+	<img src="assets/tilingimage2.png" width="240" height="240"/>
 	</div>
 	</th>
-	<td><h4>who</h4>Who Who Who<br>PLZ ALL PLZ HELP I DON'T WANT TO<br>popular and Well rated  <br> Click <a href="https://miagaming.itch.io/find-the-silver-3"> here</a> To see The REvieS!!!! is very cute and it's funny when she hides but fu£ÃƒÆ’Ã¢â‚y"<br>- BFind the 4 Fin997</td>
-	</tr>
-    
-	<tr>
-	<th>
+	<td>    <div class='gameTitle'>undefined</div>
+        <!--<h4>who</h4>-->Who Who Who<br>PLZ ALL PLZ HELP I DON'T WANT TO<br>popular and Well rated  <br> Click <a href="https://miagaming.itch.io/find-the-silver-3"> here</a> To see The REvieS!!!! is very cute and it's funny when she hides but fu£ÃƒÆ’Ã¢â‚y"<br>- BFind the 4 Fin997</td>
+	
+    <th>
 	<div class="fts4">
-	<iframe frameborder="0" src="https://itch.io/embed/1726718?border_width=5&amp;bg_color=360064&amp;fg_color=ffffff&amp;link_color=f79600&amp;border_color=ff9520" width="560" height="175"><a href="https://miagaming.itch.io/find-the-silver-4">Find The Silvers 4 - Halloween 2022 by Mia</a></iframe>
-	</div>
+	<!--<iframe frameborder="0" src="https://itch.io/embed/1726718?border_width=5&amp;bg_color=360064&amp;fg_color=ffffff&amp;link_color=f79600&amp;border_color=ff9520" width="560" height="175"><a href="https://miagaming.itch.io/find-the-silver-4">Find The Silvers 4 - Halloween 2022 by Mia</a></iframe>
+	-->
+        <a href='https://miagaming.itch.io/find-the-silver-4'><img src="assets/icons/fts4.jpg" width="240" height="240"/></a>
+
+    </div>
 	</th>
-	<td> Find the 4 Find the 4<br>"Find the Silvers has always been a series that's been revolutionizing the genre of hidden object games. But with Find the Silvers 4" "sleep"<br>"This brings it to a whole new level And so impressive that they've always been developed by one person. Why, if they were developed by a number of people that is more than one, like, for example, three, it'd just ruin the franchise. Good thing that'll never happen." - Silver Shorthair, 100 Wow thats a Big Number!</td>
-	</tr>
+	<td>    <div class='gameTitle'>Find The Silvers 4</div>
+    <!--Find the 4 Find the 4<br>-->"Find the Silvers has always been a series that's been revolutionizing the genre of hidden object games. But with Find the Silvers 4" "sleep"<br>"This brings it to a whole new level And so impressive that they've always been developed by one person. Why, if they were developed by a number of people that is more than one, like, for example, three, it'd just ruin the franchise. Good thing that'll never happen." - Silver Shorthair, 100 Wow thats a Big Number!</td>
+	
+    </tr>
     
     
     <tr>
 	<th>
 	<div class="ftstf">
 	<!--<a href="https://github.com/Miastonished/openFTS">open Find The Silvers - by mia</a>-->
-    <iframe frameborder="0" src="https://itch.io/embed/2002188?border_width=5&amp;bg_color=000000&amp;fg_color=00a3e8&amp;link_color=00a3e8&amp;border_color=00a3e8" width="560" height="175"><a href="https://miagaming.itch.io/find-the-silvers-typing-fun">Find The Silvers Typing Fun - Easter 2023 by Mia</a></iframe>
-	</div>
+    <!--<iframe frameborder="0" src="https://itch.io/embed/2002188?border_width=5&amp;bg_color=000000&amp;fg_color=00a3e8&amp;link_color=00a3e8&amp;border_color=00a3e8" width="560" height="175"><a href="https://miagaming.itch.io/find-the-silvers-typing-fun">Find The Silvers Typing Fun - Easter 2023 by Mia</a></iframe>
+	-->
+        <a href='https://miagaming.itch.io/find-the-silvers-typing-fun'><img src="assets/icons/ftstf.png" width="240" height="240"/></a>
+
+    </div>
 	</th>
-	<td>
+	<td>    <div class='gameTitle'>Find The Silvers Typing Fun</div>
     Oh no! the Robot Silvers have Invaded the Small Town of SilverVille<br>
     Use your Typing Skills to remove the Robot Silvers before it is Too Late!
     <br><br>
     "i learn the word "Schizophrenia" With my Buddy Silver!"
     - deranged fan
     </td>
-	</tr>
     
-    <tr>
-	<th>
+    	<th>
 	<div class="ofts">
 	<!--<a href="https://github.com/Miastonished/openFTS">open Find The Silvers - by mia</a>-->
-    <iframe frameborder="0" src="gamembed.html" width="560" height="175"><a href="https://miagaming.itch.io/findthesilver">Find The Silvers - Easter 2021 by Mia</a></iframe>
-	</div>
+    <!--<iframe frameborder="0" src="gamembed.html" width="560" height="175"><a href="https://miagaming.itch.io/findthesilver">Find The Silvers - Easter 2021 by Mia</a></iframe>
+	-->
+    <a href='https://github.com/Miastonished/openFTS'><img src="assets/icons/ofts.png" width="240" height="240"/></a>
+    </div>
 	</th>
-	<td>Find the silvers is back... In pog form!</td>
+	<td>    <div class='gameTitle'>Open Find The Silver</div>
+    Find the silvers is back... In pog form!</td>
+    
 	</tr>
     
+    <!--
     <tr>
 	<th>
 	<div class="ftss">
-	<img src="assets/MAN.png" width="560" height="175"/>
+	<img src="assets/MAN.png" width="240" height="240"/>
 	</div>
 	</th>
 	<td> TBA?!?!</td>
 	</tr>
-    
+    -->
     
 </table>
 
 <br>
 
 </div>
+
 <br><br><br><br>
 <embed class='fish' type='text/html' src='https://silvershorthair.github.io/chumbox.html' width='919' height='354' />
 

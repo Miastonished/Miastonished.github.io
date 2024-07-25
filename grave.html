@@ -1,0 +1,101 @@
+<head>
+<title> にゃ </title>
+<meta name="description" content="(((">
+</head>
+
+
+<style>
+@keyframes rainbowtext{
+    0%  {color: #aa0000}
+    16% {color: #aaaa00}
+    33% {color: #00aa00}
+    50% {color: #00aaaa}
+    66% {color: #0000aa}
+    83% {color: #aa00aa}
+    100%{color: #aa0000}
+}
+@keyframes fadein{
+    from{opacity:0}
+    to  {opacity:1}
+}
+
+html{margin: 0px; padding: 0px;}
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #cccccc;
+    background-color: black;
+    font-size: 32px; /*2em*/
+    font-family: serif;
+    min-height: 100%;
+    max-height: 100%;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+div{ 
+    width: 768px;
+}
+.donation {
+    
+    /*float: right;*/
+    color: #555555;
+    animation: fadein 15s, rainbowtext 30s infinite linear 0.5s;
+    
+    /*font-family: sans-serif;*/
+}
+.Author {
+    color: red;
+    animation: rainbowtext 30s infinite linear;
+}
+#woahzers > span{
+    position: absolute;
+    display: inline;
+    
+}
+
+#AAAA{
+    position: absolute;  
+    left: 0px;
+}
+</style>
+
+<script>
+let dotX = 0;
+let dotC = 255;
+function dup(ob){
+    //console.log(ob);
+    if(dotX < 0){ob.innerHTML="http"; setTimeout(function(){ob.remove()},250); return;}
+    if(dotX == 1500){
+        document.getElementById("woahzers").innerHTML += "<a ID='AAAA' href='javascript:haha();'>\\/</span>";
+        dotX = -1;
+        return;
+    }
+    ob2 = ob.cloneNode(true);
+    dotX+=10;
+    //dotC-=1;
+    ob2.style.left = `${dotX}px`;
+    ob2.style.top = `${50+Math.sin(dotX/100)*40}%`
+    //ob2.style.color = `#${(dotC).toString(16)}${(dotC).toString(16)}${(dotC).toString(16)}`
+    //console.log(ob2.style.left);
+    document.getElementById("woahzers").appendChild(ob2);
+    
+}
+function haha(){
+    document.getElementById('AAAA').innerHTML = btoa(document.getElementById('AAAA').innerHTML);
+    if(document.getElementById('AAAA').innerHTML.length > 5000){
+        document.getElementById('AAAA').innerHTML = "hide";
+        document.getElementById('AAAA').href = "javascript:alert('let me drink faygo11!! how cool is thA !!!! now im playing half lifdeath match and dribking faygO YIPEEE :33333');asdkaosd();";
+    }
+};
+</script>
+
+<div class='container'>
+    <div id='woahzers'>
+        <span style='left: 0px;' onmouseover="dup(this);">/\</span>
+    </div>
+</div>

@@ -34,12 +34,22 @@
         image-rendering: pixelated;
         -ms-interpolation-mode: nearest-neighbor;
     }
-    img {
+    .bttn {
         margin: 4px;
     }
-    img:hover{
+    .bttn:hover{
         outline: solid #a0a 4px;
         background-color: #a0a;
+    }
+    .codebox { 
+        background-color: #444;
+        width: 500px;
+        color: white;
+        text-align: left;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-color: #000;
+        padding: 1em;
     }
 	</style>
 </head>
@@ -55,17 +65,48 @@
 all here free to use <b>with credit</b> :3<br><br>
 <h2> ones for this site :3 </h2>
 download or link to whichever one fits your site the most and make it link to my site :3<br><br>
-<img src="assets/buttons/button.gif" onclick='' height="62px" width="176px"/><br>
-<img src="assets/buttons/button2.png" onclick='' height="62px" width="176px"/><br>
-<img src="assets/buttons/button3.gif" onclick='' height="62px" width="176px"/><br>
+<img class='bttn' src="assets/buttons/button.gif" onclick='' height="62px" width="176px"/><br>
+<img class='bttn' src="assets/buttons/button2.png" onclick='' height="62px" width="176px"/><br>
+<img class='bttn' src="assets/buttons/button3.gif" onclick='' height="62px" width="176px"/><br>
 <!--<img src="assets/buttons/button3.png" onclick='' height="62px" width="176px"/><br>-->
 
 <h2> others :O </h2>
 
-<img src="assets/art/88x31palestine.png" onclick='' height="62px" width="176px"/>
-<img src="assets/art/88x31static.gif" onclick='' height="62px" width="176px"/>
-<img src="assets/art/warningbtn.png" onclick='' height="62px" width="176px"/>
+<img class='bttn' src="assets/art/88x31palestine.png" onclick='' height="62px" width="176px"/>
+<img class='bttn' src="assets/art/88x31static.gif" onclick='' height="62px" width="176px"/>
+<img class='bttn' src="assets/art/warningbtn.png" onclick='' height="62px" width="176px"/>
 
+<br>
+<br>
+<h2 id='special'> special buttons </h2>
+
+<div style='background-image: url("https://miastonished.github.io/assets/art/FTSbutton/BG.png"); width: 88px; height: 31px; position:relative; transform: scale(200%);'>
+    <script>
+    function Find8831(theSilver){
+        theSilver.style.top = `${1+Math.round(Math.random()*15)}px`;
+        theSilver.style.left = `${1+Math.round(Math.random()*77)}px`;
+    }
+    </script>
+    <img src='https://miastonished.github.io/assets/art/FTSbutton/overlay.png' style='position:absolute; top:0; left:0;z-index:1; pointer-events:none;'/>
+    <img src='https://miastonished.github.io/assets/art/FTSbutton/FTS.png' style='position:absolute; top:0; left:0; z-index:1;pointer-events:none;'/>
+    <img src='https://miastonished.github.io/assets/art/FTSbutton/silver.png' onload='Find8831(this);' onclick='Find8831(this);' style='position:absolute; top:1; left:1;'/>
+</div>
+<br>
+<pre>
+<div class="codebox">
+&lt;div style=&apos;background-image: url(&quot;https://miastonished.github.io/assets/art/FTSbutton/BG.png&quot;); width: 88px; height: 31px; position:relative;&apos;&gt;
+    &lt;script&gt;
+    function Find8831(theSilver){
+        theSilver.style.top = `${1+Math.round(Math.random()*15)}px`;
+        theSilver.style.left = `${1+Math.round(Math.random()*77)}px`;
+    }
+    &lt;/script&gt;
+    &lt;img src=&apos;https://miastonished.github.io/assets/art/FTSbutton/overlay.png&apos; style=&apos;position:absolute; top:0; left:0;z-index:1; pointer-events:none;&apos;/&gt;
+    &lt;img src=&apos;https://miastonished.github.io/assets/art/FTSbutton/FTS.png&apos; style=&apos;position:absolute; top:0; left:0; z-index:1;pointer-events:none;&apos;/&gt;
+    &lt;img src=&apos;https://miastonished.github.io/assets/art/FTSbutton/silver.png&apos; onload=&apos;Find8831(this);&apos; onclick=&apos;Find8831(this);&apos; style=&apos;position:absolute; top:1; left:1;&apos;/&gt;
+&lt;/div&gt;
+</div>
+</pre>
 <br>
 details: 88px wide by 31px tall (button standard), if it looks blurry search how to disable interpolation in css
 <!--

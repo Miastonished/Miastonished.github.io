@@ -123,6 +123,8 @@
         
         for(z = 0; z < (150/qual); z++){
             for(a = circlesX.length; a > -1; a--){ //
+                circlesX[a] += Math.random() - 0.5;
+                circlesY[a] += Math.random() - 0.5;
                 if(circlesR2[a] > 0){
                     col = `rgba(${(circlesR[a]-circlesR2[a])*1.5}, 0, 0, 255)`;
                     ctx.fillStyle = col;
