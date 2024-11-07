@@ -1,0 +1,76 @@
+<head>
+	<title>
+    foo
+    </title>
+	<meta name="description" content="foo manny">
+	<!--<link rel="icon" type="image/x-icon" href="assets/favicon.ico">-->
+	<style>
+    
+    @keyframes fall {
+        0% {background-position-y: 0px;}
+        100% {background-position-y: 128px;}
+    }
+    
+    
+	html, body {margin:0;padding:0; min-height:100%;}
+	.header {background-image:linear-gradient(black, rgba(0, 0, 0, 0)); height: 200px; width: 100%;}
+	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), black ); height: 200px; width: 100%; position: absolute; bottom: 0px; pointer-events:none;}
+	body {background-color: #00601a;color:black; background-image: url(assets/art/bgInh.png); background-size: 16px;
+    
+        background-position-y: 0px;
+        animation: fall 10s linear infinite;
+    
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+        }
+	.white {color:rgba(0,0,0,0)}
+	th{text-align: center;font-weight: normal}
+	.links{background-color: #550000 ;color: black;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block}
+	a{color:black }
+	button{background-color: #550000 ; font-family: funny}
+
+    h1{color: #abCDe2}
+
+	</style>
+</head>
+<body>
+<center>
+<div class="header"></div>
+<div class="footer"></div>
+	<br>
+	<center>
+	<h1> INHERITANTS </h1>
+	</center>
+	<br>
+<h2>
+<a href='javascript:void(0);' onclick='load();'>LOAD PREVIOUS 10 </a> <br>
+<span id='loadHere'></span>
+<br>
+<s><a href='mypage.html'>Miriam</a></s> <br>
+<a href='home.html'>Mia</a> <br>
+<a href='blazeStr.html'>Blaze</a> <br>
+</h2>
+
+
+</center>
+
+<script>
+function load(){
+
+document.getElementById('loadHere').innerHTML = "Loading...";
+setTimeout(successload, (Math.random()*2000)+2000 );
+}
+
+function successload(){
+document.getElementById('loadHere').innerHTML = "XML Parsing Error: syntax error <br>\
+Location: /home/JDSFODSKOSDK/.inheritants.xml<br>\
+Line Number 1, Column 1: <br>\
+Stop it. No$% <br>\
+^";
+}
+</script>
+
+</body>

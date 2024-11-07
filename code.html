@@ -81,7 +81,56 @@
         transform: rotate(1deg);
     }
     */
+    
+    @keyframes rainbowtext{
+        0%  {color: #aa0000}
+        16% {color: #aaaa00}
+        33% {color: #00aa00}
+        50% {color: #00aaaa}
+        66% {color: #0000aa}
+        83% {color: #aa00aa}
+        100%{color: #aa0000}
+    }
 
+    .rainbowtext{
+        animation: rainbowtext 5s infinite linear;
+    }
+
+    @keyframes squish{
+        0%  {transform: scale(0.8, 1.2)}
+        50%  {transform: scale(1.2, 0.8)}
+        100%  {transform: scale(0.8, 1.2)}
+    }
+    @keyframes spin{
+        0%  {transform: scaleX(-1)}
+        50%  {transform: scaleX(1)}
+        100%  {transform: scalex(-1)}
+    }
+    @keyframes spin2{
+        0%  {transform: rotateY(0deg)}
+        100%  {transform: rotateY(360deg)}
+    }
+    
+    .spinny{
+        animation: spin 1s infinite linear;
+        display: inline-block;
+    }
+    .spinny2{
+        animation: spin2 1s infinite linear;
+        display: inline-block;
+    }
+    
+    .squishy{
+        animation: squish 1s infinite ease-in-out;
+        display: inline-block;
+    }
+    
+    .destroyerz, th, td{
+        border:5px solid #dddddd;
+        background-color: #c3c3c3;
+        border-collapse: collapse;
+        border-style: outset;
+    }
 	</style>
 	<script> 
 	var pee = 0;
@@ -107,17 +156,44 @@
 </div>
 <center><br>
 <div class="middle">
-<a href='javascript:async function BS(){await fetch("./post.php",{"headers":{"Content-Type":"application/x-www-form-urlencoded;",},"body":"text=bataspam v3","method": "POST",});};BS();BS();BS();BS();BS()'>Bataspam III</a> (Bookmark thing)
+<!--<a href='javascript:async function BS(){await fetch("./post.php",{"headers":{"Content-Type":"application/x-www-form-urlencoded;",},"body":"text=v3","method": "POST",});};BS();BS();BS();BS();BS()'>uesles</a> (Bookmark thing)-->
 
-<br><br>
 <span style="color:black">web destroyerz (drag them 2 ur bookmarkz): </span><br>
-<a href="javascript:void(function(){ a = '10000%'; document.getElementsByTagName('html')[0].style.filter = 'contrast('+a+')'; })();">Page Deepfrier</a>
-<br>
-<a href="javascript:void(function(){ b = prompt('how many degrees? (99 is rlly cool)', '1'); for (let i = 0; i < document.all.length; i++) { try{ document.all[i].style.transform='rotate('+b+'deg)'} catch{} } })();">Page Rotater</a>(takes a second)
-<br>
-<a href="javascript:void(function(){ b = prompt('how round?', '15'); for (let i = 0; i < document.all.length; i++) { try{ document.all[i].style.borderRadius=b+'px'} catch{} } })();">Corner Rounder</a>(also takes a second)
-<br>
-<a href="whiteOverlay.user.js">White Overlay</a>(Userscript, adds an annoying white gradient over every page, inspired by Xbox 360)
+
+<table class='destroyerz'>
+ <tr>
+  <th>
+   <a href="javascript:void(function(){ a = '10000%'; document.getElementsByTagName('html')[0].style.filter = 'contrast('+a+')'; })();">Page Deepfrier</a>
+  </th>
+ </tr>
+ 
+ <tr>
+  <th>
+   <a href="javascript:void(function(){ b = prompt('how many degrees? (99 is rlly cool)', '1'); for (let i = 0; i < document.all.length; i++) { try{ document.all[i].style.transform='rotate('+b+'deg)'} catch{} } })();">Page Rotater</a>
+  </th>
+  <td>
+   (takes a second)
+  </td>
+ </tr>
+ 
+ <tr>
+  <th>
+   <a href="javascript:void(function(){ b = prompt('how round?', '15'); for (let i = 0; i < document.all.length; i++) { try{ document.all[i].style.borderRadius=b+'px'} catch{} } })();">Corner Rounder</a>
+  </th>
+  <td>
+   (also takes a second)
+  </td>
+ </tr>
+ 
+ <tr>
+  <th>
+   <a href="whiteOverlay.user.js">White Overlay</a>
+  </th>
+  <td>
+   (Userscript, adds an annoying white gradient over every page, inspired by Xbox 360)
+  </td>
+ </tr>
+</table>
 
 <!-- document.all.style.transform='rotate('+b+'deg)' ||null; -->
 <br><br>
@@ -236,7 +312,7 @@ slider.oninput = function() {
 stuff to embed on you're site!!!!!!!!!!!!!! :333
 <br><br>
 <div class='ftsembed'>
-<h3>find the silver js!</h3>
+<h3>find the silver js! (supa broken)</h3>
 <!--<a href="javascript:ZmluZA=document.createElement('div');ZmluZA.outerHTML = `<script onload='fts();' src='https://miastonished.github.io/fts.js'></script>`;document.body.appendChild(ZmluZA);">
 fun
 </a>-->
@@ -287,7 +363,7 @@ while 1:
 #python
 </div>
 </pre>
-<h3>cool css rainbow text animation</h3>
+<h3 class='rainbowtext'>cool css rainbow text animation</h3>
 <pre>
 <div class="codebox" id="c4">
 @keyframes rainbowtext{
@@ -303,7 +379,35 @@ while 1:
 </div>
 </pre>
 
+<h3> squeesh <span class='squishy'>🐱</span></h3>
+<h3> speen <span class='spinny'>😛</span></h3>
+<!--<h3> spin2 <span class='spinny2'>😲</span></h3>-->
 
+<pre>
+<div class="codebox" id="c5">
+    @keyframes squish{
+        0%  {transform: scale(0.8, 1.2)}
+        50%  {transform: scale(1.2, 0.8)}
+        100%  {transform: scale(0.8, 1.2)}
+    }
+    @keyframes spin{
+        0%  {transform: rotateY(0deg)}
+        100%  {transform: rotateY(360deg)}
+    }
+    
+    .spinny{
+        animation: spin 1s infinite linear;
+        display: inline-block;
+    }
+    
+    .squishy{
+        animation: squish 1s infinite ease-in-out;
+        display: inline-block;
+    }
+</div>
+</pre>
+
+    
 <!--
 <textarea>
 aHR0cHM6Ly9taWFzdG9uaXNoZWQuZ2l0aHViLmlvLyU3MCU3NSU2NyU1NCUxMSUyNCU0NiUzMSUzNSUxOCU2NyUxMSU1OSU0MSU2OSUzMyU0MyU3OCUzMCU2OCU1MiUxOCU3MSUyNiUxNCU2MyUyOSU0NCUyNyUzNiU1NSU1MCUxMiUyNyU1NiUzNCU0OSU0NyUyOSU2NiUxNyUxMyU3OCU2MiUzMCUxMiU2MiU1MyUyMyU2NyU3MiUxNSU1NCU1MCU3MSU1OCUzOCUyMyU2NSU2MCU1MiUuaHRtbA==
@@ -312,6 +416,8 @@ aHR0cHM6Ly9taWFzdG9uaXNoZWQuZ2l0aHViLmlvLyU3MCU3NSU2NyU1NCUxMSUyNCU0NiUzMSUzNSUx
 </div>
 
 </center>
+
+<!--
 <div id="funny">
 <script>
 function funny(){
@@ -322,7 +428,8 @@ function funny(){
 }
 funny();
 </script>
-</div>
+</div>-->
+
 <div> <!--class="footer"-->
 <br><br><br><br><br>
 </div>

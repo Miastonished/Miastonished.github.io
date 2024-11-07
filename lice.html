@@ -131,18 +131,22 @@
 </div>
 
 <script>
+
+au = new Audio('assets/error.mp3')
+au.volume = 0.1;
+
 function left(){
     const loose = document.createElement("div");
     loose.classList.add("left");
     document.body.appendChild(loose);
-    new Audio('assets/error.mp3').play();
+    au.play();
     setTimeout(() => { loose.remove(); }, "600");
 }
 function right(){
     const tight = document.createElement("div");
     tight.classList.add("right");
     document.body.appendChild(tight);
-    new Audio('assets/error.mp3').play();
+    au.play();
     setTimeout(() => { tight.remove(); }, "600");
 }
 </script>
