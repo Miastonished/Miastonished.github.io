@@ -99,6 +99,19 @@
     }
 	</style>
     
+    <!--<script src='raspberries.js' type='text/javascript'></script>-->
+    
+    <script>
+    function rasp(){
+        localStorage.setItem("blueRaspberry","True")
+        window.location.href = "raspberry.html";
+    
+    }
+    
+    
+    
+    </script>
+    
     
     
 </head>
@@ -139,7 +152,7 @@
     
 	<th>
 	<div class="sokro">
-	<div class='raspb'></div>
+	<div class='raspb' onclick='rasp();'></div>
 	</div>
 	</th>
 	<td> maybe game coming soon </td>

@@ -1,0 +1,179 @@
+<head>
+	<title>
+    Raspberries - Mia's EPIC Site
+    </title>
+	<meta name="description" content="find the [raspberries] caN you Finde [them] HFInd hte [raspberries] yes">
+    <link rel="icon" type="image/png" href="assets/icons/games.png"/>
+	<style>
+	html, body {margin:0;padding:0; min-height: 100%;}
+	.header {background-image:linear-gradient(#000000 10%,#FFFFFF 20%, rgba(0, 0, 0, 0) 30%)}
+	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #2a8000)}
+	body {
+		background-image:linear-gradient(0deg, rgba(0,0,0,0) 0%, #000 10%, #000 95%, rgba(0,0,0,1) 100%),url(assets/week1.png);
+		background-color: black;
+		color: white;
+	}
+	.white {color:rgba(0,0,0,0)}
+	th{text-align: center;font-weight: normal; background:black;}
+    
+	.links{
+        /*background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,0,255,1) 50%, rgba(0,0,0,1) 100%);*/
+        color: white;padding: 5px 100px;background-image: url('assets/img/glitter3.png');text-align: center;text-decoration: none;display: inline-block;
+        background-color: #aaa;
+        }
+	a{color:#BCBCBC}
+	button{background-color: #00ff00}
+	h1{
+	    color: purple;
+	}
+	.p1{
+	    color: white;
+	}
+	.p2{
+	    color: white;
+	}
+	.thething{
+	    color: black;
+	}
+	td{
+		background-color: black;
+		width: 240px;
+        height: 240px;
+		text-align: center;
+        position: relative;
+        background-size: 240px 240px;
+        padding:0px;
+	}
+    th{
+        font-weight: bold;
+        font-family: arial;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    #rText, #yText, #pText, .unavaliable {
+        color: #444;
+    }
+    .locked {
+        color: #500;
+    }
+
+    .tableLink > *{
+        text-decoration: none;
+        color: #444;
+    }
+    .tableLink{
+        font-size: 14px;
+        
+    }
+    
+    #gR{
+        width:100%;
+        height:240px;
+        background-size: 240px 240px;
+    }
+	</style>
+    
+    <script src='raspberries.js' type='text/javascript'></script>
+    
+</head>
+
+<div> <!--class="header"--->
+	<br><!--
+	<center>
+	<span id="menulinks">THEY'RE GOOD FOR YOUUUU</span>
+	<script src="links.js" type="text/javascript"></script>	</center>
+	<br>-->
+</div>
+<center>
+<div class="GamesPLAS">
+
+
+If you have gotten to this page then you have found one of the raspberries :3 <br>
+<!--There are raspberries hidden around the website :3<br>
+<br>
+If this is your first time here, or the indicator says "No data",<br>
+you will need to <a href='javascript:init()'>click here to enable site cookies</a> in order for them to count<br>
+Once you have done that, go back a page and follow the steps it took to get to this page again<br>
+It should then show up in the table below :3<br>-->
+<br>
+Raspberries with a <span class='unavaliable'>dark grey</span> text colour aren't yet obtainable<br>
+Raspberries with a <span class='locked'>dark red</span> text colour are ones you haven't found yet<br>
+If the text is any other colour, and an image shows above it, then you've found that raspberry :3<br><br>
+
+
+ 
+<table style="background-image:url(assets/img/glitter3.png);">
+    <tr>
+    <th id='Data'>~ LOADING ~</th>
+    <th class='tableLink'><a href='home.html'>MAIN PAGE</a></th>
+    <th class='tableLink'><a href='games.html'>GAMES</a></th>
+    <th class='tableLink'><a href='code.html'>RANDOM CODE STUFF</a></th>
+    <th class='tableLink'><a href='aboutme.html'>ABOUT ME</a></th>
+    </tr>
+	<tr>
+        <td class="raspberrySlot" id="red"> </td>
+        <td class="raspberrySlot" id="yellow"> </td>
+        <td class="raspberrySlot" id="green">
+            <div id="gR"></div>
+        </td>
+        <td class="raspberrySlot" id="blue"> </td>
+        <td class="raspberrySlot" id="purple"> </td>
+    </tr>
+    <tr>
+        <th id="rText"> Red Raspberry </th>
+        <th id="yText"> Yellow Raspberry </th>
+        <th id="gText"> Green Raspberry </th>
+        <th id="bText"> Blue Raspberry </th>
+        <th id="pText"> Purple Raspberry </th>
+    </tr>
+    
+</table>
+</div>
+</center>
+
+<!-- DATA LOADED ✔ -->
+
+<script>
+dtlLDsfokasdLQWeqlwE = document.getElementById('Data');
+
+loadData();
+
+function loadData(){
+    
+    
+    if ( localStorage.getItem('blueRaspberry') == "True"){
+        document.getElementById("blue").style.backgroundImage = "url(assets/raspberries/blueRaspberry.jpg)";
+        document.getElementById("bText").style.color = "#00A";
+    } else {
+        document.getElementById("bText").style.color = "#500";
+    }
+    if (localStorage.getItem('greenRaspberry') == "True"){
+        document.getElementById("green").style.backgroundImage = "url(assets/raspberries/greenRaspberry.png)";
+        document.getElementById("gR").style.backgroundImage = "url(assets/raspberries/greenRaspberry.gif)";
+        document.getElementById("gText").style.color = "#0A0";
+    } else {
+        document.getElementById("gText").style.color = "#500";
+    }
+    
+    dtlLDsfokasdLQWeqlwE.innerHTML = "Data Loaded";
+    
+    /*} else {
+        dtlLDsfokasdLQWeqlwE.innerHTML = "No data";
+    }*/
+    
+}
+
+function gRGl(){
+    if(Math.random() > 0.05){
+        gR.style.display = 'none';
+    } else {
+        gR.style.display = 'inline-block';
+    }
+    setTimeout(function(){gRGl()}, 50);
+}
+gRGl();
+
+
+
+</script>
