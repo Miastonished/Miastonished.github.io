@@ -3,7 +3,9 @@
     Mia's EPIC Site
     </title>
 	<meta name="description" content="This site is very epic!">
-    <meta http-equiv="onion-location" content="https://miastonished.github.io/test.onion"/>
+    <!--<meta http-equiv="onion-location" content="https://miastonished.github.io/test.onion"/>-->
+    <!-- what was i trying to do? -->
+    
     <link href="osd.xml" rel="search" title="Miastonished" type="application/opensearchdescription+xml"/>
     <link rel="icon" type="image/png" href="assets/icons/index.png"/>
 	<script>
@@ -133,7 +135,7 @@
         /*box-shadow: 0px 5px 10px 0px black;*/
     
     }
-    .webring > a {
+    .webringlink {
         height: 124px;
         font-size: 20px;
         background: #ff00ff22;
@@ -192,7 +194,7 @@
 	}
 	.menu{
 		background-color: #cc020200;
-        background-image: url('assets/art/index/top.png');
+        background-image: url('assets/art/index/top5.png');
         background-size: 100% 100%;
 		width: 1300px;
         
@@ -260,6 +262,7 @@
         width: 560px;
         height: 397px;
         background:white;
+        color:black;
         padding: 5px;
         border-radius: 25px 25px 25px 25px; 
         border-style: none none solid none;
@@ -321,13 +324,12 @@
     .piercing{
         border-radius: 10px 50px 10px 10px;
         border-width: 4px;
-        border-style: solid;
-        background-color: #000;
-        border-color: #440000;
-        width: 136px;
+        width: 162px;
         position: absolute; top: 5px; right: 5px;
-        height: 141.933px;
-        padding: 6px 8px;
+        height: 162px;
+        background-image:url(assets/art/index/piercing.png);
+        background-size: 162px;
+
     }
     .transring{
         position: absolute;
@@ -362,23 +364,20 @@
 
     }
     .blogurl{
-        padding:0px;
-		background-color: #800000;
+		background-color: black;
 		width: 700px;
         height: 316px;
-		border-radius: 25px 25px 25px 25px;
-        border-style: solid none none none;
-        border-width: 10px;
-        border-color: #560101;
-        background-image:url('assets/art/index/blog5.png');
+        background-image:url('assets/art/index/blog8.png');
         background-size: 100%;
         color: red;
         font-size: 50px;
+        position: relative;
 	}
-    .blogurl > p {
-        
-        margin: 30px;
-        text-align: left;
+    .blogurl > a {
+        position: absolute;
+        top:100px;
+        left:100px;
+        color: 660101;
     }
 	</style>
 </head>
@@ -413,9 +412,9 @@
 
 <div class="linkies"> 
 <span href="webring.html" class="webring">
-<a href='https://stellaring.network/previous/'>◄prev</a>
-<img src="assets/buttons/button.gif" height="124px" width="352px"/>
-<a href='https://stellaring.network/next/'> next►</a>
+<a class='webringlink' href='https://stellaring.network/previous/'>◄prev</a>
+<a href='mybuttons.html'><img src="assets/buttons/button.gif" height="124px" width="352px"/></a>
+<a class='webringlink' href='https://stellaring.network/next/'> next►</a>
 
 <!--webring links <s>css</s> coming soon <s>WIP</s>-->
 
@@ -457,23 +456,22 @@
   <h3>-- NEWS / CHANGELOG --</h3>
   <div class='blogurl'>
     <!--<p>THIS IS WHERE MY FUCKING BLOG WILL GO</p>-->
-    <p><a style='color:red;' href='blog.html'> updATES</a></p>
+    <a href='blog.html'> site updatess</a>
     
   </div>
   
     <br>
-    as you can see, this site is updated regularly :3
+    as you can (no longer) see, this site is updated regularly :3
   
 </div>
 <div class="footer">
 <div class="bottom">
 <h3>-- NOTES FOR THE SITE --</h3>
 This site is best viewed on desktop. Most of it looks horrible on mobile<br>
-<span title="DISREGARD THIS: but you can look at the console log thingy thats fine :grin:">Don't look at the HTML in inspect element it will spoil secrets for you and doesn't hide anything useful</span><br>
+<span title="DISREGARD THIS IT IS NO LONGER TRUE: but you can look at the console log thingy thats fine :grin:">Don't look at the HTML in inspect element it will spoil secrets for you and doesn't hide anything useful</span><br>
 <!-- I'm being serious -->
 Bugs and stuff can be reported to me (Contact is on about me (not yet im working on it (okey done)))<br>
-<span id="farty" title="like hovering over certain text 😲">Some secrets are hidden very poorly</span>
-
+<span id="farty" title="like hovering over certain text 😲">Some secrets are hidden very horribly</span><br>
 
 <br>
 <br>
@@ -482,12 +480,13 @@ Bugs and stuff can be reported to me (Contact is on about me (not yet im working
   
 <!--<blockquote class="twitter-tweet" data-lang="ar" data-theme="dark"><p lang="en" dir="ltr">i just realised how deep connect 4 is like you are literally connnecting peoples souls <a href="https://twitter.com/hashtag/deep?src=hash&amp;ref_src=twsrc%5Etfw">#deep</a></p>&mdash; (@) <a href="">١٠ يناير ٢٠٢٢</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
 <div class="tumblr-post-thing">
-<a id='tumbl' onclick='loadTumblr();'>click to load tumblr embed (takes a sec to appear) </a>
+<p title='this used to hold social media posts but i ated them'>this space left unintentionally blank</p>
+<!--<a id='tumbl' onclick='loadTumblr();'>click to load tumblr embed (takes a sec to appear) </a>-->
 </div>
 
 <script>
 function loadTumblr(){
-    document.getElementById(`tumbl`).outerHTML = `<div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/Bv3d9F2Ebo9-KItRNAH4xw/701242285150650368" data-language="hi_IN"><a href="https://awnemia.tumblr.com/post/701242285150650368/mia-is-it-true-that-you-are-the-developer-of-the">LOADING TEH EPIX TUMBLAH POSTZ &lt;W&gt;</a></div>`
+    document.getElementById(`tumbl`).outerHTML = `i no longer use tumblr this code is EVIL and fucked up &lt;W&gt;</a></div>`
     var tag = document.createElement("script");
     tag.src = "https://assets.tumblr.com/post.js";
     document.getElementsByTagName("head")[0].appendChild(tag);
@@ -656,7 +655,7 @@ LILITH 2024 <br>
 <script>
 	setTimeout(() => {
 	var farty = document.getElementById("farty");
-	farty.innerHTML = "Some secrets are hidden very poorly (Like waiting a while on a page 😭)";
+	farty.innerHTML = "Some secrets are hidden very horribly (Like waiting a while on a page 😭)";
 	}, "30000");
     function silly(){
         document.getElementById('haiix3').innerHTML = "<img src='assets/art/header.png'/><br>"

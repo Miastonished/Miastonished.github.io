@@ -4,6 +4,7 @@ Disallow: /
 
 User-agent: *
 User-agent: AdsBot-Google
+User-agent: FirecrawlAgentwin 10
 Disallow: /
 
 User-agent: Googlebot

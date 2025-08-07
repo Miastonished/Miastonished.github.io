@@ -4,75 +4,89 @@
     </title>
 	<meta name="description" content="WARNING: FRAGILE">
 	<script>
-	function title(){
-		document.title = ""+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+" Mia's EPIC Site "+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random())+Math.round(Math.random());
-		setTimeout(title, 100);
-	}	
-	title()
-	function farty(x) {
+
+	function funny(x) {
 		x.src = "ass";
 		x.onmouseover = "";
-		setTimeout(() => {  x.innerHTML = "<img src='assets/slightly-smiling-face.png' width='100px'/>"; }, 200);
-		setTimeout(() => {  x.href = "yolo.html"; }, 2000);
+		setTimeout(() => {  x.style.transform = "skewx(140deg)"; }, 1000);
+        setTimeout(() => {  x.style.transform = "skewx(-140deg)"; }, 1050);
+
+		setTimeout(() => {  x.style.transform = "skewx(0deg)"; }, 1100);
+		setTimeout(() => {  x.innerHTML = ""; }, 1100);
+        setTimeout(() => {  x.style.backgroundImage = "url('assets/slightly-smiling-face.png')"; }, 1100);
+        setTimeout(() => {  x.style.backgroundColor = "black"; }, 1100);
+
+		setTimeout(() => {  window.location.href= "yolo.html"; }, 2500);
+        c = 1;
+        
+        for(b=1; b < 50; b++){
+            console.log(b);
+            z = 2100 + (b * 50)
+            setTimeout(() => {  x.style.transform = `scale(${1+c})`; c++; }, z);
+        }
 	}	
-	function farty2(x) {
+	function funny2(x) {
 		x.onmouseover = "";
 		setTimeout(() => {  x.innerHTML = "PRA ISE THE FUNNY MAN"; }, 200);
 		setTimeout(() => {  x.href = "yolo.html"; }, 2000);
 	}
 	</script>
 	<style>
-	html, body {margin:0;padding:0;}
-	.header {background-image:linear-gradient(#bf0000, rgba(0, 0, 0, 0))}
-	.footer {background-image:linear-gradient(rgba(0, 0, 0, 0), #000)}
-	body {background-color:#800000;color:#ffffff}
-	.white {color:rgba(0,0,0,0)}
-	th{text-align: center;font-weight: normal}
-	a{background-color: #f44336;color: white;padding: 5px 100px;text-align: center;text-decoration: none;display: inline-block;border-radius: 10px;}
-	.news{
-		background-color: #660101;
-		width: 1000px;
-		border-radius: 0px 0px 25px 25px;
-		padding-top: 10px;
-		padding-bottom: 50px;
+	@font-face {
+		font-family: funny;
+		src: url(assets/funny.ttf);
 	}
-	.toparea{
-		background-color: #a30000;
-		width: 1250px;
-		border-radius: 0px 0px 25px 25px;
-		padding-top: 0px;
-		padding-bottom: 25px;
-	}
-	.menu{
-		background-color: #cc0202;
-		width: 1300px;
-		border-radius: 0px 0px 25px 25px;
-		padding-top: 70px;
-		padding-bottom: 10px;
-	}
-	.bottom{
-		background-color: #450000;
-		width: 750px;
-		border-radius: 0px 0px 25px 25px;
-		padding-top: 10px;
-		padding-bottom: 50px;
-	}
-	.linkies{
-		background-color: #cc0202;
-		width: 1000px;
-		border-radius: 0px 0px 25px 25px;
-		padding-top: 1px;
-		padding-bottom: 10px;
-	}
-	/*.topshelfspyvoiceline{
-		background-color: #a30000;
-		border-radius: 0px 0px 25px 25px;
-		padding-top: 1px;
-		padding-bottom: 10px;
-	}*/
+	html, body {margin:0;padding:0; height: 100%; width: 100%;}
+    body{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #000;
+        font-family: Arial;
+        
+        
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+    .welcBox{
+        height: 500px;
+        width: 500px;
+        background-color: #900;
+        text-align: center;
+        background-image: url(assets/art/index/intro.png);
+        background-size: 100%;
+    }
+    a{
+        color: #d00;
+        text-decoration: none;
+    }
 	</style>
 </head>
+<body>
 
+<div class='welcBox' onmouseover='funny(this);'>
+<br><br><br>
+<center>
+<h2>WELCOME TO MIAS EPIC SITE!!!</h2><br>
+This website uses iframes (not many) and javascript.<br>
+It was made for a 1920 by 1080 screen and Firefox <br>
+May not look too good on other screensizes/browsers xP<br>
+It contains lots of gifs and some fast moving stuff!<br>
+
+<h1><a href='javascript:void(0);'>[ Enter ➤ ]</a></h1>
+<h4><a href='javascript:void(0);'>[ Super Minimal Site ➤ ]</a></h4>
+
+<noscript> (the super minimal site looks good on lynx,,,, just sayingggg))))) </noscript>
+</center>
+<br>
+
+</div>
+
+<!--
 <div class="header">
 	<center>
 	<div class="menu">
@@ -115,7 +129,7 @@
 <h3 onmouseover="farty(this);" >-- NOTES FOR THE SITE --</h3>
 This site is best viewed on desktop. Certain things don't look good on mobile<br>
 <span title="but you can look at the console log thingy thats fine :grin:">Viewing the HTML is not a way to find secrets</span><br>
-<!-- I'm being serious -->
+<!-- I'm being serious 
 Bugs and stuff can be reported to me (Contact is on about me)<br>
 <span id="farty" title="like hovering over certain text 😲">Some secrets are hidden very sneakily</span>
 
@@ -137,4 +151,5 @@ if u cant see this u need to check ur eyes
 	var farty = document.getElementById("nope");
 	farty.innerHTML = "winkywinkybumbumpoopootiddytiddywinkywinkybumbumpoooo";
 	}, "30000");
-</script>
+</script>-->
+</body>

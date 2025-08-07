@@ -6,13 +6,15 @@
 	<link rel="icon" type="image/x-icon" href="assets/favicon.ico"></head>
 <body>
 <center>
+<h1> DO NOT ATTEMPT TO APPROACH THE CORE </h1>
+<p> We will be redirecting you in <span id='countdown'>5</span> seconds to a random location.
+<br>Do not attempt to circumvent this redirection. Exposure to the core may result in injury or death.</p>
+
+<a id="delete" title="is this some king of door that opens when theres no power" href="cone.html">Core lock status unable to be verified. Granting Access</a>
 </center>
 <script>
 const redirects = [
   "https://www.youtube.com/watch?v=dMUi2PFOGew",
-  "https://silvershorthair.github.io",
-  "https://silvershorthair.github.io",
-  "https://silvershorthair.github.io",
   "https://silvershorthair.github.io",
   "https://www.reddit.com/r/ProgrammerHumor/comments/y26na6/we_turned_off_our_old_jenkins_server_today_we/",
   "game.html",
@@ -22,44 +24,59 @@ const redirects = [
   "https://appadvice.com/app/flippy-block/1142480464",
   "https://www.trustpilot.com/review/appadvice.com",
   "https://github.com",
-  "TheReal/TheReal/TheReal/TheReal/TheReal/TheReal/TheReal/TheReal/TheReal/TheReal/TheReal/TheReal/TheReal/TheReal/core.html",
   "https://www.google.com/search?q=how+to+install+free+javascript+plugin+magento+4+themes+and+webservice",
-  "https://www.google.com/search?q=I+CAN+HAZ+CHEEZBURGARRR+LULLZZZ",
-  "https://www.youtube.com/c/MattRoseStuff",
-  "15infantry.php",
+  "https://www.google.com/search?q=I+CAN+HAZ+CHEEZBURGERZ",
   "https://www.reddit.com/r/KGATLW/",
-//  "file:///C:/",
-//  "chrome://dino/",
   "https://tcrf.net/images/c/c9/HPSSWin-harhar.png",
-  "https://www.webmd.com/urinary-incontinence-oab/ss/slideshow-incontinence-frequent-pee",
-  "https://www.dignityhealth.org/conditions-and-treatments/womens-services/gynecology/bladder-issues",
   "https://www.cancer.org/treatment/understanding-your-diagnosis/lymph-nodes-and-cancer.html",
   "https://www.youtube.com/c/TheRealDaytime/about",
   "https://www.google.com/search?q=finally+its+working+ambergris",
   "https://www.echemi.com/cms/40233.html",
   "https://www.youtube.com/watch?v=zNaecx7MzVM",
-  "https://www.slideshare.net/Will917/december-12th-2014",
-  "portfolio.html",
-  "https://youtube.com/@Silly915?sub_confirmation=1",
   "https://www.crosswordsolver.org/clues/v/very-silly.315280",
   "https://crossword-solver.io/clue/very-silly/",
   "https://www.the-crossword-solver.com/word/very+silly",
   "https://www.danword.com/crossword/Very_silly",
   "https://crosswordgenius.com/clue/very-silly",
   "https://www.wordplays.com/crossword-solver/very-silly",
-  "https://soundcloud.com/silly917/rain/",
-  "https://soundcloud.com/silly917/rain/",
   "https://www.java.com/en/download/help/disable_browser.html",
   "https://google.com/search?=do+a+brarrel+roll",
-  "https://www.google.com/search?q=https%253A%252F%252Fmiastonished.github.io",
-  "https://gumi.gay",
-  "maggots.html",
-  "butter.png"
+  "butter.png",
+  "https://scryfall.com/card/one/10/elesh-norn-mother-of-machines",
+  "https://www.youtube.com/watch?v=_9LNhuRpHfw",
+  "https://deltarune.com/",
+  "https://store.epicgames.com/en-US/p/fortnite",
+  "https://en.wikipedia.org/wiki/Trollface",
+  "https://dotesports.com/valorant/news/how-to-uninstall-valorant",
+  "https://github.com/chillycontro/evil-mario-virus",
+  "https://www.girlsgogames.com/game/labubu-doll-mukbang-asmr-unblocked",
+  "https://wallpapercave.com/red-bull-racing-logo-wallpaper",
+  "https://learn.microsoft.com/en-us/answers/questions/5509248/i-really-want-very-much-to-disable-all-of-the-copi",
+  "https://web.archive.org/web/20211001044805/https://forums.cgsociety.org/t/plz-all-plz-help-i-dont-wanna-throw-my-computer-away/1286967",
+  "https://www.wikihow.com/Disable-JavaScript",
+  "https://learn.microsoft.com/en-us/microsoft-edge/devtools/javascript/disable",
+  "https://support.mozilla.org/en-US/questions/994809",
+  "https://duckduckgo.com/?q=disable+javascirpt+its+rui+n+ning+my+l+i+fe",
+  "https://www.wikihow.com/Block-Page-Redirects"
+  
 ];
+
+document.getElementById('delete').remove();
 min = Math.ceil(0);
 max = Math.floor(redirects.length);
-fart2 = Math.floor(Math.random() * (max - min) + min);
-fart = redirects[fart2];
-window.location.replace(fart);
+url = redirects[Math.floor(Math.random() * (max - min) + min)];
+
+ctd = 5;
+const counterElem = document.getElementById('countdown');
+
+function countdownz(){
+    counterElem.innerHTML = ctd;
+    ctd--;
+    if(ctd + 1){ setTimeout(countdownz, 1000) } else { window.location.replace(url) };
+}
+
+countdownz();
+//i have such good variable names
+//i changed it but the variable names used to all be like fart and such
+
 </script>
-<a href="cone.html">YOU HAVE ERROR CLICK _ EXCEPTION _ TO RESOLVE"DO NOT</a>

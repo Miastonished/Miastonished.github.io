@@ -1,0 +1,36 @@
+
+body{
+    
+    color: black;
+    background-color: #ffffaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+}
+
+.regenesis {
+    background-color: #222200;
+    color: #bb0000;
+    width: 1000px;
+    outline: 10px #111100 solid;
+    position: relative;
+    left: -140px;
+}
+.invis {
+    color: #ffffff00
+    
+}
+
+.main{
+    width:720px;
+    
+    
+}
+
+.banner{
+    width: 720px;
+    height: 90px;
+    background-color: black;
+    background-image: url('assets/art/arch.png');
+}

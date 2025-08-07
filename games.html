@@ -85,6 +85,7 @@
         height:240px;
         filter: brightness(0%);
         transition: filter 1s;
+        cursor: pointer;
     }
     .raspb:hover{
         filter:brightness(50%);
@@ -103,9 +104,8 @@
     
     <script>
     function rasp(){
-        localStorage.setItem("blueRaspberry","True")
+        localStorage.setItem("blueRaspberry","True");
         window.location.href = "raspberry.html";
-    
     }
     
     

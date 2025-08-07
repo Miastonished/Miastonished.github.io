@@ -1,0 +1,121 @@
+<head>
+	<title>
+    REMOVAL - Mia's EPIC Site 
+    </title>
+	<meta name="description" content="kf kof iqowe asdkfok dsopdsfopks odkfpasdfopasd">
+	<style>
+	@font-face {
+		font-family: funny;
+		src: url(assets/funny.ttf);
+	}
+	html, body {margin:0;padding:0; height: 100%; width: 100%;}
+    body{ 
+        display: flex;
+        color:white;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #000;
+        font-family: Arial;
+        
+        
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+    #welcBox{
+        height: 500px;
+        width: 500px;
+        background-color: #900;
+        text-align: center;
+        background-image: url(assets/art/index/remove.png);
+        background-size: 100%;
+        color: white;
+        opacity: 1;
+    }
+    #fakeWelcBox{
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        background-color: #900;
+        text-align: center;
+        background-image: url(assets/art/index/remove2.png);
+        background-size: 100%;
+        color: white;
+        z-index: -1;
+        opacity: 1;
+        transition: opacity 3s;
+    }
+    a{
+        color: #d00;
+        text-decoration: none;
+    }
+	</style>
+</head>
+<body>
+<!--
+<script>
+bg = document.body.style
+x = 1000
+
+function START(){
+    document.getElementById("welcBox").style.opacity = "0";
+    document.getElementById("welcBox").style.pointerEvents = "none";
+    document.getElementById("fakeWelcBox").style.opacity = "0";
+    setTimeout(() => { phase1(); }, "3100");
+}
+
+function phase1(){
+    bg.backgroundSize = "1000px";
+    document.body.style.backgroundImage = "url(assets/flashing/rewrite.gif)";
+    gLoop();
+    
+}
+
+
+function gLoop(){
+    if(x<5){ phase2(); return; }
+    x*= 0.90
+    bg.backgroundSize = `${x}px`;
+    setTimeout(() => { gLoop(); }, "100");
+}
+
+function gLoop2(){
+    if(x>900){ phase3(); return; }
+    x*= 1.2
+    bg.backgroundSize = `${x}px`;
+    setTimeout(() => { gLoop2(); }, "100");
+}
+
+function phase2(){
+    console.log('frick');
+    document.body.style.backgroundImage = "url(assets/smiley.png)";
+    gLoop2();
+}
+
+function phase3(){
+    bg.backgroundSize = "100px";
+    document.body.style.backgroundImage = "url(assets/flashing/y.png)";
+
+}
+
+</script>
+
+<!--<img src='assets/buttons/button2.png' width='500px' style='filter: brightness(50%);'>-->
+<!--
+<div id='fakeWelcBox'></div>
+<div id='welcBox'>
+<br><br><br>
+This process will repartition your brain.<br>
+It contains flashing lights. Proceed?<br><br>
+<a href='javascript:START();'> Proceed. </a>
+<!--<h2><a href='/compat/home.html'> Enter Compatibility Site </a></h2>-->
+<br>
+
+</div>
+page unavaliable
+
+
+</body>
