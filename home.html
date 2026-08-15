@@ -3,9 +3,7 @@
     Mia's EPIC Site
     </title>
 	<meta name="description" content="This site is very epic!">
-    <!--<meta http-equiv="onion-location" content="https://miastonished.github.io/test.onion"/>-->
-    <!-- what was i trying to do? -->
-    
+
     <link href="osd.xml" rel="search" title="Miastonished" type="application/opensearchdescription+xml"/>
     <link rel="icon" type="image/png" href="assets/icons/index.png"/>
 	<script>
@@ -47,7 +45,7 @@
     }
     .links:hover{border-width:0px; top:4px;}
     .stellar:hover{border-width:6px; width:800px; top:0px;}
-    .button88x31:hover{border-width:0px; top:2.5px;}
+    //.button88x31:hover{border-width:0px; top:2.5px;}
     
         
     .button88x31 {
@@ -102,7 +100,7 @@
         position:relative;
         /*top: -1;*/
         width: 750px;
-        height: 124px;
+        height: 64px;
         background: black;
         /*background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(90,0,60,1) 0%, rgba(103,0,69,1) 8%, rgba(67,0,45,1) 39%, rgba(65,0,43,1) 64%, rgba(58,0,39,1) 75%, rgba(121,0,81,1) 82%, rgba(192,0,129,1) 90%, rgba(255,0,172,1) 100%);*/
         /*background-image: url("assets/img/glitter.gif");*/
@@ -136,12 +134,12 @@
     
     }
     .webringlink {
-        height: 124px;
+        height: 64px;
         font-size: 20px;
         background: #ff00ff22;
-        line-height: 124px;
+        line-height: 64px;
         position: relative;
-        top: -56px;
+        top: -25px;
         display: inline-block;
         width: 100px;
         padding: 0px;
@@ -227,6 +225,7 @@
         position: absolute;
         left: -320px;
         top: 200px;
+        z-index: 10;
         transform: rotate(-2deg);
 		background-color: #454545;
         background-image: url('assets/art/settings2.png');
@@ -347,11 +346,24 @@
         font-size: 30px;
         top: 5px;
         right: 170px;
+        vertical-align: center;
+        text-align: center;
         color: #a00;
         background-color: #200;
-        width: 168px;
-        height: 39px;
-        border-radius: 5px;
+        width: 176px;
+        height: 62px;
+    
+        border-width: 4px;
+        border-style: solid;
+        border-color: #440000;
+    }    
+    .unreality {
+        display: inline-block;
+        position: absolute;
+        font-size: 30px;
+        top: 5px;
+        left: 170px;
+        background-color: #200;
     
         border-width: 4px;
         border-style: solid;
@@ -378,6 +390,13 @@
         top:100px;
         left:100px;
         color: 660101;
+    }
+    .buttcrack {
+        width: 400px;
+        position: relative;
+        top: -3px;
+        border: 2px solid #200;
+        border-radius: 100px;
     }
 	</style>
 </head>
@@ -406,17 +425,18 @@
 <span id="menulinks">idex dot html</span>
 	<script src="links.js" type="text/javascript"></script>
 <!--
-<div class="linkies"><a href="https://batashock.github.io/"> check out Batashocks site!! </a> ​ ​ ​<a href="https://silvershorthair.github.io/"> check out Silvers Shorthairs site!! </a></div>
+​<a href="https://silvershorthair.github.io/"> check out Silvers Shorthairs site!! </a></div>
 -->
 
 
+<!-- WEBRING -->
 <div class="linkies"> 
 <span href="webring.html" class="webring">
 <a class='webringlink' href='https://stellaring.network/previous/'>◄prev</a>
-<a href='mybuttons.html'><img src="assets/buttons/button.gif" height="124px" width="352px"/></a>
+<a href='mybuttons.html'><img src="assets/buttons/button.gif" height="64px" width="176px"/></a>
 <a class='webringlink' href='https://stellaring.network/next/'> next►</a>
+<!-- WEBRING -->
 
-<!--webring links <s>css</s> coming soon <s>WIP</s>-->
 
 </span>
 <br>
@@ -447,31 +467,33 @@
 
 <a href='comments.html' class='comment-button'>"Guestbook"</a>
 
+<a class='button88x31 unreality' href="https://ubfunkey.neocities.org/shrines/int/88x31"><img class='bttn' src="assets/buttons/unreality.gif"/></a>
 
   <h3> -- EPILEPSY WARNING -- </h3>
   this site contians a large amount of fast moving and flashing gifs and elements<br>
-  as well as potential screenshakes and matureish themes kinda<br>
+  as well as potential screenshakes and mature themes<br>
   if you have photosensitive epilepsy then probably don't be on this site soz
   
   <h3>-- NEWS / CHANGELOG --</h3>
   <div class='blogurl'>
     <!--<p>THIS IS WHERE MY FUCKING BLOG WILL GO</p>-->
-    <a href='blog.html'> site updatess</a>
+    <a href='blog.html'> cave that leads to <br>site updates</a>
     
   </div>
   
     <br>
-    as you can (no longer) see, this site is updated regularly :3
+    as you can (no longer) see, this site is (no longer) updated regularly :3
   
 </div>
 <div class="footer">
 <div class="bottom">
 <h3>-- NOTES FOR THE SITE --</h3>
 This site is best viewed on desktop. Most of it looks horrible on mobile<br>
-<span title="DISREGARD THIS IT IS NO LONGER TRUE: but you can look at the console log thingy thats fine :grin:">Don't look at the HTML in inspect element it will spoil secrets for you and doesn't hide anything useful</span><br>
-<!-- I'm being serious -->
-Bugs and stuff can be reported to me (Contact is on about me (not yet im working on it (okey done)))<br>
-<span id="farty" title="like hovering over certain text 😲">Some secrets are hidden very horribly</span><br>
+Hidden stuff may be spoilt if you dig through the HTML<br>
+<!-- I don't hide anything here-->
+Bugs and stuff can be reported to me (Contact is on about me) <!-- (not yet im working on it (okey done)))--><br>
+This site is a work of fiction
+<!--<span id="farty" title="like hovering over certain text 😲">Some secrets are hidden very horribly</span><br>-->
 
 <br>
 <br>
@@ -479,10 +501,10 @@ Bugs and stuff can be reported to me (Contact is on about me (not yet im working
   
   
 <!--<blockquote class="twitter-tweet" data-lang="ar" data-theme="dark"><p lang="en" dir="ltr">i just realised how deep connect 4 is like you are literally connnecting peoples souls <a href="https://twitter.com/hashtag/deep?src=hash&amp;ref_src=twsrc%5Etfw">#deep</a></p>&mdash; (@) <a href="">١٠ يناير ٢٠٢٢</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
-<div class="tumblr-post-thing">
+<!--<div class="tumblr-post-thing">
 <p title='this used to hold social media posts but i ated them'>this space left unintentionally blank</p>
-<!--<a id='tumbl' onclick='loadTumblr();'>click to load tumblr embed (takes a sec to appear) </a>-->
-</div>
+<!--<a id='tumbl' onclick='loadTumblr();'>click to load tumblr embed (takes a sec to appear) </a>
+</div>-->
 
 <script>
 function loadTumblr(){
@@ -499,43 +521,43 @@ function loadTumblr(){
 <div class = "sinettings">
 <h1>Sine wave controls</h1>
 
-<table>
-<tr>
-<td>
-  <input type="checkbox" id="sinenable" style='transform: scaleX(12); position: relative; left: 70px;'>
+    <table>
+    <tr>
+    <td>
+      <input type="checkbox" id="sinenable" style='transform: scaleX(12); position: relative; left: 70px;'>
 
-</td>
-<td>
-toggle sine wave 
-</td>
+    </td>
+    <td>
+    toggle sine wave 
+    </td>
 
-</tr>
+    </tr>
 
-<tr>
-<td><input type="range" min="1" max="60" value="15" id="delayslider"> </td>
-<td><span id="delaydisplay">FPS</span></td>
-</tr>
+    <tr>
+    <td><input type="range" min="1" max="60" value="15" id="delayslider"> </td>
+    <td><span id="delaydisplay">FPS</span></td>
+    </tr>
 
 
-<tr>
-<td><input type="range" min="1" max="50" value="13" id="qualslider"> </td>
-<td><span id="qualdisplay">QUALITY !!!</span></td>
-</tr>
+    <tr>
+    <td><input type="range" min="1" max="50" value="13" id="qualslider"> </td>
+    <td><span id="qualdisplay">QUALITY !!!</span></td>
+    </tr>
 
-<tr>
-<td><input type="range" min="1" max="100" value="5" id="speedslider"> </td>
-<td><span id="speeddisplay">speed</span></td>
-</tr>
+    <tr>
+    <td><input type="range" min="1" max="100" value="5" id="speedslider"> </td>
+    <td><span id="speeddisplay">speed</span></td>
+    </tr>
 
-<tr>
-<td><input type="range" min="1" max="10" value="1" id="lengthslider"> </td>
-<td><span id="lengthdisplay">length</span></td>
-</tr>
+    <tr>
+    <td><input type="range" min="1" max="10" value="1" id="lengthslider"> </td>
+    <td><span id="lengthdisplay">length</span></td>
+    </tr>
 
-<tr>
-<td><input type="range" min="0" max="100" value="0" id="secretslider"> </td>
-<td><span id="secretdisplay">???</span></td>
-</tr>
+    <tr>
+    <td><!--<input type="range" min="0" max="100" value="0" id="secretslider"> --></td>
+    <td>absolutely fucking broken<!--<span id="secretdisplay">???</span>--></td>
+    </tr>
 
 <script>
 var slider1 = document.getElementById("delayslider");
@@ -557,15 +579,15 @@ slider1.value = 15;
 slider2.value = 12;
 slider3.value = 5;
 slider4.value = 1;
-slider5.value = 0;
+//slider5.value = 0;
 
 
 
-variable5.innerHTML = "???";
-slider5.oninput = function() {
+//variable5.innerHTML = "???";
+/*slider5.oninput = function() {
   variable5.innerHTML = ""+slider5.value +"???";
   //if(slider5.value > 99){ window.location.href = "YmxvYg.html"; };
-}
+}*/
 
 checkboxx.oninput = function() {
   sinable = checkboxx.checked;
@@ -602,31 +624,39 @@ slider1.oninput = function() {
 
 </table>
 </div>
-<br>
-<a class='button88x31' href='https://gumi.gay' target='_blank'><img src='assets/buttons/gumi.gif'></a>
-<a class='button88x31' href='https://silvershorthair.github.io' target='_blank'><img src='assets/buttons/silver.png'></a>
+<hr class='buttcrack'>
+<a class='button88x31' href='https://www.silver.catsmp.gay' target='_blank'><img src='assets/buttons/silver2.png'></a>
 <a class='button88x31' href='https://skysupercharged.github.io' target='_blank'><img src='assets/buttons/sky.png'></a>
-<a class='button88x31' href='https://vaelaris.github.io' target='_blank'><img src='assets/buttons/vae.png'></a>
+<a class='button88x31' href='https://gumi.gay' target='_blank'><img src='assets/buttons/gumi.gif'></a>
+
 <br>
-<a class='button88x31' href='miasepicsite/' target='_blank'><img src='assets/art/placeholderbutton.gif'></a>
-add button here 
 <a class='button88x31' href="https://xzan-corvus.github.io/"><img src="assets/buttons/xzan_proto.gif"></a>
+<a class='button88x31' href='https://vaelaris.github.io' target='_blank'><img src='assets/buttons/vae.png'></a>
 <a class='button88x31' href="https://fabledbugs.github.io/"><img src="assets/buttons/bugs.png"></a>
 
 <br>
-<a class='button88x31' href="mybuttons.html#special"><img class='bttn' src="assets/art/FTSbutton/full.png"/></a>
-<a class='button88x31' href="https://batashock.github.io/"><img src="assets/buttons/bata.png"></a>
-<a class='button88x31' href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
 <a class='button88x31' href="https://aiston.scungled.gay/"><img class='bttn' src="assets/buttons/aiston.gif"/></a>
+<a class='button88x31' href="https://slimegal.catsmp.gay/"><img class='bttn' src="assets/buttons/jai.gif"/></a>
+<a class='button88x31' href='miasepicsite/' target='_blank'><img src='assets/art/placeholderbutton.gif'></a>
+<hr class='buttcrack'>
+
+<!--<a class='button88x31' href="mybuttons.html#special"><img class='bttn' src="assets/art/FTSbutton/full.png"/></a>-->
+<a class='button88x31' href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
+<a class='button88x31' href="https://sinkdog.neocities.org/"><img class='bttn' src="https://sinkdog.neocities.org/sinkzine2026.png"/></a>
+<a class='button88x31' href="https://aprilfools.scryfall.com/2026" target='_blank'><img src='assets/buttons/pay2.gif'></a>
 <br>
+
+<a class='button88x31' href="https://archlinux.org/"><img class='bttn' src="assets/buttons/arch.gif"/></a>
 
 <a class='button88x31' href="https://debtdeath.neocities.org/buttons"><img class='bttn' src="assets/buttons/alwayswas.png"/></a>
-<a class='button88x31' href="https://archlinux.org/"><img class='bttn' src="assets/buttons/arch.gif"/></a>
-<a class='button88x31' href="https://ublockorigin.com/"><img class='bttn' src="assets/buttons/ublock.png"/></a>
-<a class='button88x31' href='https://www.tumblr.com/sulfurcosmos/732456971539775488/how-you-can-help-palestine' target='_blank'><img src='assets/art/88x31palestine.png'></a>
+<a class='button88x31'><img src='assets/art/88x31palestine.png'></a>
 <br>
-<a class='buttonlink' href='buttons.html'>more buttons</a>
+<a class='button88x31'><img class='bttn' src="assets/buttons/paws.gif"/></a>
+<a class='button88x31' href="https://ublockorigin.com/"><img class='bttn' src="assets/buttons/ublock.png"/></a>
+<a class='button88x31' href="https://archive.org/"><img class='bttn' src="assets/buttons/ia.png"/></a>
+<hr class='buttcrack'>
 
+<a class='buttonlink' href='buttons.html'>more buttons</a>
 <br>
 
 <br>
@@ -643,10 +673,11 @@ Current Viewers:<script language="javascript" type="text/javascript" src="https:
 <!--<iframe src="https://john.citrons.xyz/embed?ref=miastonished.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
 
 if u cant see this then that may be a problem (nvm its good now you shouldn't be able to see this text)-->
-<p class="white">if you cant see this text then i understand why</p>
-
+Not currently accepting donations
+<p class="white">this space left intentionally blank</p>
 LILITH 2024 <br>
-<img src='assets/buttons/lilith2.gif'/> <a href='mybuttons.html'><img src='assets/buttons/button2.png'/></a>
+<a href='https://www.silver.catsmp.gay/buttons.html'><img src='assets/buttons/lilith2.gif'/></a>
+<a href='mybuttons.html'><img src='assets/buttons/button2.png'/></a>
 </div>
 <br><a href="TheReal"> check out         site!! </a><br><br><br><br>
 
